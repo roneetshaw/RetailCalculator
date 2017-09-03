@@ -1,0 +1,164 @@
+data ={
+  "Foundation": [
+	{
+		"Earthwork": [
+			{
+				"Labour_and_Earth":[
+					{
+						"cubic_ft":"3",
+						"rate":"10"
+					}
+				]
+			}
+		],
+		"Cement_Concrete": [
+			{
+				"Cement":[
+					{
+						"bags":"0.009",
+						"rate":"380"
+					}
+				],
+				"Sand":[
+					{
+						"cubic_mt":"0.003",
+						"rate":"7000"
+					}
+				],
+				"Course_Aggregate":[
+					{
+						"value":"0.005",
+						"rate":"600"
+					}
+				]
+			}
+		],
+		"Brick_Work": [
+			{
+				"Cement":[
+					{
+						"bags":"0.018",
+						"rate":"380"
+					}
+				],
+				"Sand":[
+					{
+						"cubic_mt":"0.004",
+						"rate":"7000"
+					}
+				],
+				"Bricks":[
+					{
+						"nos":"5.53",
+						"rate":"7"
+					}
+				]
+			}
+		],
+		"DPC": [
+			{
+				"Horizantal_DPC":[
+					{
+						"sqft":"0.12",
+						"rate":"130"
+					}
+				]
+			}
+		],
+		"Labour": [
+			{
+				"Labour_Cost_excl_Earthwork	":[
+					{
+						"man_days":"0.113",
+						"rate":"600"
+					}
+				]
+			}
+		]
+    },
+  ],
+  "SuperStructure": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "Flooring": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "Plastering": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "Woodwork": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "Painting": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "ElectricalnPlumbing": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ]
+}

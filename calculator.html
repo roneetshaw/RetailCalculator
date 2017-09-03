@@ -5,10 +5,15 @@
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Bootstrap Loan Calculator - Bootsnipp.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="rate.json"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="customCSS.css" rel="stylesheet" />
+    <link href="customCSS.css?v=0" rel="stylesheet" />
+    <link href="cost_estimator.css?v=0" rel="stylesheet" />
+    <link href="papertostonecss.css?v=0" rel="stylesheet" />
+    <link href="bootstrap.css?v=0" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	
 </head>
 <body>
 <div class="container">
@@ -16,46 +21,117 @@
         <div class="row">
 			<div class="col-sm-4">
 				<div class="form-pricing">
-                  <div class="price-slider">
-                    <h4 class="great">Amount</h4>
-                    <span>Minimum $100K is required</span>
-                    <div class="col-sm-12">
-                      <div id="slider_amirol"></div>
-                    </div>
-                  </div>
-                  <div class="price-slider">
-                    <h4 class="great">Duration</h4>
-                    <span>Please choose one</span>
-                    <div class="btn-group btn-group-justified">
-                      <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary btn-lg btn-block month active-month selected-month" id='24month'>24 Months</button>
-                      </div>
-                      <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary btn-lg btn-block month" id='18month'>18 Months</button>
-                      </div>
-                      <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary btn-lg btn-block month" id='12month'>12 Months</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="price-slider">
-                    <h4 class="great">Term</h4>
-                    <span>Please choose one</span>
-                      <input name="sliderVal" type="hidden" id="sliderVal" value='0' readonly="readonly" />
-                <input name="month" type="hidden" id="month" value='24month' readonly="readonly" />
-                <input name="term" type="hidden" id="term" value='quarterly' readonly="readonly" />
-                      <div class="btn-group btn-group-justified">
-                        <div class="btn-group btn-group-lg">
-                    <button type="button" class="btn btn-primary btn-lg btn-block term active-term selected-term" id='quarterly'>Quarterly</button>
-                  </div>
-                        <div class="btn-group btn-group-lg">
-                          <button type="button" class="btn btn-primary btn-lg btn-block term" id='monthly'>Monthly</button>
-                  </div>
-                        <div class="btn-group btn-group-lg">
-                          <button type="button" class="btn btn-primary btn-lg btn-block term" id='weekly'>Weekly</button>
-                        </div>
-                      </div>
-                  </div>
+					<div class="price-slider">
+						<h4 class="great">CITY</h4>
+						<span>Minimum $100K is required</span>
+						<div class="col-sm-12">
+							<div class="dropdown" >
+							    <button class="btn btn-default dropdown-toggle" style="width:300px" id="dwnText" type="button" data-toggle="dropdown">Select a City
+							    <span class="caret"></span></button>
+							    <ul class="dropdown-menu" style="width:300px" id="dwnCity">
+									<li><a href="#" value="bangalore">Bangalore</a></li>
+									<li><a href="#" value="delhi">Delhi</a></li>
+									<li><a href="#" value="mumbai">Mumbai</a></li>
+									<li><a href="#" value="chennai">Chennai</a></li>
+									<li><a href="#" value="hyderabad">Hyderabad</a></li>
+									<li><a href="#" value="coimbatore">Coimbatore</a></li>
+									<li><a href="#" value="kolkata">Kolkata</a></li>
+									<li><a href="#" value="jaipur">Jaipur</a></li>
+									<li><a href="#" value="trivandrum">Trivandrum</a></li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+					<div class="price-slider">
+						<h4 class="great">LAND AREA</h4>
+						<div class="row">
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="landArea">
+							</div>
+							<div class="col-sm-4">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dwnLand"
+									data-toggle="dropdown">Select
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu" id="dwnMeter">
+										<li><a href="#" value="1">Sqft</a></li>
+										<li><a href="#" value="9">Sq yard</a></li>
+										<li><a href="#" value="10.7639">Sq meter</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price-slider">
+						<h4 class="great">FLOORS</h4>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" style="width:140px" id="dwnFloortext" type="button" data-toggle="dropdown">Select
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu" id="dwnFloorUl">
+										<li><a href="#" value="1">Ground Floor Only</a></li>
+										<li><a href="#" value="2">Ground +1 Floor</a></li>
+										<li><a href="#" value="3">Ground +2 Floors</a></li>
+										<li><a href="#" value="4">Ground +3 Floors</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<label><input type="checkbox" value="">Has Basement</label>
+							</div>
+						</div>
+					</div>
+					<div class="price-slider">
+						<h4 class="great">BHK</h4>
+						<span>Please choose one</span>
+						<div class="input-group">
+							<div id="radioBtnBHK" class="btn-group">
+								<a class="btn btn-primary btn-sm active" style="width:100px" data-toggle="funBHK" data-title="1">1 BHK</a>
+								<a class="btn btn-primary btn-sm notActive" style="width:100px" data-toggle="funBHK" data-title="2">2 BHK</a>
+								<a class="btn btn-primary btn-sm notActive" style="width:100px" data-toggle="funBHK" data-title="3">3+ BHK</a>
+							</div>
+							<input type="hidden" name="funBHK" id="funBHK">
+						</div>						
+					</div>
+					<div class="price-slider">
+						<h4 class="great">PAINT TYPE</h4>
+						<span>Please choose one</span>
+						<div class="input-group" >
+							<div id="radioBtnPaint" class="btn-group">
+								<a class="btn btn-primary btn-sm active" style="width:100px" data-toggle="funPaint" data-title="R">Rental</a>
+								<a class="btn btn-primary btn-sm notActive" style="width:100px"data-toggle="funPaint" data-title="B">Basic</a>
+								<a class="btn btn-primary btn-sm notActive" style="width:100px"data-toggle="funPaint" data-title="P">Premium</a>
+							</div>
+							<input type="hidden" name="funPaint" id="funPaint">
+						</div>
+					</div>
+					<div class="price-slider">
+						<h4 class="great">DOOR TYPE</h4>
+						<span>Please choose one</span>
+						<div class="input-group">
+							<div id="radioBtnDoor" class="btn-group">
+								<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="funDoor" data-title="S">SalWood</a>
+								<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="funDoor" data-title="T">TeakWood</a>
+							</div>
+							<input type="hidden" name="funDoor" id="funDoor">
+						</div>
+					</div>
+					<div class="price-slider">
+						<h4 class="great">FLOORING</h4>
+						<span>Please choose one</span>
+						<div class="input-group">
+							<div id="radioBtnFloor" class="btn-group">
+								<a class="btn btn-primary btn-sm active" data-toggle="funFloor" style="width:100px" data-title="T">Tiles</a>
+								<a class="btn btn-primary btn-sm notActive" data-toggle="funFloor" style="width:100px" data-title="M">Marble</a>
+								<a class="btn btn-primary btn-sm notActive" data-toggle="funFloor" style="width:100px" data-title="W">Wooden</a>
+							</div>
+							<input type="hidden" name="funFloor" id="funFloor">
+						</div>
+					</div>
+					<div style="text-align:center; margin-top:50px;">
+						<button type="button" class="btn btn-default" id="calcost">Calculate Cost</button>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-8 card">
@@ -67,8 +143,227 @@
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 										<i class="more-less glyphicon glyphicon-plus"></i>
-										Collapsible Group Item #1
+										Foundation
+										
 									</a>
+									<div class="pull-right">
+									Amount
+									</div>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+								<div class="ng-scope ng-isolate-scope"><div class="tableTitle ng-binding"> Earthwork and Excavation </div>
+								<table>
+									<thead>
+										<tr>
+											<th>Item</th>
+											<th>Quantity</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="ng-scope ng-isolate-scope">
+											<td class="ng-binding">Labour and Earth Filling</td>
+											<td ng-show="item.quantity" class="ng-binding" ><span id="FearthWork01">3,585 cubic ft </span><span class="ng-binding"> @ ₹&nbsp;</span><span id="FearthWork02">10 per unit</span></td>
+											<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+											<td class="ng-binding" id="EarthWorkTotalnnn">35,850</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+										  <td></td>
+										  <td>Total Price</td>
+										  <td class="ng-binding" id="EarthTotal" >35,850</td>
+										</tr>
+									</tfoot>
+								</table>
+								</div>
+								<div>
+								<div class="tableTitle"> Cement Concrete </div>
+								<table>
+									<thead>
+										<tr>
+											<th>Item</th>
+											<th>Quantity</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td >Cement</td>
+											<td><span class="ng-binding" id="CCcement01">10 bags</span> @ ₹&nbsp;<span class="ng-binding" id="CCcement02">380 per unit</span></td>
+											<td class="ng-hide">LUMP SUM</td>
+											<td id="CCcementTotal">3,800</td>
+										</tr><
+										<tr >
+											<td >Sand</td>
+											<td class="ng-binding"><span class="ng-binding" id="CCsand01">3 cubic meters </span> @ ₹&nbsp;<span class="ng-binding" id="CCsand02">7,000 per unit</span></td>
+											<td>LUMP SUM</td>
+											<td id="CCsandTotal">21,000</td>
+										</tr>
+										<tr class="ng-scope ng-isolate-scope">
+											<td class="ng-binding">Course Aggregate</td>
+											<td ng-show="item.quantity" class="ng-binding"><span class="ng-binding" id="CCca01">6 </span>  @ ₹&nbsp;<span class="ng-binding" id="CCca02">600 per unit</span></td>
+											<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+											<td class="ng-binding" id="CCcaTotal">3,600</td>
+										</tr><!-- end ngRepeat: subitem in item.items -->
+									</tbody>
+								<tfoot>
+								<tr>
+								  <td></td>
+								  <td>Total Price</td>
+								  <td class="ng-binding" id="CCTotal">28,400</td>
+								</tr>
+								<!-- ngIf: item.content -->
+								</tfoot>
+								</table>
+								</div><!-- end ngRepeat: item in estimate.breakup --><div ng-repeat="item in estimate.breakup" subcalc-output="" item="item" class="ng-scope ng-isolate-scope"><div class="tableTitle ng-binding"> Brick Work </div>
+								<table>
+								  <thead>
+									<tr>
+									  <th>Item</th>
+									  <th>Quantity</th>
+									  <th>Price</th>
+									</tr>
+								  </thead>
+								  <tbody>
+								  <!-- ngRepeat: subitem in item.items --><tr ng-repeat="subitem in item.items" item-output="" item="subitem" class="ng-scope ng-isolate-scope"><td class="ng-binding">Bricks</td>
+								<td ng-show="item.quantity" class="ng-binding" id="BWbricks01">6,040 nos. <span class="ng-binding" id="BWbricks02"> @ ₹&nbsp;7 per unit</span></td>
+								<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+								<td class="ng-binding" id="BWbricksTotal">42,280</td>
+								</tr><!-- end ngRepeat: subitem in item.items --><tr ng-repeat="subitem in item.items" item-output="" item="subitem" class="ng-scope ng-isolate-scope"><td class="ng-binding">Cement</td>
+								<td ng-show="item.quantity" class="ng-binding" id="BWca01" >20 bags <span class="ng-binding" id="BWca02"> @ ₹&nbsp;380 per unit</span></td>
+								<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+								<td class="ng-binding" id="BWcementTotal">7,600</td>
+								</tr><!-- end ngRepeat: subitem in item.items --><tr ng-repeat="subitem in item.items" item-output="" item="subitem" class="ng-scope ng-isolate-scope"><td class="ng-binding">Sand</td>
+								<td ng-show="item.quantity" class="ng-binding" id="BWsand01">4 cubic meters <span class="ng-binding" id="BWsand02"> @ ₹&nbsp;7,000 per unit</span></td>
+								<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+								<td class="ng-binding" id="BWsandTotal">28,000</td>
+								</tr><!-- end ngRepeat: subitem in item.items -->
+								</tbody>
+								<tfoot>
+								<tr>
+								  <td></td>
+								  <td>Total Price</td>
+								  <td class="ng-binding" id="BWtotal">77,880</td>
+								</tr>
+								<!-- ngIf: item.content -->
+								</tfoot>
+								</table>
+								</div><!-- end ngRepeat: item in estimate.breakup --><div ng-repeat="item in estimate.breakup" subcalc-output="" item="item" class="ng-scope ng-isolate-scope"><div class="tableTitle ng-binding"> DPC </div>
+								<table>
+								  <thead>
+									<tr>
+									  <th>Item</th>
+									  <th>Quantity</th>
+									  <th>Price</th>
+									</tr>
+								  </thead>
+								  <tbody>
+								  <!-- ngRepeat: subitem in item.items --><tr ng-repeat="subitem in item.items" item-output="" item="subitem" class="ng-scope ng-isolate-scope"><td class="ng-binding">Horizantal DPC</td>
+								<td ng-show="item.quantity" class="ng-binding" id="DPC01">130 sqft <span class="ng-binding" id="DPC02"> @ ₹&nbsp;130 per unit</span></td>
+								<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+								<td class="ng-binding" id="DPChorizantoalTotal">16,900</td>
+								</tr><!-- end ngRepeat: subitem in item.items -->
+								</tbody>
+								<tfoot>
+								<tr>
+								  <td></td>
+								  <td>Total Price</td>
+								  <td class="ng-binding" id="DPCTotal">16,900</td>
+								</tr>
+								<!-- ngIf: item.content -->
+								</tfoot>
+								</table>
+								</div><!-- end ngRepeat: item in estimate.breakup --><div ng-repeat="item in estimate.breakup" subcalc-output="" item="item" class="ng-scope ng-isolate-scope"><div class="tableTitle ng-binding"> Labour </div>
+								<table>
+								  <thead>
+									<tr>
+									  <th>Item</th>
+									  <th>Quantity</th>
+									  <th>Price</th>
+									</tr>
+								  </thead>
+								  <tbody>
+								  <!-- ngRepeat: subitem in item.items --><tr ng-repeat="subitem in item.items" item-output="" item="subitem" class="ng-scope ng-isolate-scope"><td class="ng-binding">Labour Cost excl Earthwork</td>
+								<td ng-show="item.quantity" class="ng-binding" id="Lcost01">134 man days <span class="ng-binding"id="Lcost02"> @ ₹&nbsp;600 per unit</span></td>
+								<td ng-hide="item.quantity" class="ng-hide">LUMP SUM</td>
+								<td class="ng-binding" id="LcosrTotal">80,663</td>
+								</tr><!-- end ngRepeat: subitem in item.items -->
+								</tbody>
+								<tfoot>
+								<tr>
+								  <td></td>
+								  <td>Total Price</td>
+								  <td class="ng-binding" id="LTotal">80,663</td>
+								</tr>
+								<!-- ngIf: item.content -->
+								</tfoot>
+								</table>
+								</div><!-- end ngRepeat: item in estimate.breakup -->
+									<!-- table section -->
+									<table class="totalTable">
+									  <tfoot>
+									  <tr>
+										<td></td>
+										<td class="ng-binding">Total for Foundation</td>
+										<td><span class="ng-binding" id="FTotal">₹&nbsp;2,39,693 </span></td>
+									  </tr>
+									  </tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<i class="more-less glyphicon glyphicon-plus"></i>
+										Super Structure
+									</a>
+									<div class="pull-right">
+									Amount
+									</div>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<i class="more-less glyphicon glyphicon-plus"></i>
+										Flooring
+									</a>
+									<div class="pull-right">
+									Amount
+									</div>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<i class="more-less glyphicon glyphicon-plus"></i>
+										Plastering and Wall Tiles
+									</a>
+									<div class="pull-right">
+									Amount
+									</div>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -83,8 +378,11 @@
 								<h4 class="panel-title">
 									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 										<i class="more-less glyphicon glyphicon-plus"></i>
-										Collapsible Group Item #2
+										Wood Work
 									</a>
+									<div class="pull-right">
+									Amount
+									</div>
 								</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -99,8 +397,30 @@
 								<h4 class="panel-title">
 									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 										<i class="more-less glyphicon glyphicon-plus"></i>
-										Collapsible Group Item #3
+										Painting
 									</a>
+									<div class="pull-right">
+									Amount
+									</div>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<i class="more-less glyphicon glyphicon-plus"></i>
+										Electrical and Plumbing
+									</a>
+									<div class="pull-right">
+									Amount
+									</div>
 								</h4>
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
