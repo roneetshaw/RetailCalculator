@@ -1,0 +1,26 @@
+1. Rename city dropdrown to Location ref (http://architects4design.com/)
+2. Add an option for Plot size (standard plot sizes searched by user) put it as an option besides land area(Plot Size)
+3. label change  for BHk (duplex house, rental, duplex +rental )
+4. Below land area add location drop down ref (http://architects4design.com/)
+4.5 Structure(Cement Blocks (6'),Cement Blocks (8'), Bricks )
+5. Add an option for flooring (Vetrified, Granite)
+6. Doors (Plywood , Salwood)
+7. windows (Teakwood, Salwood, Honne, UPVC)
+
+Excel mapping
+---------------
+
+8. Foundation #1, #2, #3, #4, #6
+8.5 SteelFoundation #5
+9. Wall accordian new point #10
+10. super structure #7, #8, #9
+11. Wood work (Doors #11) (Windows #12, #13)
+12. Plastering (Walls,ceiling,etc #14)
+13.	Flooring  variety #15
+14. Tiling work Kitchen, bathroon (16, 17, 18)
+15. Painting Internal #19, External #20
+16. 
+
+Discussion
+#10 rates for 9, 8,4.5
+
