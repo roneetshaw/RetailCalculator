@@ -570,8 +570,54 @@ data ={
   ],
   "Tiling": [
     {
-      "type": "home",
-      "number": "212 555-1234"
+		"Kitchen": [
+			{
+				"Material":[
+					{
+						"sq_ft":"0.06",
+						"rate":"25"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"0.06",
+						"rate":"16"
+					}
+				]
+			}
+		],
+		"Toilet": [
+			{
+				"Material":[
+					{
+						"sq_ft":"0.28",
+						"rate":"25"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"0.28",
+						"rate":"16"
+					}
+				]
+			}
+		],
+		"Bathroom": [
+			{
+				"Material":[
+					{
+						"sq_ft":"0.06",
+						"rate":"30"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"0.06",
+						"rate":"20"
+					}
+				]
+			}
+		]
     }
   ],
   "Plastering": [
@@ -628,8 +674,62 @@ data ={
   ],
   "Painting": [
     {
-      "type": "home",
-      "number": "212 555-1234"
+		"InteriorWalls": [
+			{
+				"Material":[
+					{
+						"sq_ft":"3.00",
+						"rate":"20"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"3.00",
+						"rate":"8"
+					}
+				]
+			}
+		],
+		"ExteriorWalls": [
+			{
+				"Material":[
+					{
+						"sq_ft":"1.30",
+						"rate":"15"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"1.30",
+						"rate":"8"
+					}
+				]
+			}
+		]
     }
   ],
+  "Miscellaneous": [
+    {
+		"Electrification": [
+			{
+				"Material":[
+					{
+						"sq_ft":"1.00",
+						"rate":"150"
+					}
+				]
+			}
+		],
+		"Sanitary": [
+			{
+				"Material":[
+					{
+						"sq_ft":"1.00",
+						"rate":"150"
+					}
+				]
+			}
+		]
+    }
+  ]
 }
