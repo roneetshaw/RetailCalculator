@@ -11,6 +11,38 @@ data ={
 				]
 			}
 		],
+		"Bed_Concrete": [
+			{
+				"Material":[
+					{
+						"cubic_ft":"0.22",
+						"rate":"100"
+					}
+				],
+				"Labour":[
+					{
+						"cubic_ft":"0.22",
+						"rate":"20"
+					}
+				]
+			}
+		],
+		"SSM_Construction": [
+			{
+				"Material":[
+					{
+						"cubic_ft":"0.45",
+						"rate":"120"
+					}
+				],
+				"Labour":[
+					{
+						"cubic_ft":"0.45",
+						"rate":"20"
+					}
+				]
+			}
+		],
 		"Footing_Concrete": [
 			{
 				"Material":[

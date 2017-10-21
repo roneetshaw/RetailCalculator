@@ -16,7 +16,7 @@
  }
  .alignment .btn{
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 14px;table_titile
  }
  
  .row1{
@@ -58,6 +58,13 @@
   font-weight: 900;
   font-family: sans-serif;
   font-size: 17px;
+}
+.subtable_titile{
+	padding-top:10px;
+  inline-table:50px;
+  font-weight: 900;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 .table-borderless tbody tr td,
 .table-borderless tbody tr th,

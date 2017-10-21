@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Bootstrap Loan Calculator</title>
+    <title>Bootstrap Loan Calculator - Bootsnipp.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="rate.json"></script>
     <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">-->
@@ -743,22 +743,23 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>Labour & Earth Filling</td>
-                                                    <td><span class="e_earthfillng" id="estpad">2851</span>cubic ft @ ₹ 10 per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="e_earthcharges" id="estpad">28510</span></td>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="e_earthfillng" id="FearthWork01"></span>  <span id="FearthWork02"></span> </td>
+                                                    <td><span id="estpad">&#8377;</span><span class="e_earthcharges" id="EarthWorkTotalnnn"> </span></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="e_earthcharges">28510</span></td>
+                                                    <td><span id="EarthTotal">&#8377;</span><!-- <span class="e_earthcharges">28510</span>--></td> 
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Footing Concrete</div>
+                                        <div class="table_titile">Layering and Curing Concrete</div>
+											<!-- <div class="subtable_titile">Footing</div> -->
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -769,43 +770,29 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cement</td>
-                                                    <td><span class="e_fbags" id="estpad">141</span><span>Bags @</span> <span class="e_bagprice" id="estpad">₹ 335</span> per unit</td>
-                                                    <td><span>&#8377;</span> <span class="e_cementprice" id="estpad">47235</span></td>
+                                                    <td>Material</td>
+                                                    <td><span class="e_fbags" id="totBags"> </span><span></span> <span class="e_bagprice" id="disprate"> </span></td>
+                                                    <td> <span class="e_cementprice" id="totalprice"></span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Sand</td>
-                                                    <td><span class="esand" id="estpad">342</span>cft @ <span>&#8377;</span><span class="esandp" id="estpad">40</span>per unit</td>
+                                                    <td>Labour</td>
+                                                    <td><span class="esand" id="labour"></span> <span>&#8377;</span><span class="esandp" id="rate"></span></td>
                                                     <td>
                                                         <span>&#8377;</span>
-                                                        <span class="esandt" id="estpad">13680</span>
+                                                        <span class="esandt" id="totalLabour"><span>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Course Aggregate</td>
-                                                    <td><span class="eaggregate" id="estpad">642</span>cft @ ₹ 26 per unit</td>
-                                                    <td><span>&#8377;</span>
-                                                        <span class="eaggregatep" id="estpad">16692</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ms Steel</td>
-                                                    <td><span class="esteel" id="estpad">1901</span>kgs @ ₹ 38.5 per unit</td>
-                                                    <td><span>&#8377;</span>
-                                                        <span class="esteelp" id="estpad">73189</span></td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
+                                                
                                                     <td></td>
                                                     <td>Total Price</td>
                                                     <td><span>&#8377;</span>
-                                                        <span class="ftotal" id="estpad">150796</span>
+                                                        <span class="ftotal" id="totalLayer">150796</span>
                                                     </td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Plinth Beam</div>
+                                        <div class="table_titile">Providing and constructing the SSM</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -816,38 +803,223 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cement</td>
-                                                    <td><span class="p_bags" id="estpad">58</span><span>Bags @</span> <span class="e_bagprice" id="estpad"> ₹ 335</span> per unit</td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="estpad">19430</span></td>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="materialcost"></span><span></span> <span class="e_bagprice" id="displayrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalMaterial"></span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Sand</td>
-                                                    <td><span class="p_sand" id="estpad">342</span>cft @ <span>&#8377;</span><span class="esandp" id="estpad">40</span>per unit</td>
-                                                    <td>
-                                                        <span>&#8377;</span>
-                                                        <span class="p_sandp" id="estpad">5600</span>
-                                                    </td>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="labourCost"></span><span class="e_bagprice" id="displayrate2"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalLabourCost"></span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Course Aggregate</td>
-                                                    <td><span class="p_aggrigate" id="estpad">262</span>cft @ ₹ 26 per unit</td>
-                                                    <td><span>&#8377;</span>
-                                                        <span class="p_aggrigatep" id="estpad">6812</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ms Steel</td>
-                                                    <td><span class="psteel" id="estpad">778</span>kgs @ ₹ 38.5 per unit</td>
-                                                    <td><span>&#8377;</span>
-                                                        <span class="psteelp" id="estpad">29953</span></td>
-                                                </tr>
+                                                
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="estpad">61795</span></td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totalCost"></span></td>
                                                 </tr>
                                             </tfoot>
+
+                                        </table>
+										<div class="table_titile">Providing and laying Concrete</div>
+											<div class="subtable_titile">a) Footing</div>
+											
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="totLayMat"></span><span></span> <span class="e_bagprice" id="drate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totLay"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="totLayLabour"></span><span class="e_bagprice" id="ratelabour"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totlabour"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totLayConcrete"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
+
+                                        </table>
+										<div class="subtable_titile">b) Column</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="colconcrete"></span><span></span> <span class="e_bagprice" id="colrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totlColMaterial"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="colconcretelab"></span><span class="e_bagprice" id="colratelabour"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totlCollabour"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totColConcrete"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
+
+                                        </table>
+										<div class="subtable_titile">c) Plinth Beam</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="PlinthMat"></span><span></span> <span class="e_bagprice" id="Plinthrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalPlinthMat"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="PlinthLab"></span><span class="e_bagprice" id="PlinthrateLab"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="TotPlinthLab"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+												
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="TotPlinth"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
+
+                                        </table>
+										
+										
+										<div class="table_titile">Providing and Fabricating steel</div>
+											<div class="subtable_titile">a) Footing</div>
+											
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="footMat"></span><span></span> <span class="e_bagprice" id="footrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalfootMat"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="SteelLab"></span><span class="e_bagprice" id="Steelratelab"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSteelLab"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totSteelFoot"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
+
+                                        </table>
+										<div class="subtable_titile">b) Column</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="colSteelMat"></span><span></span> <span class="e_bagprice" id="colrateMat"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="steelmat"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="colconcretelab"></span><span class="e_bagprice" id="colratelabour"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totlCollabour"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totColConcrete"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
+
+                                        </table>
+										<div class="subtable_titile">c) Plinth Beam</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="PlinthMat"></span><span></span> <span class="e_bagprice" id="Plinthrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalPlinthMat"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="PlinthLab"></span><span class="e_bagprice" id="PlinthrateLab"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="TotPlinthLab"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="TotPlinth"></span></td>
+                                                </tr>
+                                            </tfoot>
+											
 
                                         </table>
                                         <table class="table table-borderless foundation_total">
@@ -855,7 +1027,7 @@
                                                 <tr>
                                                     <td class="titem"></td>
                                                     <td class="tquantity">Total Foundation Cost</td>
-                                                    <td class="tprice"><span>&#8377;</span><span class="foundation_ecost" id="estpad">241101</span></td>
+                                                    <td class="tprice"><span>&#8377;</span><span class="foundation_ecost" id="totFoundation"></span></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
