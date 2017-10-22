@@ -377,13 +377,13 @@ data ={
 			{
 				"Material":[
 					{
-						"cubic_ft":"1.1",
+						"sq_ft":"1.1",
 						"rate":"70"
 					}
 				],
 				"Labour":[
 					{
-						"cubic_mt":"1.1",
+						"sq_ft":"1.1",
 						"rate":"25"
 					}
 				]
@@ -393,13 +393,13 @@ data ={
 			{
 				"Material":[
 					{
-						"cubic_ft":"0.8",
+						"sq_ft":"0.8",
 						"rate":"40"
 					}
 				],
 				"Labour":[
 					{
-						"cubic_mt":"0.8",
+						"sq_ft":"0.8",
 						"rate":"20"
 					}
 				]
@@ -409,13 +409,13 @@ data ={
 			{
 				"Material":[
 					{
-						"cubic_ft":"0.421",
+						"sq_ft":"1.1",
 						"rate":"80"
 					}
 				],
 				"Labour":[
 					{
-						"cubic_mt":"0.421",
+						"sq_ft":"1.1",
 						"rate":"50"
 					}
 				]
@@ -425,13 +425,13 @@ data ={
 			{
 				"Material":[
 					{
-						"cubic_ft":"0.055",
+						"sq_ft":"0.8",
 						"rate":"50"
 					}
 				],
 				"Labour":[
 					{
-						"cubic_mt":"0.055",
+						"sq_ft":"0.8",
 						"rate":"15"
 					}
 				]
@@ -441,13 +441,13 @@ data ={
 			{
 				"Material":[
 					{
-						"cubic_ft":"0.140",
+						"sq_ft":"1.1",
 						"rate":"100"
 					}
 				],
 				"Labour":[
 					{
-						"cubic_mt":"0.140",
+						"sq_ft":"1.1",
 						"rate":"20"
 					}
 				]
@@ -596,14 +596,63 @@ data ={
   ],
   "Flooring": [
     {
-      "type": "home",
-      "number": "212 555-1234"
+		"Vitrified": [
+			{
+				"Tiles":[
+					{
+						"sq_ft":"1.1",
+						"rate":"60"
+					}
+				],
+				"Material":[
+					{
+						"sq_ft":"1.1",
+						"rate":"40"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"1.1",
+						"rate":"20"
+					}
+				]
+			}
+		],
+		"Granite": [
+			{
+				"Tiles":[
+					{
+						"sq_ft":"1.1",
+						"rate":"120"
+					}
+				],
+				"Material":[
+					{
+						"sq_ft":"1.1",
+						"rate":"60"
+					}
+				],
+				"Labour":[
+					{
+						"sq_ft":"1.1",
+						"rate":"30"
+					}
+				]
+			}
+		]
     }
   ],
   "Tiling": [
     {
+		
 		"Kitchen": [
 			{
+				"Tiles":[
+					{
+						"sq_ft":"0.06",
+						"rate":"45"
+					}
+				],
 				"Material":[
 					{
 						"sq_ft":"0.06",
@@ -620,6 +669,12 @@ data ={
 		],
 		"Toilet": [
 			{
+				"Tiles":[
+					{
+						"sq_ft":"0.28",
+						"rate":"45"
+					}
+				],
 				"Material":[
 					{
 						"sq_ft":"0.28",
@@ -636,6 +691,12 @@ data ={
 		],
 		"Bathroom": [
 			{
+				"Tiles":[
+					{
+						"sq_ft":"0.06",
+						"rate":"45"
+					}
+				],
 				"Material":[
 					{
 						"sq_ft":"0.06",

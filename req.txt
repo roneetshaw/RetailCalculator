@@ -19,9 +19,13 @@ Excel mapping
 13.	Flooring  variety #15
 14. Tiling work Kitchen, bathroon (16, 17, 18)
 15. Painting Internal #19, External #20
-16. 
 
-Discussion
-#10 rates for 9, 8,4.5
-#16 have three rows
-
+req_2
+------
+1. land area or plot dimension and then location
+2. Floors should have G+4 option. text should be Ground+4 (G+4).
+3. WIndows order should be SalWood, Honne, Teakwood, UPVC.
+4. Rename heading BHK to Construction Type.
+5. Add option House Type below BHK : 1BHK, 2BHK, 3BHK, 4BHK.
+6. Bricks combinations (a,b) (c,b) (d,e) 
+7. Painting Type: Basic and Premium 
