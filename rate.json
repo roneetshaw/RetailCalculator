@@ -106,11 +106,7 @@ data ={
 					}
 				]
 			}
-		]
-    },
-  ],
-  "SteelFoundation": [
-    {
+		],
 		"Footing_Concrete": [
 			{
 				"Material":[
