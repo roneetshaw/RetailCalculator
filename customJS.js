@@ -250,11 +250,9 @@ $( document ).ready(function() {
 	function calSteelColumn()
 	{
 		var Mt=data.SteelFoundation[0].Column_Concrete[0].Material[0].MT;
-	var rate =data.SteelFoundation[0].Column_Concrete[0].Material[0].rate;
-	var totalVal=(parseInt($("#landArea").val()));
+		var rate =data.SteelFoundation[0].Column_Concrete[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
 		var totalVal2=(parseInt(totalVal-200));
-		//alert(totalVal2);
-		
 		var colSteel=totalVal2*Mt;
 		alert(colSteel);
 		$("#colSteelMat").text(colSteel+" Metric Tonne @");
