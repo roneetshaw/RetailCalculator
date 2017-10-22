@@ -76,6 +76,7 @@ $( document ).ready(function() {
 	$("#calcost").on('click',function(){
 		//alert("start");
 		calFoundation();
+		calSteel();
 		
 		
 	})
@@ -249,7 +250,8 @@ $( document ).ready(function() {
 	}
 	function calSteelColumn()
 	{
-		var Mt=data.SteelFoundation[0].Column_Concrete[0].Material[0].MT;
+		var Mt=data.SteelFoundation[0].Column_Concrete[0].Material[0].cubic_ft;
+		alert(Mt);
 		var rate =data.SteelFoundation[0].Column_Concrete[0].Material[0].rate;
 		var totalVal=(parseInt($("#landArea").val()));
 		var totalVal2=(parseInt(totalVal-200));
@@ -259,34 +261,77 @@ $( document ).ready(function() {
 		$("#colrateMat").text("₹ "+rate);
 		var steelmat=colSteel*rate;
 		$("#steelmat").text(steelmat);
+		
+		var Mt=data.SteelFoundation[0].Column_Concrete[0].Labour[0].cubic_mt;
+		var rate=data.SteelFoundation[0].Column_Concrete[0].Labour[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var colSteelLab=totalVal2*Mt;
+		$("#colSteelLab").text(colSteelLab+" Metric Tonne @");
+		$("#rateSteelLab").text("₹ "+rate);
+		var totSteelLab=colSteelLab*rate;
+		// alert(totSteelLab);
+		$("#totSteelLab").text(totSteelLab);
+		
+		var totSteelColumn=totSteelLab+steelmat;
+		$("#totSteelColumn").text(totSteelColumn);
+		return totSteelColumn;
+	}
+	
+	function calSteelPlinth()
+	{
+		var Mt=data.SteelFoundation[0].Plinth_Beam[0].Material[0].MT;
+		var rate=data.SteelFoundation[0].Plinth_Beam[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var steelPlint=totalVal2*Mt;
+		var steelPlinth=steelPlint.toFixed(2);
+		$("#steelPlinth").text(steelPlinth+" Metric Tonne @");
+		$("#ratePlinth").text("₹ "+rate);
+		var totStlPlinthMat=Math.ceil(steelPlinth*rate);
+		$("#totStlPlinthMat").text(totStlPlinthMat);
+		
+		var Mt=data.SteelFoundation[0].Plinth_Beam[0].Labour[0].MT;
+		var rate=data.SteelFoundation[0].Plinth_Beam[0].Labour[0].rate;
+		var steelPlint=totalVal2*Mt;
+		var steelPlintlab=steelPlint.toFixed(2);
+		$("#steelPlintlab").text(steelPlintlab+" Metric Tonne @");
+		$("#steelPlintLabrate").text("₹ "+rate);
+		totSteelPlintLab=Math.floor(steelPlintlab*rate);
+		$("#totSteelPlintLab").text(totSteelPlintLab);
+		
+		var totstlplinth=totSteelPlintLab+totStlPlinthMat;
+		$("#totstlplinth").text(totstlplinth);
+		return totstlplinth;
+		
 	}
 	
 	
-	function calBrickWork()
-	{
-		var amt=data.Foundation[0].Brick_Work[0].Cement[0].bags;
-		var rate = data.Foundation[0].Brick_Work[0].Cement[0].rate
-		var total=amt*rate;
-		amt=data.Foundation[0].Brick_Work[0].Sand[0].cubic_mt;
-		rate = data.Foundation[0].Brick_Work[0].Sand[0].rate
-		total=total + amt*rate;
-		amt=data.Foundation[0].Brick_Work[0].Bricks[0].nos;
-		rate = data.Foundation[0].Brick_Work[0].Bricks[0].rate
-		total=total + amt*rate;
-		return total;
-	}
-	function calDPC()
-	{
-		var cubic_ft=data.Foundation[0].DPC[0].Horizantal_DPC[0].sqft;
-		var rate = data.Foundation[0].DPC[0].Horizantal_DPC[0].rate
-		return cubic_ft*rate;
-	}
-	function calLabour()
-	{
-		var cubic_ft=data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].man_days;
-		var rate = data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].rate
-		return cubic_ft*rate;
-	}
+	// function calBrickWork()
+	// {
+		// var amt=data.Foundation[0].Brick_Work[0].Cement[0].bags;
+		// var rate = data.Foundation[0].Brick_Work[0].Cement[0].rate
+		// var total=amt*rate;
+		// amt=data.Foundation[0].Brick_Work[0].Sand[0].cubic_mt;
+		// rate = data.Foundation[0].Brick_Work[0].Sand[0].rate
+		// total=total + amt*rate;
+		// amt=data.Foundation[0].Brick_Work[0].Bricks[0].nos;
+		// rate = data.Foundation[0].Brick_Work[0].Bricks[0].rate
+		// total=total + amt*rate;
+		// return total;
+	// }
+	// function calDPC()
+	// {
+		// var cubic_ft=data.Foundation[0].DPC[0].Horizantal_DPC[0].sqft;
+		// var rate = data.Foundation[0].DPC[0].Horizantal_DPC[0].rate
+		// return cubic_ft*rate;
+	// }
+	// function calLabour()
+	// {
+		// var cubic_ft=data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].man_days;
+		// var rate = data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].rate
+		// return cubic_ft*rate;
+	// }
 	function calFoundation()
 	{
 		var EarthWork =calEarthWork();
@@ -295,10 +340,17 @@ $( document ).ready(function() {
 		var ConcreteFooting=calConcreteFooting();
 		var ColumnConcrete=calColumnConcrete();
 		var PlinthConcrete=calPlinthConcrete();
-		var SteelFooting=calSteelFooting();
-		var SteelColumn=calSteelColumn();
-		var totFoundation=EarthWork+CuringConcrete+SSM_Foundation+ConcreteFooting+ColumnConcrete+PlinthConcrete+SteelFooting;
+		// var SteelFooting=calSteelFooting();
+		// var SteelColumn=calSteelColumn();
+		var totFoundation=EarthWork+CuringConcrete+SSM_Foundation+ConcreteFooting+ColumnConcrete+PlinthConcrete;
 		$("#totFoundation").text(totFoundation);
 	}
+	function calSteel()
+	{
+		var SteelFooting=calSteelFooting();
+		var SteelColumn=calSteelColumn();
+		calSteelPlinth();
+	}
+	
 	//alert(data.Foundation[0].Earthwork[0].Labour_and_Earth[0].cubic_ft)
 });
