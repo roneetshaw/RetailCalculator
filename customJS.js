@@ -77,6 +77,8 @@ $( document ).ready(function() {
 		//alert("start");
 		calFoundation();
 		calSteel();
+		calLayingBase();
+		calSuperStructure();
 		
 		
 	})
@@ -305,6 +307,116 @@ $( document ).ready(function() {
 		return totstlplinth;
 		
 	}
+	function calLayingBase()
+	{
+		var cubic_ft=data.Foundation[0].Laying_Base[0].Material[0].cubic_ft;
+		var rate = data.Foundation[0].Laying_Base[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var baseMatft=totalVal2*cubic_ft;
+		$("#baseMat").text(baseMatft+" cubic ft @");
+		$("#baseRate").text(rate+" per unit");
+		//alert(baseMatft+" "+rate);
+		var totbaseMat=baseMatft*rate;
+		$("#totbaseMat").text(totbaseMat);
+		
+		
+		var cubic_ft=data.Foundation[0].Laying_Base[0].Labour[0].cubic_ft;
+		var rate = data.Foundation[0].Laying_Base[0].Labour[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var baseLab=totalVal2*cubic_ft;
+		$("#baseLab").text(baseLab+" cubic ft @");
+		$("#labrate").text(rate+" per unit");
+		var totbaselab=baseLab*rate;
+		$("#totbaselab").text(totbaselab);
+		
+		var totbase=totbaselab+totbaseMat;
+		$("#totbase").text(totbase);
+		return totbase;
+	}
+	function calsuperColumn()
+	{
+		var cubic_ft=data.SuperStructure[0].Column[0].Material[0].cubic_ft;
+		var rate = data.SuperStructure[0].Column[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var columnact=totalVal2*cubic_ft;
+		$("#columnact").text(columnact+" cubic ft @");
+		$("#ratecol").text(rate+" per unit");
+		var totcolstruct=columnact*rate;
+		$("#totcolstruct").text(totcolstruct);
+		
+		var cubic_ft=data.SuperStructure[0].Column[0].Labour[0].cubic_ft;
+		var rate = data.SuperStructure[0].Column[0].Labour[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var columnLabact=totalVal2*cubic_ft;
+		$("#columnLabact").text(columnLabact+" cubic ft @");
+		$("#columnLabRate").text(rate+" per unit");
+		var totcolumnLab=columnLabact*rate;
+		$("#totcolumnLab").text(totcolumnLab);
+		
+		var totSuperColumn=totcolumnLab+totcolstruct;
+		$("#totSuperColumn").text(totSuperColumn);
+		
+		return totSuperColumn;
+	}
+	
+	function calsuperBeam()
+	{
+		
+		var cubic_ft=data.SuperStructure[0].Beam[0].Material[0].cubic_ft;
+		var rate = data.SuperStructure[0].Beam[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var beammmat=totalVal2*cubic_ft;
+		$("#beammmat").text(beammmat+" cubic ft @");
+		$("#beamRate").text(rate+" per unit");
+		var totbeamMat=beammmat*rate;
+		$("#totbeamMat").text(totbeamMat);
+		
+		var cubic_ft=data.SuperStructure[0].Beam[0].Labour[0].cubic_ft;
+		var rate = data.SuperStructure[0].Beam[0].Labour[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var beamlab=totalVal2*cubic_ft;
+		$("#beamlab").text(beamlab+" cubic ft @");
+		$("#beamRatelab").text(rate+" per unit");
+		var totbeamlab=beamlab*rate;
+		$("#totbeamlab").text(totbeamlab);
+		
+		var totSuperBeam=totbeamlab+totbeamMat;
+		$("#totSuperBeam").text(totSuperBeam);
+	}
+	function calSuperSlab()
+	{
+		var cubic_ft=data.SuperStructure[0].Slab[0].Material[0].cubic_ft;
+		var rate = data.SuperStructure[0].Slab[0].Material[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var SlabcubicMat=totalVal2*cubic_ft;
+		$("#SlabcubicMat").text(SlabcubicMat+" cubic ft @");
+		$("#SlabRateMat").text(rate+" per unit");
+		var totSlabMat=SlabcubicMat+rate;
+		$("#totSlabMat").text(totSlabMat);
+		
+		var cubic_ft=data.SuperStructure[0].Slab[0].Labour[0].cubic_ft;
+		var rate = data.SuperStructure[0].Slab[0].Labour[0].rate;
+		var totalVal=(parseInt($("#landArea").val()));
+		var totalVal2=(parseInt(totalVal-200));
+		var SlabcubicLab=totalVal2*cubic_ft;
+		$("#SlabcubicLab").text(SlabcubicLab+" cubic ft @");
+		$("#SlabrateLab").text(rate+" per unit");
+		var totSlabLab=SlabcubicLab*rate;
+		$("#totSlabLab").text(totSlabLab);
+		
+		var totSlabprice=totSlabMat+totSlabLab;
+		$("#totSlabprice").text(totSlabprice);
+		return totSlabprice;
+	}
+	
+	
 	
 	
 	// function calBrickWork()
@@ -351,6 +463,13 @@ $( document ).ready(function() {
 		var SteelColumn=calSteelColumn();
 		calSteelPlinth();
 	}
+	function calSuperStructure()
+	{
+		calsuperColumn();
+		calsuperBeam();
+		calSuperSlab();
+	}
+	
 	
 	//alert(data.Foundation[0].Earthwork[0].Labour_and_Earth[0].cubic_ft)
 });
