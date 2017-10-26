@@ -65,8 +65,37 @@ $( document ).ready(function() {
 		$('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
 	})
 	$("#dwnCity li").on('click',function(){
-		$("#dwnText").html($(this).text()+'  '+'<span class="caret"></span></button>');
+		$("#dwnText").val($(this).text().trim());
 	})
+	$( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $("#dwnText").autocomplete({
+      source: availableTags
+    }).autocomplete('widget').removeClass('ui-corner-all');
+	} );
 	$("#dwnMeter li").on('click',function(){
 		$("#dwnLand").html($(this).text()+'  '+'<span class="caret"></span></button>');
 	})

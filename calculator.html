@@ -6,13 +6,15 @@
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Bootstrap Loan Calculator - Bootsnipp.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="rate.json"></script>
     <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="cost_estimator.css?v=0" rel="stylesheet" />   
     <!--<link href="papertostonecss.css?v=0" rel="stylesheet" />-->
     <link href="bootstrap.css?v=0" rel="stylesheet" />
 	<link href="customCSS.css?v=0" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 </head>
@@ -30,8 +32,11 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle" style="width:330px" id="dwnText" type="button" data-toggle="dropdown">Select a Location
-                                            <span class="caret"></span></button>
+                                        <input class="btn btn-default" placeholder="Type a Location" style="width:292px" id="dwnText" type="text" >
+                                        </input>
+										<button type="button" style="height:33px" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span class="caret"></span>
+										</button>
                                         <ul class="dropdown-menu" style="width:330px;height: 200px;overflow:auto" id="dwnCity">
                                         <li><a href="#" value="Aalada Mara Road "> Aalada Mara Road </a></li>
 											<li><a href="#" value=" Aavalahal "> Aavalahal </a></li>
@@ -2279,8 +2284,6 @@
         </div>
 
     </div>
-
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script src="customJS.js" type="text/javascript"></script>
 </body>
 
