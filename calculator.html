@@ -671,9 +671,9 @@
                             </div>
                         </div>
 
-                        <div class="panel-group" id="accordion">
+                        <div class="panel-group" >
                             <!-- accordion 1 START -->
-                            <div class="panel" style="border:1px solid #000;">
+                            <div class="panel" >
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
                                     <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#foundation">
@@ -695,8 +695,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- foundation_value panel body -->
+                                
                                 <div id="foundation" class="panel-collapse collapse in">
+									<!-- foundation_value panel body Start-->
                                     <div class="panel-body" style="padding:15px">
                                         <div class="table_titile">Earthwork and Excavation</div>
                                         <table class="table table-borderless">
@@ -876,441 +877,415 @@
                                             </tfoot>											
                                         </table>										
                                     </div>                                
-                                </div>
-								<!-- foundation_value panel body -->
+									<!-- foundation_value panel body Ends-->
+								</div>
+								
                             </div>
 							<!-- accordion 1 END -->
 							
+							<!-- accordion 2 START -->							
 							<div class="panel">
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
-                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#structural">
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#steel_structural">
                                         <div class="col-md-8 c_title">
-                                            <h3>   Steel </h3>
+                                            <h3>Steel Structure</h3>
                                         </div>
                                         <div class="col-md-2" id="price_eastimation">
                                             <span id="prprice">&#8377;</span><span id="prprice" class="structural_value">384397</span>
                                         </div>
                                         <div class="col-md-2 chevron">
                                             <div class="s_close">
-                                                <a href="#"><span>more</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
                                             </div>
                                             <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- Steel panel body -->
-                                <div id="structural" class="panel-collapse collapse in">
-                                    <div class="panel-body" style="padding:15px">
+                                
+                                <div id="steel_structural" class="panel-collapse collapse in">
+                                    <!-- Steel panel body Starts-->
+									<div class="panel-body" style="padding:15px">
 									<div class="table_titile">Providing and Fabricating steel</div>
-											<div class="subtable_titile">a) Footing</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="footMat"></span><span></span> <span class="e_bagprice" id="footrate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totalfootMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="SteelLab"></span><span class="e_bagprice" id="Steelratelab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSteelLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSteelFoot"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">b) Column</div>
-										<table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="colSteelMat"></span><span></span> <span class="e_bagprice" id="colrateMat"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="steelmat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="colSteelLab"></span><span class="e_bagprice" id="rateSteelLab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSteelLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSteelColumn"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">c) Plinth Beam</div>
-										<table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelPlinth"></span><span></span> <span class="e_bagprice" id="ratePlinth"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totStlPlinthMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelPlintlab"></span><span class="e_bagprice" id="steelPlintLabrate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSteelPlintLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totstlplinth"></span></td>
-                                                </tr>
-                                            </tfoot>
+										<div class="subtable_titile">a) Footing</div>											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="footMat"></span><span></span> <span class="e_bagprice" id="footrate"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totalfootMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="SteelLab"></span><span class="e_bagprice" id="Steelratelab"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totSteelLab"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSteelFoot"></span></td>
+													</tr>
+												</tfoot>											
 											</table>
-									   </div>
-								 
+											
+										<div class="subtable_titile">b) Column</div>
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="colSteelMat"></span><span></span> <span class="e_bagprice" id="colrateMat"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="steelmat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="colSteelLab"></span><span class="e_bagprice" id="rateSteelLab"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totSteelLab"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSteelColumn"></span></td>
+													</tr>
+												</tfoot>											
+											</table>
+											
+										<div class="subtable_titile">c) Plinth Beam</div>
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelPlinth"></span><span></span> <span class="e_bagprice" id="ratePlinth"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totStlPlinthMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelPlintlab"></span><span class="e_bagprice" id="steelPlintLabrate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totSteelPlintLab"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totstlplinth"></span></td>
+													</tr>
+												</tfoot>
+											</table>
+											
+									</div>	
+									<!-- Steel panel body Ends-->
+								</div>
 							</div>
-							</div>
-										<div class="panel">
+							<!-- accordion 2 END -->
+							
+							<!-- accordion 3 START -->							
+							<div class="panel">
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
-                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#structural">
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#roofing">
                                         <div class="col-md-8 c_title">
-                                            <h3>ROOF</h3>
+                                            <h3>Roofing</h3>
                                         </div>
                                         <div class="col-md-2" id="price_eastimation">
                                             <span id="prprice">&#8377;</span><span id="prprice" class="structural_value">384397</span>
                                         </div>
                                         <div class="col-md-2 chevron">
                                             <div class="s_close">
-                                                <a href="#"><span>more</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
                                             </div>
                                             <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- Steel panel body -->
-                                <div id="structural" class="panel-collapse collapse in">
+                                <!-- Roofing panel body starts-->
+                                <div id="roofing" class="panel-collapse collapse in">
                                     <div class="panel-body" style="padding:15px">
-									<div class="table_titile">Providing and laying Base</div>
-											<!-- <div class="subtable_titile">a) Footing</div> -->
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="baseMat"></span><span></span> <span class="e_bagprice" id="baseRate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totbaseMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="baseLab"></span><span class="e_bagprice" id="labrate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totbaselab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totbase"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+										<div class="table_titile">Providing and laying Base</div>											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="baseMat"></span><span></span> <span class="e_bagprice" id="baseRate"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totbaseMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="baseLab"></span><span class="e_bagprice" id="labrate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totbaselab"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totbase"></span></td>
+													</tr>
+												</tfoot>										
+											</table>										
 
-                                        </table>	
-										</div>
-										 <div class="panel-body" style="padding:15px">
-									<div class="table_titile">Providing and laying 1:1:5:3 concrete</div>
-											 <div class="subtable_titile">a) Column</div>
+										<div class="table_titile">Providing and laying 1:1.5:3 concrete</div>
+											<div class="subtable_titile">a) Column</div>										
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="columnact"></span><span></span> <span class="e_bagprice" id="ratecol"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totcolstruct"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="columnLabact"></span><span class="e_bagprice" id="columnLabRate"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totcolumnLab"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSuperColumn"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">b) Beam</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="beammmat"></span><span></span> <span class="e_bagprice" id="beamRate"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totbeamMat"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="beamlab"></span><span class="e_bagprice" id="beamRatelab"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totbeamlab"></span></td>
+														</tr>                                              
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSuperBeam"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">c) Slab</div>										
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="SlabcubicMat"></span><span></span> <span class="e_bagprice" id="SlabRateMat"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totSlabMat"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="SlabcubicLab"></span><span class="e_bagprice" id="SlabrateLab"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totSlabLab"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSlabprice"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">d) Lintel</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="LintelMat"></span><span></span> <span class="e_bagprice" id="LintelRateMat"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totLintelMat"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="LintelLab"></span><span class="e_bagprice" id="LintelRate"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totLintelLab"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSuperLintel"></span></td>
+														</tr>
+													</tfoot>												
+												</table>
+												
+											<div class="subtable_titile">e) Chijja</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="ChijjaMat"></span><span></span> <span class="e_bagprice" id="ChijjaRate"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totChijjaMat"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="ChijjaLab"></span><span class="e_bagprice" id="ChijjaRateLab"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totChijjaLab"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSuperChijja"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">e) Staircase</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="StaircaseMat"></span><span></span> <span class="e_bagprice" id="StaircaseRate"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totStaircaseMat"></span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="StaircaseLab"></span><span class="e_bagprice" id="StaircaseRateLab"> </span></td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totStaircaseLab"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totSuperStaircase"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">e) Granite Slab</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+														   <td>Material</td>
+															<td><span class="p_bags" id="steelGranite_slabMat"></span><span></span> <span class="e_bagprice" id="steelMatRateGranite_slab"> </span> </td>
+															<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelGranite_slabMat"></span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>&#8377;</span><span class="ptotal" id="totsteeelGranite_slab"></span></td>
+														</tr>
+													</tfoot>											
+												</table>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="columnact"></span><span></span> <span class="e_bagprice" id="ratecol"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totcolstruct"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="columnLabact"></span><span class="e_bagprice" id="columnLabRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totcolumnLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperColumn"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>	
-										 <div class="subtable_titile">b) Beam</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="beammmat"></span><span></span> <span class="e_bagprice" id="beamRate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totbeamMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="beamlab"></span><span class="e_bagprice" id="beamRatelab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totbeamlab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperBeam"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										 <div class="subtable_titile">c) Slab</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="SlabcubicMat"></span><span></span> <span class="e_bagprice" id="SlabRateMat"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSlabMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="SlabcubicLab"></span><span class="e_bagprice" id="SlabrateLab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totSlabLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSlabprice"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">d) Lintel</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="LintelMat"></span><span></span> <span class="e_bagprice" id="LintelRateMat"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totLintelMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="LintelLab"></span><span class="e_bagprice" id="LintelRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totLintelLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperLintel"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">e) Chijja</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="ChijjaMat"></span><span></span> <span class="e_bagprice" id="ChijjaRate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totChijjaMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="ChijjaLab"></span><span class="e_bagprice" id="ChijjaRateLab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totChijjaLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperChijja"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">e) Staircase</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="StaircaseMat"></span><span></span> <span class="e_bagprice" id="StaircaseRate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totStaircaseMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="StaircaseLab"></span><span class="e_bagprice" id="StaircaseRateLab"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totStaircaseLab"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStaircase"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										<div class="subtable_titile">e) Granite Slab</div>
-											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                   <td>Material</td>
-                                                    <td><span class="p_bags" id="steelGranite_slabMat"></span><span></span> <span class="e_bagprice" id="steelMatRateGranite_slab"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelGranite_slabMat"></span></td>
-                                                </tr>
-												<!-- <tr> -->
-                                                    <!-- <td>Labour</td> -->
-                                                    <!-- <td><span class="p_bags" id="StaircaseLab"></span><span class="e_bagprice" id="StaircaseRateLab"> </span></td> -->
-                                                    <!-- <td><span>&#8377;</span> <span class="p_cementprice" id="totStaircaseLab"></span></td> -->
-                                                <!-- </tr> -->
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totsteeelGranite_slab"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
-
-                                        </table>
-										
-										</div>
-										</div>
-										</div>
-
-                            <!-- structural details -->
+									</div>
+								</div>
+								<!-- Roofing panel body Ends -->
+							</div>							
+							<!-- accordion 3 END -->
+							
+                            <!-- accordion 4 START -->
                             <div class="panel">
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
-                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#structural">
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#super_structural">
                                         <div class="col-md-8 c_title">
                                             <h3>   Super Structure </h3>
                                         </div>
@@ -1319,225 +1294,230 @@
                                         </div>
                                         <div class="col-md-2 chevron">
                                             <div class="s_close">
-                                                <a href="#"><span>more</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
                                             </div>
                                             <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
-                                <!-- structural panel body -->
-                                <div id="structural" class="panel-collapse collapse in">
-                                    <div class="panel-body" style="padding:15px">
+                                
+                                <div id="super_structural" class="panel-collapse collapse in">
+                                    <!-- super structural panel body start-->
+									<div class="panel-body" style="padding:15px">
                                         <div class="subtable_titile">a) Column</div>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelColumnMat"></span><span></span> <span class="e_bagprice" id="steelMatRate"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelColumnMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelColumnLabour"></span><span class="e_bagprice" id="steelLabourRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelColumnLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelColumn"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelColumnMat"></span><span></span> <span class="e_bagprice" id="steelMatRate"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelColumnMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelColumnLabour"></span><span class="e_bagprice" id="steelLabourRate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelColumnLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelColumn"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>	
-										 <div class="subtable_titile">b) Beam</div>
+											</table>	
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelBeamMat"></span><span></span> <span class="e_bagprice" id="steelMatRateBeam"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelBeamMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelBeamLabour"></span><span class="e_bagprice" id="steelBeamRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelBeamLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelBeam"></span></td>
-                                                </tr>
-                                            </tfoot>
+										<div class="subtable_titile">b) Beam</div>
 											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelBeamMat"></span><span></span> <span class="e_bagprice" id="steelMatRateBeam"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelBeamMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelBeamLabour"></span><span class="e_bagprice" id="steelBeamRate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelBeamLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelBeam"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>
-										 <div class="subtable_titile">c) Slab</div>
+											</table>
+											 
+										<div class="subtable_titile">c) Slab</div>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelSlabMat"></span><span></span> <span class="e_bagprice" id="steelMatRateSlab"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelSlabMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelSlabLabour"></span><span class="e_bagprice" id="steelSlabRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelSlabLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelSlab"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelSlabMat"></span><span></span> <span class="e_bagprice" id="steelMatRateSlab"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelSlabMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelSlabLabour"></span><span class="e_bagprice" id="steelSlabRate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelSlabLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelSlab"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>
+											</table>
+										
 										<div class="subtable_titile">d) Lintel</div>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelLintelMat"></span><span></span> <span class="e_bagprice" id="steelMatRateLintel"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelLintelMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelLintelLabour"></span><span class="e_bagprice" id="steelLintelRate"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelLintelLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelLintel"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelLintelMat"></span><span></span> <span class="e_bagprice" id="steelMatRateLintel"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelLintelMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelLintelLabour"></span><span class="e_bagprice" id="steelLintelRate"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelLintelLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelLintel"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>
+											</table>
+										
 										<div class="subtable_titile">e) Chijja</div>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelChijjaMat"></span><span></span> <span class="e_bagprice" id="steelMatRateChijja"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelChijjaMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelChijjaLabour"></span><span class="e_bagprice" id="steelLabourRateChijja"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelChijjaLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelChijja"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelChijjaMat"></span><span></span> <span class="e_bagprice" id="steelMatRateChijja"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelChijjaMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelChijjaLabour"></span><span class="e_bagprice" id="steelLabourRateChijja"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelChijjaLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelChijja"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>
+											</table>
+										
 										<div class="subtable_titile">e) Staircase</div>
 											
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Material</td>
-                                                    <td><span class="p_bags" id="steelStaircaseMat"></span><span></span> <span class="e_bagprice" id="steelMatRateStaircase"> </span> </td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelStaircaseMat"></span></td>
-                                                </tr>
-												<tr>
-                                                    <td>Labour</td>
-                                                    <td><span class="p_bags" id="steelStaircaseLabour"></span><span class="e_bagprice" id="steelLabourRateStaircase"> </span></td>
-                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelStaircaseLabour"></span></td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="tquantity">Total Price</td>
-                                                    <td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelStaircase"></span></td>
-                                                </tr>
-                                            </tfoot>
-											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelStaircaseMat"></span><span></span> <span class="e_bagprice" id="steelMatRateStaircase"> </span> </td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelStaircaseMat"></span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelStaircaseLabour"></span><span class="e_bagprice" id="steelLabourRateStaircase"> </span></td>
+														<td><span>&#8377;</span> <span class="p_cementprice" id="totsteeelStaircaseLabour"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>&#8377;</span><span class="ptotal" id="totSuperStructure_steelStaircase"></span></td>
+													</tr>
+												</tfoot>
+												
 
-                                        </table>
+											</table>
 
                                     </div>
-                                    <!-- structural panel body -->
+                                    <!-- structural panel body ends-->
                                 </div>
                             </div>
-                            <!-- structural end -->
-                            <!-- Flooring -->
+                            <!-- accordion 4 END -->
+                            
+							<!-- Flooring -->
                             <div class="panel">
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
