@@ -110,6 +110,8 @@ $( document ).ready(function() {
 		calSuperStructure();
 		calSuperStructure_Steel()
 		
+		calWall_construction();
+
 		
 	})
 	
@@ -704,7 +706,189 @@ $( document ).ready(function() {
 		
 		
 	}
-	
+	function calWall_construction()
+	{
+		var value=$("#radioBtnStructure").find(".active").attr("value");
+		if(value == 1)
+		{
+			
+			$("#Wall_BrickSize1").text("6 inch Thick Cement Block");
+			$("#Wall_BrickSize2").text("4 inch Thick Cement Block")
+			
+			var square_ft=data.Walls[0].Six[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Six[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallSix_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallSix_Mat=WallSix_Mat*rate;
+			$("#Bricksixrate").text(rate+" per unit");
+			$("#WallSix_Mat").text(WallSix_Mat+" square_ft @");
+			$("#totWallSix_Mat").text("₹"+totWallSix_Mat);
+			
+			var square_ft=data.Walls[0].Six[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Six[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallSix_Labour=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallSix_Labour=WallSix_Labour*rate;
+			$("#Bricksixrate2").text(rate+" per unit");
+			$("#WallSix_Labour").text(WallSix_Labour+" square_ft @");
+			$("#totWallSix_Labour").text(totWallSix_Labour);
+			
+			var totSix_Cost =totWallSix_Labour+totWallSix_Mat;
+			$("#totSix_Cost").text(totSix_Cost);
+			
+			
+			var square_ft=data.Walls[0].Four[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Four[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFour_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallFour_Mat=WallFour_Mat*rate;
+			$("#BrickFourrate").text(rate+" per unit");
+			$("#WallFour_Mat").text(WallFour_Mat+" square_ft @");
+			$("#totWallFour_Mat").text("₹"+totWallFour_Mat);
+			
+			
+			
+			var square_ft=data.Walls[0].Four[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Four[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFour_Labour=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallFour_Labour=WallFour_Labour*rate;
+			$("#BrickFourrate2").text(rate+" per unit");
+			$("#WallFour_Labour").text(WallFour_Labour+" square_ft @");
+			$("#totWallFour_Labour").text(totWallFour_Labour);
+			
+				var totFour_Cost =totWallFour_Labour+totWallFour_Mat;
+				$("#totFour_Cost").text(totFour_Cost);
+			
+		}
+		else if(value == 2){
+			$("#Wall_BrickSize1").text("8 inch Thick Cement Block");
+			$("#Wall_BrickSize2").text("4 inch Thick Cement Block");
+			
+			var square_ft=data.Walls[0].Eight[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Eight[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallEight_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallEight_Mat=WallEight_Mat*rate;
+			$("#Bricksixrate").text(rate+" per unit");
+			$("#WallSix_Mat").text(WallEight_Mat+" square_ft @");
+			$("#totWallSix_Mat").text("₹"+totWallEight_Mat);
+			
+			var square_ft=data.Walls[0].Eight[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Eight[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallEight_Labour=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallEight_Labour=WallEight_Labour*rate;
+			$("#Bricksixrate2").text(rate+" per unit");
+			$("#WallSix_Labour").text(WallEight_Labour+" square_ft @");
+			$("#totWallSix_Labour").text(totWallEight_Labour);
+			
+			var totEight_Cost =totWallEight_Labour+totWallEight_Mat;
+			$("#totSix_Cost").text(totEight_Cost);
+			
+			
+			var square_ft=data.Walls[0].Four[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Four[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFour_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallFour_Mat=WallFour_Mat*rate;
+			$("#BrickFourrate").text(rate+" per unit");
+			$("#WallFour_Mat").text(WallFour_Mat+" square_ft @");
+			$("#totWallFour_Mat").text("₹"+totWallFour_Mat);
+			
+			
+			
+			var square_ft=data.Walls[0].Four[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Four[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFour_Labour=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallFour_Labour=WallFour_Labour*rate;
+			$("#BrickFourrate2").text(rate+" per unit");
+			$("#WallFour_Labour").text(WallFour_Labour+" square_ft @");
+			$("#totWallFour_Labour").text(totWallFour_Labour);
+			
+				var totFour_Cost =totWallFour_Labour+totWallFour_Mat;
+				$("#totFour_Cost").text(totFour_Cost);
+			
+		}
+		else if(value == 3)
+		{
+		
+			$("#Wall_BrickSize1").text("9 inch Thick Burnt Brick");
+			$("#Wall_BrickSize2").text("4.5 inch Thick Burnt Brick");
+			
+			var square_ft=data.Walls[0].Nine[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Nine[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallNine_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallNine_Mat=WallNine_Mat*rate;
+			$("#Bricksixrate").text(rate+" per unit");
+			$("#WallSix_Mat").text(WallNine_Mat+" square_ft @");
+			$("#totWallSix_Mat").text("₹"+totWallNine_Mat);
+			
+			var square_ft=data.Walls[0].Nine[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Nine[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallNine_Labour=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallNine_Labour=WallNine_Labour*rate;
+			$("#Bricksixrate2").text(rate+" per unit");
+			$("#WallSix_Labour").text(WallNine_Labour+" square_ft @");
+			$("#totWallSix_Labour").text(totWallNine_Labour);
+			
+			var totNine_Cost =totWallNine_Labour+totWallNine_Mat;
+			$("#totSix_Cost").text(totNine_Cost);
+			
+			
+			var square_ft=data.Walls[0].Fourpointfive[0].Material[0].sq_ft;
+			var rate = data.Walls[0].Fourpointfive[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFourpointfive_Mat=totalVal2*square_ft;
+			//alert(square_ft+" "+totalVal2);
+			var totWallFourpointfive_Mat=WallFourpointfive_Mat*rate;
+			$("#BrickFourrate").text(rate+" per unit");
+			$("#WallFour_Mat").text(WallFourpointfive_Mat+" square_ft @");
+			$("#totWallFour_Mat").text(totWallFourpointfive_Mat);
+			
+			
+			
+			var square_ft=data.Walls[0].Fourpointfive[0].Labour[0].sq_ft;
+			var rate = data.Walls[0].Fourpointfive[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var WallFourpointfive_Labour=totalVal2*square_ft;
+			alert(square_ft+" "+totalVal2);
+			var totWallFourpointfive_Labour=WallFourpointfive_Labour*rate;
+			$("#BrickFourrate2").text(rate+" per unit");
+			$("#WallFour_Labour").text(WallFourpointfive_Labour+" square_ft @");
+			$("#totWallFour_Labour").text(totWallFourpointfive_Labour);
+			
+				var totFourpointfive_Cost =totWallFourpointfive_Labour+totWallFourpointfive_Mat;
+				$("#totFour_Cost").text(totFourpointfive_Cost);
+		}
+		
+		// return totcalWall_construction();
+	}
 	
 	
 	// function calBrickWork()
@@ -761,6 +945,9 @@ $( document ).ready(function() {
 		calSuperStaircase();
 		calSuperStructureGranite_slab();
 	}
+	
+	
+	
 	function calSuperStructure_Steel()
 	{
 		calSuperStructure_steelColumn();
