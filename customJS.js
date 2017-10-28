@@ -109,8 +109,9 @@ $( document ).ready(function() {
 		calLayingBase();
 		calSuperStructure();
 		calSuperStructure_Steel()
-		
+		calFlooring();
 		calWall_construction();
+		calWoodWork();
 
 		
 	})
@@ -877,7 +878,7 @@ $( document ).ready(function() {
 			var totalVal=(parseInt($("#landArea").val()));
 			var totalVal2=(parseInt(totalVal-200));
 			var WallFourpointfive_Labour=totalVal2*square_ft;
-			alert(square_ft+" "+totalVal2);
+			//alert(square_ft+" "+totalVal2);
 			var totWallFourpointfive_Labour=WallFourpointfive_Labour*rate;
 			$("#BrickFourrate2").text(rate+" per unit");
 			$("#WallFour_Labour").text(WallFourpointfive_Labour+" square_ft @");
@@ -890,32 +891,209 @@ $( document ).ready(function() {
 		// return totcalWall_construction();
 	}
 	
+	function calFlooring()
+	{
+		var value=$("#radioBtnFlooring").find(".active").attr("value");
+		//alert(value);
+		if(value == 1)
+		{
+			$("#flooringId").text("Vetrified Tiles");
+			 var square_ft=data.Flooring[0].Vitrified[0].Tiles[0].sq_ft;
+			 var rate=data.Flooring[0].Vitrified[0].Tiles[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var VetrifiedTiles = totalVal2 * square_ft;
+			 //alert(totalVal2+" "+square_ft);
+			 $("#VetrifiedTiles").text(VetrifiedTiles+" square_ft @");
+			 $("#VetrifiedTilesRate").text(rate+" per unit");
+			 var totVetrifiedTiles = VetrifiedTiles*rate;
+			 $("#totVetrifiedTiles").text(totVetrifiedTiles);
+			 
+			 var square_ft=data.Flooring[0].Vitrified[0].Material[0].sq_ft;
+			 var rate=data.Flooring[0].Vitrified[0].Material[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var VetrifiedTilesMaterial = totalVal2 * square_ft;
+			  $("#VetrifiedTilesMaterial").text(VetrifiedTilesMaterial+" square_ft @");
+			 $("#VetrifiedTilesMaterialRate").text(rate+" per unit");
+			 var totVetrifiedTilesMaterial = VetrifiedTilesMaterial*rate;
+			 $("#totVetrifiedTilesMaterial").text(totVetrifiedTilesMaterial);
+			 
+			  var square_ft=data.Flooring[0].Vitrified[0].Labour[0].sq_ft;
+			 var rate=data.Flooring[0].Vitrified[0].Labour[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var VetrifiedTilesLabour = totalVal2 * square_ft;
+			  $("#VetrifiedTilesLabour").text(VetrifiedTilesLabour+" square_ft @");
+			 $("#VetrifiedTilesLabourRate").text(rate+" per unit");
+			 var totVetrifiedTilesLabour = VetrifiedTilesLabour*rate;
+			 $("#totVetrifiedTilesLabour").text(totVetrifiedTilesLabour);
+			 
+			 var totVetrifiedFloor=totVetrifiedTilesLabour+totVetrifiedTilesMaterial+totVetrifiedTiles;
+			 $("#totVetrifiedFloor").text(totVetrifiedFloor);
+			  $("#totVetrifiedFloor1").text(totVetrifiedFloor);
+			 
+			 
+		}
+		if(value == 2)
+		{
+			$("#flooringId").text("Granite");
+			
+			var square_ft=data.Flooring[0].Granite[0].Tiles[0].sq_ft;
+			 var rate=data.Flooring[0].Granite[0].Tiles[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var GraniteTiles = totalVal2 * square_ft;
+			 //alert(totalVal2+" "+square_ft);
+			 $("#VetrifiedTiles").text(GraniteTiles+" square_ft @");
+			 $("#VetrifiedTilesRate").text(rate+" per unit");
+			 var totGraniteTiles = GraniteTiles*rate;
+			 $("#totVetrifiedTiles").text(totGraniteTiles);
+			 
+			 var square_ft=data.Flooring[0].Granite[0].Material[0].sq_ft;
+			 var rate=data.Flooring[0].Granite[0].Material[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var GraniteTilesMaterial = totalVal2 * square_ft;
+			  $("#VetrifiedTilesMaterial").text(GraniteTilesMaterial+" square_ft @");
+			 $("#VetrifiedTilesMaterialRate").text(rate+" per unit");
+			 var totGraniteTilesMaterial = GraniteTilesMaterial*rate;
+			 $("#totVetrifiedTilesMaterial").text(totGraniteTilesMaterial);
+			 
+			  var square_ft=data.Flooring[0].Granite[0].Labour[0].sq_ft;
+			 var rate=data.Flooring[0].Granite[0].Labour[0].rate;
+			 var totalVal=(parseInt($("#landArea").val()));
+			 var totalVal2=(parseInt(totalVal-200));
+			 var GraniteTilesLabour = totalVal2 * square_ft;
+			  $("#VetrifiedTilesLabour").text(GraniteTilesLabour+" square_ft @");
+			 $("#VetrifiedTilesLabourRate").text(rate+" per unit");
+			 var totGraniteTilesLabour = GraniteTilesLabour*rate;
+			 $("#totVetrifiedTilesLabour").text(totGraniteTilesLabour);
+			 
+			 var totGraniteFloor=totGraniteTilesLabour+totGraniteTilesMaterial+totGraniteTiles;
+			 $("#totVetrifiedFloor").text(totGraniteFloor);
+			  $("#totVetrifiedFloor1").text(totGraniteFloor);
+			
+			
+		}
+	}
 	
-	// function calBrickWork()
-	// {
-		// var amt=data.Foundation[0].Brick_Work[0].Cement[0].bags;
-		// var rate = data.Foundation[0].Brick_Work[0].Cement[0].rate
-		// var total=amt*rate;
-		// amt=data.Foundation[0].Brick_Work[0].Sand[0].cubic_mt;
-		// rate = data.Foundation[0].Brick_Work[0].Sand[0].rate
-		// total=total + amt*rate;
-		// amt=data.Foundation[0].Brick_Work[0].Bricks[0].nos;
-		// rate = data.Foundation[0].Brick_Work[0].Bricks[0].rate
-		// total=total + amt*rate;
-		// return total;
-	// }
-	// function calDPC()
-	// {
-		// var cubic_ft=data.Foundation[0].DPC[0].Horizantal_DPC[0].sqft;
-		// var rate = data.Foundation[0].DPC[0].Horizantal_DPC[0].rate
-		// return cubic_ft*rate;
-	// }
-	// function calLabour()
-	// {
-		// var cubic_ft=data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].man_days;
-		// var rate = data.Foundation[0].Labour[0].Labour_Cost_excl_Earthwork[0].rate
-		// return cubic_ft*rate;
-	// }
+	function calWoodWorkDoors()
+	{
+		var value=$("#radioBtnDoors").find(".active").attr("value");
+		alert(value);
+		if(value == 1)
+		{	
+			$("#doors").text("TeakWood Doors");
+			var square_ft=data.Woodwork[0].Doors[0].Teakwood[0].Material[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].Teakwood[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var TeakWoodMaterial=totalVal2*square_ft;
+			var totTeakWoodMaterial=TeakWoodMaterial*rate;
+			$("#MaterialDoor").text(TeakWoodMaterial);
+			$("#Materialrate").text(rate);
+			$("#totMaterialCost").text(totTeakWoodMaterial);
+			
+			var square_ft=data.Woodwork[0].Doors[0].Teakwood[0].Labour[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].Teakwood[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var TeakWoodLabour=totalVal2*square_ft;
+			var totTeakWoodLabour=TeakWoodLabour*rate;
+			$("#LabourDoor").text(TeakWoodLabour);
+			$("#Labourrate").text(rate);
+			$("#totLabourCost").text(totTeakWoodLabour);
+			//alert("teakWood");
+			var totTeakDoorPrice = totTeakWoodLabour+totTeakWoodMaterial;
+			alert(totTeakDoorPrice);
+			$("#totDoorPrice").text(totTeakDoorPrice);
+		
+		}else if(value == 2)
+		{
+			$("#doors").text("HonneWood Doors");
+			var square_ft=data.Woodwork[0].Doors[0].HonneWood[0].Material[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].HonneWood[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var HonneWoodMaterial=totalVal2*square_ft;
+			var totHonneWoodMaterial=HonneWoodMaterial*rate;
+			$("#MaterialDoor").text(HonneWoodMaterial);
+			$("#Materialrate").text(rate);
+			$("#totMaterialCost").text(totHonneWoodMaterial);
+			
+			var square_ft=data.Woodwork[0].Doors[0].HonneWood[0].Labour[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].HonneWood[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var HonneWoodLabour=totalVal2*square_ft;
+			var totHonneWoodLabour=HonneWoodLabour*rate;
+			$("#LabourDoor").text(HonneWoodLabour);
+			$("#Labourrate").text(rate);
+			$("#totLabourCost").text(totHonneWoodLabour);
+			//alert("teakWood");
+			var totHonneWoodPrice = totHonneWoodLabour+totHonneWoodMaterial;
+			alert(totHonneWoodPrice);
+			$("#totDoorPrice").text(totHonneWoodPrice);
+		}else if(value == 3)
+		{
+			$("#doors").text("SalWood Doors");
+			
+			var square_ft=data.Woodwork[0].Doors[0].SalWood[0].Material[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].SalWood[0].Material[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var SalWoodMaterial=totalVal2*square_ft;
+			var totSalWoodMaterial=SalWoodMaterial*rate;
+			$("#MaterialDoor").text(SalWoodMaterial);
+			$("#Materialrate").text(rate);
+			$("#totMaterialCost").text(totSalWoodMaterial);
+			
+			var square_ft=data.Woodwork[0].Doors[0].SalWood[0].Labour[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].SalWood[0].Labour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var SalWoodLabour=totalVal2*square_ft;
+			var totSalWoodLabour=SalWoodLabour*rate;
+			$("#LabourDoor").text(SalWoodLabour);
+			$("#Labourrate").text(rate);
+			$("#totLabourCost").text(totSalWoodLabour);
+			//alert("teakWood");
+			var totSalWoodPrice = totSalWoodLabour+totSalWoodMaterial;
+			alert(totSalWoodPrice);
+			$("#totDoorPrice").text(totSalWoodPrice);
+		}else if(value == 4)
+		{
+			$("#doors").text("OST Doors");
+			$("#Material").text("Material + Labour");
+			// $("#wood").find(".table-borderless").id("labour").remove();
+			//$("#labour").remove();
+			var square_ft=data.Woodwork[0].Doors[0].OSTDoors[0].Materialpluslabour[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].OSTDoors[0].Materialpluslabour[0].rate;
+			var totalVal=(parseInt($("#landArea").val()));
+			var totalVal2=(parseInt(totalVal-200));
+			var OSTDoorsMaterial=totalVal2*square_ft;
+			var totOSTDoorsMaterial=OSTDoorsMaterial*rate;
+			$("#MaterialDoor").text(OSTDoorsMaterial);
+			$("#Materialrate").text(rate);
+			$("#totMaterialCost").text(totOSTDoorsMaterial);
+			
+			// var square_ft=data.Woodwork[0].Doors[0].OSTDoors[0].Materialpluslabour[0].sq_ft;
+			// var rate=data.Woodwork[0].Doors[0].OSTDoors[0].Materialpluslabour[0].rate;
+			// var totalVal=(parseInt($("#landArea").val()));
+			// var totalVal2=(parseInt(totalVal-200));
+			// var OSTDoorsLabour=totalVal2*square_ft;
+			// var totOSTDoorsLabour=OSTDoorsLabour*rate;
+			// $("#LabourDoor").text(OSTDoorsLabour);
+			// $("#Labourrate").text(rate);
+			// $("#totLabourCost").text(totOSTDoorsLabour);
+			// //alert("teakWood");
+			var totOSTDoorsPrice =totOSTDoorsMaterial;
+			alert(totSalWoodPrice);
+			$("#totDoorPrice").text(totOSTDoorsPrice);
+		}
+		
+	}
 	function calFoundation()
 	{
 		var EarthWork =calEarthWork();
@@ -946,8 +1124,6 @@ $( document ).ready(function() {
 		calSuperStructureGranite_slab();
 	}
 	
-	
-	
 	function calSuperStructure_Steel()
 	{
 		calSuperStructure_steelColumn();
@@ -959,6 +1135,10 @@ $( document ).ready(function() {
 		
 	}
 	
+	function calWoodWork()
+	{
+		calWoodWorkDoors();
+	}
 	
 	//alert(data.Foundation[0].Earthwork[0].Labour_and_Earth[0].cubic_ft)
 });

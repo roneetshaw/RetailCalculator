@@ -613,8 +613,8 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnFlooring" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7">Vetrified</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8">Granite</a>      
+										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8" value ="2">Granite</a>      
 									</div>
 									<input type="hidden" name="floorVal" id="floorVal">
 								</div>
@@ -624,8 +624,10 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnDoors" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="DoorVal" data-title="9">Plywood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="DoorVal" data-title="10">SalWood</a>
+										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10"value = "2">HonneWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11"value = "3">SalWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12"value = "4">OSTDoors</a>
 										
 									</div>
 									<input type="hidden" name="DoorVal" id="DoorVal">
@@ -1541,7 +1543,7 @@
                                 </div>
                                 
                                 <div id="Wall_construct" class="panel-collapse collapse in">
-									<!-- foundation_value panel body Start-->
+									<!-- wall construction_value panel body Start-->
                                     
                                         <div class="table_titile" id="Wall_BrickSize1"></div>
                                         <table class="table table-borderless">
@@ -1606,7 +1608,7 @@
                                         </table>
 																	
                                     </div>                                
-									<!-- foundation_value panel body Ends-->
+									<!-- Wall construction_value panel body Ends-->
 								</div>
 								
                             </div>
@@ -1639,7 +1641,7 @@
                                 <!-- flooring panel body -->
                                 <div id="flooring" class="panel-collapse collapse in">
                                     <div class="panel-body" style="padding:15px">
-                                        <div class="table_titile">Main Flooring</div>
+                                        <div class="table_titile"id="flooringId"></div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1652,53 +1654,44 @@
                                                 <tr>
                                                     <td>Tiles</td>
                                                     <td>
-                                                        <span class="mft_area" id="estpad">648</span>sqft @ ₹ <span class="mftp" id="estpad">120</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="estpad">77760</span></td>
+                                                        <span class="mft_area" id="VetrifiedTiles">648</span> ₹ <span class="mftp" id="VetrifiedTilesRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTiles"></span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesMaterial">648</span>₹ <span class="mftp" id="VetrifiedTilesMaterialRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTilesMaterial"></span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesLabour">648</span>₹ <span class="mftp" id="VetrifiedTilesLabourRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTilesLabour"></span></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="estpad">77760</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedFloor">77760</span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
 
-                                        <div class="table_titile">Bathroom Flooring</div>
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Tiles</td>
-                                                    <td><span class="bathfloorarea" id="estpad">35</span>sqft @ ₹ <span class="bathroom_tp" id="estpad">100</span>per unit</td>
-                                                    <td><span id="estpad">&#8377</span><span class="bathroom_tilesp">3500</span></td>
-                                                </tr>
-
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="bathroom_tilesp">3500</span></td>
-                                                </tr>
-                                            </tfoot>
-
-                                        </table>
+                                        
                                         <table class="table table-borderless">
                                             <tfoot>
                                                 <tr>
                                                     <td class="titem"></td>
                                                     <td class="tquantity">Total Flooring Price</td>
-                                                    <td class="tprice" id="estpad"><span>&#8377;</span><span class="flooring_value" id="estpad">81260
-                                </span></td>
+                                                    <td class="tprice" id="estpad"><span>&#8377;</span><span class="flooring_value" id="totVetrifiedFloor1">81260 </span></td>
+                               
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -1881,29 +1874,36 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Teakwood Door
-                                                        <br>(Main door including shutters & frames)</td>
-                                                    <td>Lump sum</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="maindoor">30000</span></td>
+                                                    <td id="doors">Teakwood Door</td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="MaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="Materialrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMaterialCost"></span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Membrane Doors
-                                                        <br>(Main door including shutters & frames)</td>
-                                                    <td><span class="roomd" id="estpad">59</span> ft @ ₹ <span class="wroomdp" id="estpad">450</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="roomdp">26550</span></td>
+												<tr id="labour">	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="LabourDoor"></span> ft @ ₹ <span class="wroomdp" id="Labourrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totLabourCost"></span></td>
                                                 </tr>
+                                                <!-- <tr> -->
+                                                    <!-- <td>Membrane Doors -->
+                                                        <!-- <br>(Main door including shutters & frames)</td> -->
+                                                    <!-- <td><span class="roomd" id="estpad">59</span> ft @ ₹ <span class="wroomdp" id="estpad">450</span> per unit</td> -->
+                                                    <!-- <td><span id="estpad">&#8377;</span><span class="roomdp">26550</span></td> -->
+                                                <!-- </tr> -->
 
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="door_prices">56550</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totDoorPrice">56550</span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Windows</div>
+                                        <div class="table_titile"id ="windows">Windows</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
