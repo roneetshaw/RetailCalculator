@@ -637,10 +637,10 @@
 									<h4 class="great">WINDOWS</h4>
 									<div class="input-group">
 										<div id="radioBtnWindows" class="btn-group">
-											<a class="btn btn-primary btn-sm active"    style="width:150px" data-toggle="windowVal" data-title="11">Teakwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12">Salwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13">Honne</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14">UPVC</a>
+											<a class="btn btn-primary btn-sm active"    style="width:150px" data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12"value = "2">Salwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13"value = "3">Honne</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
 										</div>
 										<input type="hidden" name="windowVal" id="windowVal">
 									</div>
@@ -1886,12 +1886,7 @@
                                                     <td><span class="roomd" id="LabourDoor"></span> ft @ ₹ <span class="wroomdp" id="Labourrate"></span> per unit</td>
                                                     <td><span id="estpad">&#8377;</span><span class="roomdp" id="totLabourCost"></span></td>
                                                 </tr>
-                                                <!-- <tr> -->
-                                                    <!-- <td>Membrane Doors -->
-                                                        <!-- <br>(Main door including shutters & frames)</td> -->
-                                                    <!-- <td><span class="roomd" id="estpad">59</span> ft @ ₹ <span class="wroomdp" id="estpad">450</span> per unit</td> -->
-                                                    <!-- <td><span id="estpad">&#8377;</span><span class="roomdp">26550</span></td> -->
-                                                <!-- </tr> -->
+                                                
 
                                             </tbody>
                                             <tfoot class="c_dotted">
@@ -1914,16 +1909,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>3 Track UPVC Sliding windows</td>
-                                                    <td><span class="windows" id="estpad">87</span>sqft @ ₹ <span class="windowps" id="estpad">550</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="windowsp">47850</span></td>
+                                                    <td id="WindowName">Teakwood Door</td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="WindowMat"></span> ft @ ₹ <span class="wroomdp" id="WindowRate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowMatPrice"></span></td>
                                                 </tr>
-                                            </tbody>
+												<tr id="labour">	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="WindowLabour"></span> ft @ ₹ <span class="wroomdp" id="WindowRateLabour"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowLabourPrice"></span></td>
+                                                </tr>
+											</tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="windowsp">47850</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="windowsp"id="totWindowPrice">47850</span></td>
                                                 </tr>
                                             </tfoot>
 
