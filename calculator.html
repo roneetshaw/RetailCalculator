@@ -601,9 +601,9 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnStructure" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="StructureVal" data-title="4">Cement Blocks (6')</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="5">Cement Blocks (8')</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="6">Bricks</a>
+										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="StructureVal" data-title="4" name="Wall_construct" value="1">Cement Blocks (6')</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="5" name="Wall_construct"value="2">Cement Blocks (8')</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="6" name="Wall_construct" value="3">Bricks</a>
 									</div>
 									<input type="hidden" name="StructureVal" id="StructureVal">
 								</div>
@@ -613,8 +613,8 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnFlooring" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7">Vetrified</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8">Granite</a>      
+										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8" value ="2">Granite</a>      
 									</div>
 									<input type="hidden" name="floorVal" id="floorVal">
 								</div>
@@ -624,8 +624,10 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnDoors" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="DoorVal" data-title="9">Plywood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="DoorVal" data-title="10">SalWood</a>
+										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10"value = "2">HonneWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11"value = "3">SalWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12"value = "4">OSTDoors</a>
 										
 									</div>
 									<input type="hidden" name="DoorVal" id="DoorVal">
@@ -635,10 +637,10 @@
 									<h4 class="great">WINDOWS</h4>
 									<div class="input-group">
 										<div id="radioBtnWindows" class="btn-group">
-											<a class="btn btn-primary btn-sm active"    style="width:150px" data-toggle="windowVal" data-title="11">Teakwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12">Salwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13">Honne</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14">UPVC</a>
+											<a class="btn btn-primary btn-sm active"    style="width:150px" data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12"value = "2">Salwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13"value = "3">Honne</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
 										</div>
 										<input type="hidden" name="windowVal" id="windowVal">
 									</div>
@@ -1516,6 +1518,101 @@
                                 </div>
                             </div>
                             <!-- accordion 4 END -->
+							     <!-- accordion 5 START -->
+                            <div class="panel" >
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#Wall_construct">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Wall Construction </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">&#8377;</span><span id="prprice" class="foundation_value">241101</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="f_close">
+                                                <a href="#"> <span>more</span>
+                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="construction cost down"></span></a>
+                                            </div>
+                                            <div class="f_open" style="display:none">
+                                                <a href="#"><span>less</span>
+                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt=" construction cost estimator up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="Wall_construct" class="panel-collapse collapse in">
+									<!-- wall construction_value panel body Start-->
+                                    
+                                        <div class="table_titile" id="Wall_BrickSize1"></div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="e_fbags" id="WallSix_Mat"> </span><span></span> <span class="e_bagprice" id="Bricksixrate"> </span></td>
+                                                    <td> <span class="e_cementprice" id="totWallSix_Mat"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="esand" id="WallSix_Labour"></span> <span>&#8377;</span><span class="esandp" id="Bricksixrate2"></span></td>
+													<td><span>&#8377;</span><span class="esandt" id="totWallSix_Labour"></span></td>
+                                                </tr>
+											</tbody>								
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span>&#8377;</span>
+                                                        <span class="ftotal" id="totSix_Cost"></span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="table_titile" id="Wall_BrickSize2"></div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="WallFour_Mat"></span><span></span> <span class="e_bagprice" id="BrickFourrate"> </span> </td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totWallFour_Mat"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="WallFour_Labour"></span><span class="e_bagprice" id="BrickFourrate2"> </span></td>
+                                                    <td><span>&#8377;</span> <span class="p_cementprice" id="totWallFour_Labour"></span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>&#8377;</span><span class="ptotal" id="totFour_Cost"></span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+																	
+                                    </div>                                
+									<!-- Wall construction_value panel body Ends-->
+								</div>
+								
+                            </div>
+							<!-- accordion 5 END -->
                             
 							<!-- Flooring -->
                             <div class="panel">
@@ -1544,7 +1641,7 @@
                                 <!-- flooring panel body -->
                                 <div id="flooring" class="panel-collapse collapse in">
                                     <div class="panel-body" style="padding:15px">
-                                        <div class="table_titile">Main Flooring</div>
+                                        <div class="table_titile"id="flooringId"></div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1557,53 +1654,44 @@
                                                 <tr>
                                                     <td>Tiles</td>
                                                     <td>
-                                                        <span class="mft_area" id="estpad">648</span>sqft @ ₹ <span class="mftp" id="estpad">120</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="estpad">77760</span></td>
+                                                        <span class="mft_area" id="VetrifiedTiles">648</span> ₹ <span class="mftp" id="VetrifiedTilesRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTiles"></span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesMaterial">648</span>₹ <span class="mftp" id="VetrifiedTilesMaterialRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTilesMaterial"></span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesLabour">648</span>₹ <span class="mftp" id="VetrifiedTilesLabourRate">120</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedTilesLabour"></span></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="estpad">77760</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="mf_tilesp" id="totVetrifiedFloor">77760</span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
 
-                                        <div class="table_titile">Bathroom Flooring</div>
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Tiles</td>
-                                                    <td><span class="bathfloorarea" id="estpad">35</span>sqft @ ₹ <span class="bathroom_tp" id="estpad">100</span>per unit</td>
-                                                    <td><span id="estpad">&#8377</span><span class="bathroom_tilesp">3500</span></td>
-                                                </tr>
-
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="bathroom_tilesp">3500</span></td>
-                                                </tr>
-                                            </tfoot>
-
-                                        </table>
+                                        
                                         <table class="table table-borderless">
                                             <tfoot>
                                                 <tr>
                                                     <td class="titem"></td>
                                                     <td class="tquantity">Total Flooring Price</td>
-                                                    <td class="tprice" id="estpad"><span>&#8377;</span><span class="flooring_value" id="estpad">81260
-                                </span></td>
+                                                    <td class="tprice" id="estpad"><span>&#8377;</span><span class="flooring_value" id="totVetrifiedFloor1">81260 </span></td>
+                               
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -1786,29 +1874,31 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Teakwood Door
-                                                        <br>(Main door including shutters & frames)</td>
-                                                    <td>Lump sum</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="maindoor">30000</span></td>
+                                                    <td id="doors">Teakwood Door</td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="MaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="Materialrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMaterialCost"></span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Membrane Doors
-                                                        <br>(Main door including shutters & frames)</td>
-                                                    <td><span class="roomd" id="estpad">59</span> ft @ ₹ <span class="wroomdp" id="estpad">450</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="roomdp">26550</span></td>
+												<tr id="labour">	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="LabourDoor"></span> ft @ ₹ <span class="wroomdp" id="Labourrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totLabourCost"></span></td>
                                                 </tr>
+                                                
 
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="door_prices">56550</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totDoorPrice">56550</span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Windows</div>
+                                        <div class="table_titile"id ="windows">Windows</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1819,16 +1909,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>3 Track UPVC Sliding windows</td>
-                                                    <td><span class="windows" id="estpad">87</span>sqft @ ₹ <span class="windowps" id="estpad">550</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="windowsp">47850</span></td>
+                                                    <td id="WindowName">Teakwood Door</td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="WindowMat"></span> ft @ ₹ <span class="wroomdp" id="WindowRate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowMatPrice"></span></td>
                                                 </tr>
-                                            </tbody>
+												<tr id="labour">	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="WindowLabour"></span> ft @ ₹ <span class="wroomdp" id="WindowRateLabour"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowLabourPrice"></span></td>
+                                                </tr>
+											</tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="windowsp">47850</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="windowsp"id="totWindowPrice">47850</span></td>
                                                 </tr>
                                             </tfoot>
 

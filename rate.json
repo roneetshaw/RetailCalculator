@@ -509,11 +509,18 @@ data ={
 				],
 				"OSTDoors":[
 					{
-						"Materialpluslabour":[
+						"Material":[
 							{
 								"sq_ft":"0.100",
-								"rate":"350"
+								"rate":"200"
 							}
+						],
+						"Labour":[
+							{
+								"sq_ft":"0.100",
+								"rate":"150"
+							}
+						
 						]
 					}
 				]
