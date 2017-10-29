@@ -29,3 +29,7 @@ req_2
 5. Add option House Type below BHK : 1BHK, 2BHK, 3BHK, 4BHK.
 6. Bricks combinations (a,b) (c,b) (d,e) 
 7. Painting Type: Basic and Premium 
+
+req_3
+1. Flooring add  an option Premium Marble + Wooden
+2. Doors Honnewood, SalWood, Plywood, TeakWood
