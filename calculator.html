@@ -559,7 +559,8 @@
 								<div class="row">
 										<div class="col-sm-3">
 											<div style="width:250px">
-												<input type="text" style="text-align:center;" class="form-control" id="landArea">
+												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">
+												<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
 											</div>                            
 									</div> 
 										<div class="col-sm-2" style="font-size: x-large;">
@@ -1700,13 +1701,13 @@
 								
                             </div>
                             <!-- flooring end -->
-                            <!-- Plastering -->
+                            <!-- Tiles -->
                             <div class="panel">
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
-                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#plastering">
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#tiles">
                                         <div class="col-md-8 c_title">
-                                            <h3> Plastering & Wall Tiles </h3>
+                                            <h3>Wall Tiles </h3>
                                         </div>
                                         <div class="col-md-2" id="price_eastimation">
                                             <span id="prprice" id="estpad">&#8377;</span><span id="prprice" class="pl_total">28730</span>
@@ -1724,10 +1725,10 @@
                                     </div>
 
                                 </div>
-                                <!-- plastering panel body -->
-                                <div id="plastering" class="panel-collapse collapse in">
+                                <!-- tiles panel body -->
+                                <div id="tiles" class="panel-collapse collapse in">
                                     <div class="panel-body" style="padding:15px">
-                                        <div class="table_titile">Plastering - Walls</div>
+                                        <div class="table_titile">Kitchen</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1738,14 +1739,19 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cement</td>
-                                                    <td><span class="plw_cement" id="estpad">15</span> bags @ <span class="e_bagprice">₹ 335</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plw_cementp">5025</span></td>
+                                                    <td>Tiles</td>
+                                                    <td><span class="plw_cement" id="TilesCost""></span>  <span class="e_bagprice" id="Tilesrate">₹ </span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plw_cementp" id="TotTilesCost"></span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Material</td>
+                                                    <td><span class="plw_cement" id="MaterialCost"></span> <span class="e_bagprice" id="Materialrate">₹</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plw_cementp" id="TotMaterialCost">5025</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Sand</td>
-                                                    <td><span class="plw_sand" id="estpad">86</span>cft @ ₹ <span class="esandp" id="estpad">40</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plw_sandp">3440</span></td>
+                                                    <td>Labour</td>
+                                                    <td><span class="plw_sand" id="LabourCost">86</span> ₹ <span class="esandp" id="Labourrate"></span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plw_sandp"id="TotLabourCost">3440</span></td>
                                                 </tr>
 
                                             </tbody>
@@ -1753,12 +1759,12 @@
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plwt">8465</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plwt" ID="totTilesPrice">8465</span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Plastering - Ceiling</div>
+                                        <div class="table_titile">Toilet</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1769,14 +1775,19 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cement</td>
-                                                    <td><span class="pl_cement" id="estpad">9</span> bags @ <span class="e_bagprice">₹ 335</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="pl_cementp">3015</span></td>
+                                                    <td>Tiles</td>
+                                                    <td><span class="pl_cement" id="TilesCostToilet"></span> <span class="e_bagprice" id="TilesrateToilet">₹</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_cementp" id="TotTilesCostToilet">3015</span></td>
+                                                </tr>
+												 <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="pl_cement" id="MaterialCostToilet"></span>  <span class="e_bagprice" id="MaterialrateToilet">₹ </span> </td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_cementp" id="TotMaterialCostToilet">3015</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Sand</td>
-                                                    <td><span class="pl_sand" id="estpad">56</span>cft @ ₹ <span class="esandp" id="estpad">40</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="pl_sandp">2240</span></td>
+                                                    <td>Labour</td>
+                                                    <td><span class="pl_sand" id="LabourCostToilet">56</span><span class="esandp" id="LabourrateToilet"></span> </td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_sandp"id="TotLabourCostToilet"></span></td>
                                                 </tr>
 
                                             </tbody>
@@ -1784,12 +1795,12 @@
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plc_total">5255</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plc_total"id="totTilesPriceToilet"></span></td>
                                                 </tr>
                                             </tfoot>
 
                                         </table>
-                                        <div class="table_titile">Wall Tiles</div>
+                                         <div class="table_titile">BathRoom</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1800,23 +1811,27 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Glazed Tiles - Kitchen
-                                                        <br> (Including Labour charges) </td>
-                                                    <td><span class="kitchent" id="estpad">35</span>sqft @ ₹ <span class="kitchenpsp" id="estpad">95</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="kitchentiles">3325</span></td>
+                                                    <td>Tiles</td>
+                                                    <td><span class="pl_cement" id="TilesCostBathroom"></span>  <span class="e_bagprice"id="TilesrateBathroom">₹</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_cementp"id="TotTilesCostBathroom"></span></td>
+                                                </tr>
+												 <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="pl_cement" id="MaterialCostBathroom"></span><span class="e_bagprice"id="MaterialrateBathroom">₹</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_cementp"id="TotMaterialCostBathroom"></span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Glazed Tiles - Bathroom
-                                                        <br> (Including Labour charges) </td>
-                                                    <td><span class="bathtoptiles" id="estpad">123 </span> @ ₹ <span class="toptilesp" id="estpad">95</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="bathglasstiles">11685</span></td>
+                                                    <td>Labour</td>
+                                                    <td><span class="pl_sand" id="LabourCostBathroom"></span>₹ <span class="esandp" id="LabourrateBathroom"></span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="pl_sandp"id="TotLabourCostBathroom"></span></td>
                                                 </tr>
+
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="batht_total">15010</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="plc_total"id="totTilesPriceBathroom"></span></td>
                                                 </tr>
                                             </tfoot>
 
@@ -1835,7 +1850,7 @@
                                     <!-- plastering body -->
                                 </div>
                             </div>
-                            <!-- plastering end -->
+                            <!-- tiles end -->
                             <!-- wood work -->
                             <div class="panel">
                                 <div class="panel-heading">
@@ -1984,11 +1999,19 @@
                                                     <th class="tprice">Price</th>
                                                 </tr>
                                             </thead>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="ppceiling" id="extPaintcost">1368</span> sqft @ ₹ <span class="ppcpsft" id="extPaintRate">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totextPaintcost">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
                                             <tbody>
                                                 <tr>
-                                                    <td>Exterior</td>
-                                                    <td><span class="ppceiling" id="estpad">1368</span> sqft @ ₹ <span class="ppcpsft" id="estpad">18</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal">24624</span></td>
+                                                    <td>Labour</td>
+                                                    <td><span class="ppceiling" id="extPaintcostLabour">1368</span> sqft @ ₹ <span class="ppcpsft" id="extPaintRateLabour">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totextPaintcostLabour">24624</span></td>
                                                 </tr>
 
                                             </tbody>
@@ -1996,7 +2019,7 @@
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="eptotal">24624</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="eptotal" id="totIntPaint">24624</span></td>
                                                 </tr>
                                             </tfoot>
 
@@ -2010,18 +2033,25 @@
                                                     <th class="tprice">Price</th>
                                                 </tr>
                                             </thead>
+											 <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="ippceiling" id="intPaintcost">2700</span> sqft @ ₹ <span class="ippcpsft" id="intPaintRate">17</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ippctotal"id="totintPaintcost">45900</span></td>
+                                                </tr>
+                                            </tbody>
                                             <tbody>
                                                 <tr>
-                                                    <td>Interior</td>
-                                                    <td><span class="ippceiling" id="estpad">2700</span> sqft @ ₹ <span class="ippcpsft" id="estpad">17</span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="ippctotal">45900</span></td>
+                                                    <td>Labour</td>
+                                                    <td><span class="ippceiling" id="intPaintcostLabour">2700</span> sqft @ ₹ <span class="ippcpsft" id="intPaintRateLabour">17</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ippctotal"id="totintPaintcostLabour">45900</span></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="iptotal">45900</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="iptotal"id="totInttotIntPaintPaint">45900</span></td>
                                                 </tr>
                                             </tfoot>
 
@@ -2031,7 +2061,7 @@
                                                 <tr>
                                                     <td class="titem"></td>
                                                     <td class="tquantity">Total Painting Cost</td>
-                                                    <td class="tprice"><span id="estpad">&#8377;</span><span class="tpaint">70524</span></td>
+                                                    <td class="tprice"><span id="estpad">&#8377;</span><span class="tpaint"id="totPainting">70524</span></td>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -2042,6 +2072,150 @@
                             </div>
 
                             <!-- Painting end -->
+							  <!-- Plastering Starts -->
+							<div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#plastering">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Plastering </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">&#8377;</span><span id="prprice" class="tpaint">70524</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="pa_close">
+                                                <a href="#"> <span>more</span>
+                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="pa_open" style="display:none">
+                                                <a href="#"> <span>less</span>
+                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- plastering panel body -->
+                                <div id="plastering" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+										  <div class="table_titile">Ceiling</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="ppceiling" id="PlasteringCeiling">1368</span> sqft @ ₹ <span class="ppcpsft" id="PlasteringRate">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totPlasterCeiling">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="ppceiling" id="PlasteringCeilingLabour">1368</span> sqft @ ₹ <span class="ppcpsft" id="PlasteringRateLabour">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totPlasterCeilingLabour">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="eptotal" id="totPlasterCeilingwhole">24624</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+										
+										
+										
+                                        <div class="table_titile">Internal Walls</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="ppceiling" id="PlasteringInternalWall">1368</span> sqft @ ₹ <span class="ppcpsft" id="PlasteringRateInternalWall">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totPlasterInternalWall">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="ppceiling" id="PlasteringInternalWallLabour">1368</span> sqft @ ₹ <span class="ppcpsft" id="PlasteringRateLabourInternalWall">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totPlasterInternalWallLabour">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="eptotal" id="totPlasterInternalWallwhole">24624</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile">External Walls</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+											 <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="ippceiling" id="PlasteringExternalSurfaces">2700</span> sqft @ ₹ <span class="ippcpsft" id="PlasteringRateExternalSurfaces">17</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ippctotal"id="totPlasterExternalSurfaces">45900</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="ippceiling" id="PlasteringExternalSurfacesLabour">2700</span> sqft @ ₹ <span class="ippcpsft" id="PlasteringRateLabourExternalSurfaces">17</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ippctotal"id="totPlasterExternalSurfacesLabour">45900</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="iptotal"id="totPlasterExternalSurfaceswhole">45900</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <table class="table table-borderless">
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="titem"></td>
+                                                    <td class="tquantity">Total Plastering Cost</td>
+                                                    <td class="tprice"><span id="estpad">&#8377;</span><span class="tpaint"id="totPlastering">70524</span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                    </div>
+                                    <!-- plastering body -->
+                                </div>
+                            </div>
                             <!-- electrical & Plumbing -->
                             <div class="panel">
                                 <div class="panel-heading">
@@ -2080,16 +2254,17 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Electrical</td>
-                                                    <td>Lump Sum</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="electricalt">135747</span></td>
+                                                    <td>Material</td>
+                                                    <td><span class="ppceiling" id="Electricneeds">1368</span> sqft @ ₹ <span class="ppcpsft" id="ElelctricRate">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totElectricneeds2">24624</span></td>
                                                 </tr>
+
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="electricalt">135747</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="electricalt" id= "totElectricneeds">135747</span></td>
                                                 </tr>
                                             </tfoot>
 
@@ -2105,24 +2280,25 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Plumbing</td>
-                                                    <td>Lump Sum</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plumbing">147552</span></td>
+                                                    <td>Material</td>
+                                                    <td><span class="ppceiling" id="Sanitaryneeds"">1368</span> sqft @ ₹ <span class="ppcpsft" id="SanitaryRate">18</span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="ppctotal" id="totSanitaryneeds">24624</span></td>
                                                 </tr>
+
                                             </tbody>
                                             <tfoot class="c_dotted">
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="plumbingt">147552</span></td>
-                                                </tr>
+                                                    <td><span id="estpad">&#8377;</span><span class="plumbingt" id="totSanitaryneeds2">147552</span></td>
+                                                </tr> 
                                             </tfoot>
                                             <table class="table table-borderless">
                                                 <tfoot>
                                                     <tr>
                                                         <td class="titem"></td>
                                                         <td class="tquantity">Total Electrical & Plumbing Cost</td>
-                                                        <td class="tprice"><span id="estpad">&#8377;</span><span class="tep">283299</span></td>
+                                                        <td class="tprice"><span id="estpad">&#8377;</span><span class="tep" id="totMisc">283299</span></td>
                                                     </tr>
                                                 </tfoot>
                                             </table>
@@ -2134,63 +2310,8 @@
                                 </div>
                                 <!-- electrical & Plumbing end -->
                             </div>
-                            <!--- labour charges -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <!-- panel-heading -->
-                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#labourc">
-                                        <div class="col-md-8 c_title">
-                                            <h3> Construction Labour Charges </h3>
-                                        </div>
-                                        <div class="col-md-2" id="price_eastimation">
-                                            <span id="prprice">&#8377;</span><span id="prprice" class="labc">270000</span>
-                                        </div>
-                                        <div class="col-md-2 chevron">
-                                            <div class="el_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span> </a>
-                                            </div>
-                                            <div class="el_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- electrical&plumbing panel body -->
-                                <div id="labourc" class="panel-collapse collapse in">
-                                    <div class="panel-body" style="padding:35px">
-                                        <div class="table_titile">Labour</div>
-                                        <table class="table table-borderless">
-                                            <thead>
-                                                <tr>
-                                                    <th class="titem">Item</th>
-                                                    <th class="tquantity">Quantity</th>
-                                                    <th class="tprice">Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Labour</td>
-                                                    <td>Lump Sum</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="laboursft">270000</span></td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot class="c_dotted">
-                                                <tr>
-                                                    <td></td>
-                                                    <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="labc">270000</span></td>
-                                                </tr>
-                                            </tfoot>
-
-                                        </table>
-                                    </div>
-                                    <!-- electrical & Plumbing panel body -->
-                                </div>
-                                <!-- electrical & Plumbing end -->
-                            </div>
+                            
+                            
                         </div>
                         <p style="padding:10px"><strong>Note:</strong><span class="requireds">*</span> <b>This </i>construction cost estimation</i> is only an approximation of the most common project needs. Actual costs may vary depending on exact requirements.</b> </p>
                     </div>
