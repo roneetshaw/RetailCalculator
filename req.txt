@@ -22,18 +22,18 @@ Excel mapping
 
 req_2
 ------
-1. land area or plot dimension and then location.
-2. Floors should have G+4 option. text should be Ground+4 (G+4).
-3. WIndows order should be SalWood, Honne, Teakwood, UPVC.
-4. Rename heading BHK to Construction Type.
-5. Add option House Type below BHK : 1BHK, 2BHK, 3BHK, 4BHK.
-6. Bricks combinations (a,b) (c,b) (d,e) 
-7. Painting Type: Basic and Premium 
+1. land area or plot dimension and then location.+
+2. Floors should have G+4 option. text should be Ground+4 (G+4).+
+3. WIndows order should be SalWood, Honne, Teakwood, UPVC.+
+4. Rename heading BHK to Construction Type.+
+5. Add option House Type below BHK : 1BHK, 2BHK, 3BHK, 4BHK.+
+6. Bricks combinations (a,b) (c,b) (d,e) +
+7. Painting Type: Basic and Premium +
 
 req_3
-1. Flooring add  an option Premium Marble + Wooden
+1. Flooring add  an option Premium Marble + Wooden+
 2. Doors Honnewood, SalWood, Plywood, TeakWood
-3. Add Aluminumum option to windows
+3. Add Aluminumum option to windows+
 
 Not working
 ------------

@@ -28,6 +28,20 @@
 							<div class="row">
 							<div class="col-sm-12">
 								<div class="price-slider">
+								<h4 class="great">LAND AREA</h4>
+								<div class="row">
+										<div class="col-sm-3">
+											<div style="width:250px">
+												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">
+												<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
+											</div>                            
+									</div> 
+										<div class="col-sm-2" style="font-size: x-large;">
+											Sq.Ft.                           
+									</div> 								
+								</div>
+							</div>
+								<div class="price-slider">
 									<h4 class="great">LOCATION</h4>
 									<div class="row">
 										<div class="col-sm-12">
@@ -554,20 +568,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="price-slider">
-								<h4 class="great">LAND AREA</h4>
-								<div class="row">
-										<div class="col-sm-3">
-											<div style="width:250px">
-												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">
-												<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
-											</div>                            
-									</div> 
-										<div class="col-sm-2" style="font-size: x-large;">
-											Sq.Ft.                           
-									</div> 								
-								</div>
-							</div>
+							
 								<div class="price-slider">
 								<h4 class="great">FLOORS</h4>
 								<div class="row">
@@ -577,22 +578,36 @@
 												<span class="caret"></span></button>
 											<ul class="dropdown-menu" style="width:330px" id="dwnFloorUl">
 												<li><a href="#" value="1">Ground Floor Only</a></li>
-												<li><a href="#" value="2">Ground +1 Floor</a></li>
-												<li><a href="#" value="3">Ground +2 Floors</a></li>
-												<li><a href="#" value="4">Ground +3 Floors</a></li>
+												<li><a href="#" value="2">Ground +1 Floor(G+1)</a></li>
+												<li><a href="#" value="3">Ground +2 Floors(G+2)</a></li>
+												<li><a href="#" value="4">Ground +3 Floors(G+3)</a></li>
+												<li><a href="#" value="5">Ground +3 Floors(G+4)</a></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 								</div>
 								<div class="price-slider">
-								<h4 class="great">BHK</h4>
-								<span>Please choose one</span>
+								<h4 class="great">CONSTRUCTION TYPE</h4>
+								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnBHK" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="BHKVal" data-title="1">Duplex House</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="BHKVal" data-title="2">Rental House</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="BHKVal" data-title="3">Duplex+Rental House</a>
+										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="ConstructVal" data-title="1">Duplex House</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="ConstructVal" data-title="2">Rental House</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="ConstructVal" data-title="3">Duplex+Rental House</a>
+									</div>
+									<input type="hidden" name="ConstructVal" id="ConstructVal">
+								</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">BHK</h4>
+								<!-- <span>Please choose one</span> -->
+								<div class="input-group">
+									<div id="radioBtnBHK" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="BHKVal" data-title="1">1 BHK</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="2">2 BHK</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="3">3 BHK</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="4">4 BHK</a>
 									</div>
 									<input type="hidden" name="BHKVal" id="BHKVal">
 								</div>
@@ -614,8 +629,9 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnFlooring" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8" value ="2">Granite</a>      
+										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="floorVal" data-title="8" value ="2">Granite</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="floorVal" data-title="9" value ="3">Marble + Wooden</a> 
 									</div>
 									<input type="hidden" name="floorVal" id="floorVal">
 								</div>
@@ -625,10 +641,13 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnDoors" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10" value = "2">HonneWood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11" value = "3">SalWood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12" value = "4">OSTDoors</a>
+									<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="10" value = "2">HonneWood</a>
+									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11" value = "3">SalWood</a>
+									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12" value = "4">OSTDoors</a>
+									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
+										
+										
+										
 										
 									</div>
 									<input type="hidden" name="DoorVal" id="DoorVal">
@@ -638,15 +657,26 @@
 									<h4 class="great">WINDOWS</h4>
 									<div class="input-group">
 										<div id="radioBtnWindows" class="btn-group">
-											<a class="btn btn-primary btn-sm active"    style="width:150px" data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12"value = "2">Salwood</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13"value = "3">Honne</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
+										<a class="btn btn-primary btn-sm active" style="width:120px" data-toggle="windowVal" data-title="12"value = "3">Salwood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="13"value = "2">Honne</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="15"value = "5">Aluminumum</a>
 										</div>
 										<input type="hidden" name="windowVal" id="windowVal">
 									</div>
 								</div>
-							
+							<div class="price-slider">
+								<h4 class="great">PAINTING TYPE</h4>
+								<!-- <span>Please choose one</span> -->
+								<div class="input-group">
+									<div id="radioBtnPaint" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="PaintVal" data-title="16">Basic</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="PaintVal" data-title="17">Premium</a>
+									</div>
+									<input type="hidden" name="PaintVal" id="PaintVal">
+								</div>
+								</div>
 							</div>
 							</div>
 							<div style="text-align:center; margin-top:50px;">
