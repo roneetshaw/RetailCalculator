@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Bootstrap Loan Calculator - Bootsnipp.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./Bootstrap Loan Calculator - Bootsnipp.com_files/jquery-ui.css">
+	<script src="./Bootstrap Loan Calculator - Bootsnipp.com_files/jquery-1.12.4.js.download"></script>
+	<script src="./Bootstrap Loan Calculator - Bootsnipp.com_files/jquery-ui.js.download"></script>
+    <script type="text/javascript" src="./Bootstrap Loan Calculator - Bootsnipp.com_files/rate.json"></script>
+    <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./Bootstrap Loan Calculator - Bootsnipp.com_files/cost_estimator.css" rel="stylesheet">   
+    <!--<link href="papertostonecss.css?v=0" rel="stylesheet" />-->
+    <link href="./Bootstrap Loan Calculator - Bootsnipp.com_files/bootstrap.css" rel="stylesheet">
+	<link href="./Bootstrap Loan Calculator - Bootsnipp.com_files/customCSS.css" rel="stylesheet">
+    <script src="./Bootstrap Loan Calculator - Bootsnipp.com_files/bootstrap.min.js.download"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="price-box">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-pricing">
+							<div class="row">
+							<div class="col-sm-12">
+								<div class="price-slider">
+									<h4 class="great">LOCATION</h4>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="dropdown">
+												<input class="btn btn-default ui-autocomplete-input" placeholder="Type a Location" style="width:292px" id="dwnText" type="text" autocomplete="off">
+												
+												<button type="button" style="height:33px" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" style="width:330px;height: 200px;overflow:auto" id="dwnCity">
+												<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="Aalada Mara Road "> Aalada Mara Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Aavalahal "> Aavalahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Abbigere"> Abbigere</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Adugodi"> Adugodi</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" AECS Layout   "> AECS Layout   </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Akshayanagar "> Akshayanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Amrutha Hal  "> Amrutha Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Anagalapura"> Anagalapura</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ananth Nagar "> Ananth Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Andrahal  "> Andrahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Anekal "> Anekal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Anjanapura "> Anjanapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Annapurneshwari Nagar "> Annapurneshwari Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Arasanakunte "> Arasanakunte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Architects in Bangalore "> Architects in Bangalore </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Arekere"> Arekere</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ashirvad Colony "> Ashirvad Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ashok Nagar "> Ashok Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Attibele Anekal Road"> Attibele Anekal Road</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Attibele "> Attibele </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Attiguppe"> Attiguppe</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Austin Town "> Austin Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Avenue Road "> Avenue Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Azad Nagar "> Azad Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Babusa Palya "> Babusa Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bagalakunte "> Bagalakunte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bagalur  "> Bagalur  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bagalur Road "> Bagalur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bagaluru"> Bagaluru</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bagepal  Bagepal"> Bagepal  Bagepal</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Baiyyappanahal "> Baiyyappanahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Balagere Balagere"> Balagere Balagere</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Balepet Balepet"> Balepet Balepet</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ballur Ballur"> Ballur Ballur</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Banashankari 3rd Stage "> Banashankari 3rd Stage </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Banashankari "> Banashankari </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Banasvadi "> Banasvadi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Banaswadi "> Banaswadi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bangalore Central "> Bangalore Central </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bangalore East "> Bangalore East </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bangalore North "> Bangalore North </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bangalore South "> Bangalore South </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bangalore West "> Bangalore West </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bannerghatta "> Bannerghatta </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bannerghatta Jigani Road "> Bannerghatta Jigani Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bannerghatta Road "> Bannerghatta Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bapuji Nagar "> Bapuji Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Basapura "> Basapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Basavanagar "> Basavanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Basavanagudi"> Basavanagudi</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Basavanna Nagar "> Basavanna Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Basaveshwara Nagar "> Basaveshwara Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Battarahal  "> Battarahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Begur Begur"> Begur Begur</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Begur Road "> Begur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Belatur "> Belatur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bellandur "> Bellandur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bellary Road "> Bellary Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bel Road "> Bel Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" BEML  Layout "> BEML  Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" BEML Layout"> BEML Layout</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bengaluru "> Bengaluru </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bennigana Hal  "> Bennigana Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Benson Town "> Benson Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bhaktharahal  "> Bhaktharahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bhoganhal  "> Bhoganhal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bhoopasandra "> Bhoopasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bhovi Palya "> Bhovi Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bhuvaneshwari Nagar"> Bhuvaneshwari Nagar</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bidadi "> Bidadi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bidrahal "> Bidrahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bikasipura "> Bikasipura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bikkanahal  "> Bikkanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bilekahal  "> Bilekahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bileshivale "> Bileshivale </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Binny Pete "> Binny Pete </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" B Narayanapura "> B Narayanapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bommanahal  "> Bommanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Bommasandra "> Bommasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Boyalahal  "> Boyalahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Brigade Road "> Brigade Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Brookefield "> Brookefield </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Btm layout "> Btm layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Budigere Road "> Budigere Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Budihal "> Budihal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Byatarayanapura "> Byatarayanapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Byrathi "> Byrathi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Cambridge  Layout "> Cambridge  Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Carmelaram "> Carmelaram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chadalapura "> Chadalapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chamarajendra Nagar "> Chamarajendra Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chamarajpet "> Chamarajpet </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chamundi Nagar "> Chamundi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chandapura "> Chandapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chandra Layout "> Chandra Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chansandra "> Chansandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chatram Road "> Chatram Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chelekare "> Chelekare </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chickpet "> Chickpet </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikbanavara "> Chikbanavara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkaballapura "> Chikkaballapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkaballapura Road "> Chikkaballapura Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkaballapur "> Chikkaballapur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkaballapur Road"> Chikkaballapur Road</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkabasavanapura "> Chikkabasavanapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkabellandur "> Chikkabellandur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkabidarakallu "> Chikkabidarakallu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkagubbi "> Chikkagubbi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkakannal  "> Chikkakannal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkalasandra "> Chikkalasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkanahal  "> Chikkanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikkathoguru "> Chikkathoguru </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikka Tirupathi "> Chikka Tirupathi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chikka Tirupathi Road "> Chikka Tirupathi Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chinnapa Garden "> Chinnapa Garden </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chinnapanna Hal  "> Chinnapanna Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Chokkanahal  "> Chokkanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Cholanayakanahal  "> Cholanayakanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Choodasandra "> Choodasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Church Street "> Church Street </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Commercial Street "> Commercial Street </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Cooke Town "> Cooke Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Cox Town "> Cox Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" CQAL Layout "> CQAL Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Craig Park Layout "> Craig Park Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Crescent Road "> Crescent Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Cunningham road "> Cunningham road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" CV Raman Nagar "> CV Raman Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dabaspete "> Dabaspete </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dasarahal  "> Dasarahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dasarahal  Main Road "> Dasarahal  Main Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dayananda Nagar "> Dayananda Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Defence Colony "> Defence Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Devanahal  "> Devanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Devanahal  Road "> Devanahal  Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Devarachikkanahal "> Devarachikkanahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Devasthanagalu "> Devasthanagalu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Devinagar "> Devinagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dickenson Road "> Dickenson Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddaballapur "> Doddaballapur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddaballapur Road "> Doddaballapur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dodda Banasvadi "> Dodda Banasvadi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddabele "> Doddabele </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddabommasandra "> Doddabommasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddakallasandra "> Doddakallasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddakammanahal  "> Doddakammanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddakannal  "> Doddakannal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddamaval  "> Doddamaval  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddathoguru "> Doddathoguru </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddenahal  "> Doddenahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Doddenakundi "> Doddenakundi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dodsworth Layout "> Dodsworth Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dollars Colony "> Dollars Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Domlur "> Domlur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dommasandra "> Dommasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Donnenahal  "> Donnenahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Dooravani Nagar "> Dooravani Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ejipura "> Ejipura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Electronic City "> Electronic City </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Electronic City Phase 1  "> Electronic City Phase 1  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Electronic City Phase 2 "> Electronic City Phase 2 </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Essel Gardens "> Essel Gardens </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Frazer Town "> Frazer Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ganapathihal  "> Ganapathihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gandhi Nagar "> Gandhi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ganga Nagar "> Ganga Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Garden Layout "> Garden Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Garudachar Palya "> Garudachar Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Garvebhavi Palya "> Garvebhavi Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gattahal  "> Gattahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gauribidanur "> Gauribidanur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gavipuram "> Gavipuram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Girinagar "> Girinagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" GM Palya "> GM Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gollahal  "> Gollahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gottigere "> Gottigere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gunjur "> Gunjur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Gunjur Mugalur Road "> Gunjur Mugalur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Guttahal  Guttahal"> Guttahal  Guttahal</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hal Hal"> Hal Hal</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" HAL Layout "> HAL Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hancharahal  "> Hancharahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hanumantha Nagar "> Hanumantha Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hanumanthanagar "> Hanumanthanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Haragadde "> Haragadde </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Haralur Road "> Haralur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Harlur "> Harlur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Harohal  "> Harohal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Haudin Road "> Haudin Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hbr layout "> Hbr layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hebbal "> Hebbal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hegde Nagar "> Hegde Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hennur "> Hennur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hennur Road "> Hennur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hesaraghatta "> Hesaraghatta </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hombegowda Nagar "> Hombegowda Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hongasandra "> Hongasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hoodi "> Hoodi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Horamavu Agara "> Horamavu Agara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Horamavu "> Horamavu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hosakerehal  "> Hosakerehal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hosapalaya "> Hosapalaya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hosa Road "> Hosa Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hoskote "> Hoskote </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hosur Road "> Hosur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" House Architects "> House Architects </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" HRBR Layout "> HRBR Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hsr layout "> Hsr layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" HSR Layout Sector 1 2 3 4 5 "> HSR Layout Sector 1 2 3 4 5 </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hullahal  "> Hullahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Hu mavu "> Hu mavu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Huskur "> Huskur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Huttanahal  "> Huttanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Immadihal  "> Immadihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Infantry Road "> Infantry Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" International Airport Road "> International Airport Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" ISRO Layout "> ISRO Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" ITPL "> ITPL </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" IVC Road  "> IVC Road  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jagadish Nagar "> Jagadish Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jagajeevanram Nagar "> Jagajeevanram Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jakkasandra "> Jakkasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jakkuru "> Jakkuru </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="  Jakkuru Layout  ">  Jakkuru Layout  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jalahal  Cross "> Jalahal  Cross </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jalahal  East  "> Jalahal  East  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jalahal  "> Jalahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jalahal  West "> Jalahal  West </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jangamakote "> Jangamakote </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jayamahal Road "> Jayamahal Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jayanagar "> Jayanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jeevanbheema Nagar "> Jeevanbheema Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jeevan Bheema Nagar "> Jeevan Bheema Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jigani "> Jigani </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Jnana Ganga Nagar"> Jnana Ganga Nagar</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" JP nagar "> JP nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" JP Nagar Phase 1 2 3 4 5 "> JP Nagar Phase 1 2 3 4 5 </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" JP Nagar Phase 6 "> JP Nagar Phase 6 </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" JP Nagar Phase 9 "> JP Nagar Phase 9 </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kacharakanahal  "> Kacharakanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kadabagere "> Kadabagere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kadubeesanahal  "> Kadubeesanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kadugodi "> Kadugodi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kadugondanahal "> Kadugondanahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kadusonnappanahal  "> Kadusonnappanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kaggadasapura "> Kaggadasapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kagga pura "> Kagga pura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kalasipalayam "> Kalasipalayam </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kalena Agrahara "> Kalena Agrahara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kalkere "> Kalkere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kallumantapa "> Kallumantapa </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kalyan Nagar "> Kalyan Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kamaksipalya "> Kamaksipalya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kamala Nagar "> Kamala Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kammanahal  "> Kammanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kammasandra Agrahara "> Kammasandra Agrahara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kammasandra "> Kammasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kanaka Nagar "> Kanaka Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kanakapura"> Kanakapura</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kanakapura road "> Kanakapura road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kannamangala "> Kannamangala </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kartik Nagar "> Kartik Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Karuna Nagar "> Karuna Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kasavanahal  "> Kasavanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kasturba Road "> Kasturba Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kasturi Nagar "> Kasturi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kathriguppe "> Kathriguppe </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kattigenahal  "> Kattigenahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kaval Byrasandra"> Kaval Byrasandra</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" K Channasandra Malur"> K Channasandra Malur</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kempapura "> Kempapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kempegowda Nagar "> Kempegowda Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kempe Gowda Road "> Kempe Gowda Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kengeri "> Kengeri </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kengeri Satel te Town "> Kengeri Satel te Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kithiganur "> Kithiganur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kodathi "> Kodathi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kodichikkanahal  "> Kodichikkanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kodigehal  "> Kodigehal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kodihal  "> Kodihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kogilu "> Kogilu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kolar "> Kolar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kolar Road "> Kolar Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kommaghatta "> Kommaghatta </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Konanakunte "> Konanakunte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Koppa "> Koppa </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Koralur "> Koralur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="Koramangala ">Koramangala </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kothanoor "> Kothanoor </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kothanur "> Kothanur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Koti Hosahal  "> Koti Hosahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Krishnaraja Puram "> Krishnaraja Puram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" K R Puram  "> K R Puram  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" KR puram "> KR puram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kudlu Gate "> Kudlu Gate </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kudlu "> Kudlu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kumara Krupa Road Kumara "> Kumara Krupa Road Kumara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kumaraswamy Layout "> Kumaraswamy Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kumbalgodu "> Kumbalgodu </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kundalahal  "> Kundalahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kunigal Road "> Kunigal Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Kuthaganahal "> Kuthaganahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Lady Curzon Road "> Lady Curzon Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Laggere "> Laggere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Lake City "> Lake City </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Lakshmamma Layout "> Lakshmamma Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" lal bagh "> lal bagh </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Langford Road "> Langford Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Langford Town "> Langford Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Lavelle Road "> Lavelle Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" LB Shastri Nagar "> LB Shastri Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Madhava Nagar "> Madhava Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Madivala "> Madivala </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Magadi Road "> Magadi Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Magrath Road "> Magrath Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mahadevapura "> Mahadevapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mahalakshmi Layout "> Mahalakshmi Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mahalakshmipuram "> Mahalakshmipuram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Majestic "> Majestic </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mallathahal  "> Mallathahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Malleshpalya "> Malleshpalya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Malleshwaram "> Malleshwaram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Marathahal  "> Marathahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Margondanahal  "> Margondanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Maruthi Nagar "> Maruthi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Maruthi Sevanagar "> Maruthi Sevanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Medihal  "> Medihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Meenakunte "> Meenakunte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" MG Road "> MG Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mico Layout "> Mico Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Millers Road "> Millers Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mission Road "> Mission Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" MS Palya "> MS Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Munireddy Layout "> Munireddy Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Munireddypalya "> Munireddypalya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Munnekollal "> Munnekollal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="  Murugeshpalya  ">  Murugeshpalya  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Museum Road "> Museum Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Mysore Road "> Mysore Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagadevanahal  "> Nagadevanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagarathpet "> Nagarathpet </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagarbhavi Circle "> Nagarbhavi Circle </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagarbhavi "> Nagarbhavi </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagasandra "> Nagasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagashetty Hal  "> Nagashetty Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagavara "> Nagavara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nagondanahal   "> Nagondanahal   </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nallurhal "> Nallurhal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nandi  Hills"> Nandi  Hills</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nandini Layout "> Nandini Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nanjappa Garden "> Nanjappa Garden </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Narasapura "> Narasapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nayanda Hal  "> Nayanda Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Neeladri Nagar "> Neeladri Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Neelasandra "> Neelasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nehru Nagar "> Nehru Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nelamangala "> Nelamangala </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" New BEL Road"> New BEL Road</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="  ngadheeranahal    ">  ngadheeranahal    </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="  ngarajapuram  ">  ngarajapuram  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Nobo Nagar "> Nobo Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" NRI Layout "> NRI Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Old Airport Road O"> Old Airport Road O</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" OMBR Layout "> OMBR Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Outer Ring Road "> Outer Ring Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Padmanabhanagar "> Padmanabhanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Padmanabha Nagar "> Padmanabha Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Pai Layout "> Pai Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Palace Road "> Palace Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Panathur "> Panathur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Panduranga Nagar "> Panduranga Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Pattandur Agrahara "> Pattandur Agrahara </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Peenya Peenya"> Peenya Peenya</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Prashanth Nagar "> Prashanth Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Race Course Road "> Race Course Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ragavendra Nagar "> Ragavendra Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Raghavendra Colony "> Raghavendra Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rajaji Nagar "> Rajaji Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rajanukunte "> Rajanukunte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rajarajeshwari nagar "> Rajarajeshwari nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Raj Bhavan Road "> Raj Bhavan Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rajiv Gandhi Nagar "> Rajiv Gandhi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rajpet "> Rajpet </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ramagondanahal  "> Ramagondanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ramamurthy Nagar "> Ramamurthy Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rayasandra "> Rayasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Residency Road Residency Road"> Residency Road Residency Road</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Residential Architects "> Residential Architects </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Rest House Road "> Rest House Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Richard&#39;s Park "> Richard's Park </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Richards Town "> Richards Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Richmond Town "> Richmond Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" RK Hegde Nagar "> RK Hegde Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" RMV 2nd Stage "> RMV 2nd Stage </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" RMV Extension "> RMV Extension </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" RMV "> RMV </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Roopena Agrahara"> Roopena Agrahara</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" RT Nagar "> RT Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sadashiva Nagar "> Sadashiva Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sadashivanagar "> Sadashivanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sadduguntepalya "> Sadduguntepalya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sahakara Nagar "> Sahakara Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sampangi Rama Nagar "> Sampangi Rama Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sampangiram "> Sampangiram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sampigehal  "> Sampigehal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sanjay Nagar "> Sanjay Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sankey Road "> Sankey Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sarjapura "> Sarjapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sarjapur Attibele Road "> Sarjapur Attibele Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sarjapur Road "> Sarjapur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sarjapur "> Sarjapur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sathanur "> Sathanur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Seegehal  "> Seegehal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Seenappa Layout "> Seenappa Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Seshadripuram "> Seshadripuram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Seshadri Road "> Seshadri Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shankarapura "> Shankarapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shanthala Nagar "> Shanthala Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shanthi Nagar "> Shanthi Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shanthi Pura "> Shanthi Pura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shanti Nagar "> Shanti Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shettihal  "> Shettihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shigehal  "> Shigehal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shivajinagar "> Shivajinagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Shivaji Nagar "> Shivaji Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Siddapura "> Siddapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sidlaghatta "> Sidlaghatta </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Silk Board "> Silk Board </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Silver Springs Layout "> Silver Springs Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Singanahal  "> Singanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Singasandra "> Singasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" S Medihal  "> S Medihal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Solur "> Solur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Somashetti Hal  "> Somashetti Hal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sompura "> Sompura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sonnenahal  "> Sonnenahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Soukya Road "> Soukya Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Soundarya Layout "> Soundarya Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Srinagar "> Srinagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Srinivasa Nagar "> Srinivasa Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Srirampuram "> Srirampuram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Srirampura "> Srirampura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" St. Mark&#39;s Road "> St. Mark's Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" St. Thomas Town "> St. Thomas Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" St Johns Road "> St Johns Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Subramanyapura "> Subramanyapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sudhama Nagar "> Sudhama Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Sunkadakatte "> Sunkadakatte </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Suryanagar "> Suryanagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Talaghattapura "> Talaghattapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tavarekere "> Tavarekere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" TC Palya "> TC Palya </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" T Dasarahal  "> T Dasarahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Teachers Colony "> Teachers Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Thanisandra "> Thanisandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tharabal  "> Tharabal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tharabanahal  "> Tharabanahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Thavarekere "> Thavarekere </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Thippasandra "> Thippasandra </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Thubarahal  "> Thubarahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Thurahal   "> Thurahal   </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tilak Nagar "> Tilak Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tippenahal  "> Tippenahal  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Tumkur Road "> Tumkur Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ullal "> Ullal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Ulsoor "> Ulsoor </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Uttarahal  Main Road "> Uttarahal  Main Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Uttarahal "> Uttarahal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Varthur Road"> Varthur Road</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Varthur"> Varthur</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vasanthapura "> Vasanthapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vasanth Nagar "> Vasanth Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vehlo  "> Vehlo  </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Venkatagiri Kote "> Venkatagiri Kote </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Venkatapura "> Venkatapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Venkateshpuram "> Venkateshpuram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Victoria Layout "> Victoria Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vidyaranyapura "> Vidyaranyapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vignana Nagar "> Vignana Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vijay bank layout   "> Vijay bank layout   </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vijay Nagar "> Vijay Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vijaypura "> Vijaypura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vimanapura "> Vimanapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vinayaka Layout "> Vinayaka Layout </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Virupakshapura "> Virupakshapura </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vishweshwaraiah Layout"> Vishweshwaraiah Layout</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vittal Mallya Road "> Vittal Mallya Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vittal Nagar "> Vittal Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Viveka Nagar "> Viveka Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vivek Nagar "> Vivek Nagar </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" VV Puram "> VV Puram </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Vya kaval "> Vya kaval </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Weavers Colony "> Weavers Colony </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wheeler Road "> Wheeler Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Whitefield "> Whitefield </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wil ams Town "> Wil ams Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wilson Garden "> Wilson Garden </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelachena Hal "> Yelachena Hal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelahanka "> Yelahanka </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yemalur "> Yemalur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wil ams Town "> Wil ams Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wilson Garden "> Wilson Garden </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelachena Hal "> Yelachena Hal </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yelahanka "> Yelahanka </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yemalur "> Yemalur </a></li>
+													<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">LAND AREA</h4>
+								<div class="row">
+										<div class="col-sm-3">
+											<div style="width:250px">
+												<input type="text" style="text-align:center;" class="form-control" id="landArea">
+											</div>                            
+									</div> 
+										<div class="col-sm-2" style="font-size: x-large;">
+											Sq.Ft.                           
+									</div> 								
+								</div>
+							</div>
+								<div class="price-slider">
+								<h4 class="great">FLOORS</h4>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" id="dwnFloortext" style="width:330px" type="button" data-toggle="dropdown">Select
+												<span class="caret"></span></button>
+											<ul class="dropdown-menu" style="width:330px" id="dwnFloorUl">
+												<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="1">Ground Floor Only</a></li>
+												<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="2">Ground +1 Floor</a></li>
+												<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="3">Ground +2 Floors</a></li>
+												<li><a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" value="4">Ground +3 Floors</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">BHK</h4>
+								<span>Please choose one</span>
+								<div class="input-group">
+									<div id="radioBtnBHK" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="BHKVal" data-title="1">Duplex House</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="BHKVal" data-title="2">Rental House</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="BHKVal" data-title="3">Duplex+Rental House</a>
+									</div>
+									<input type="hidden" name="BHKVal" id="BHKVal">
+								</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">STRUCTURE</h4>
+								<!-- <span>Please choose one</span> -->
+								<div class="input-group">
+									<div id="radioBtnStructure" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="StructureVal" data-title="4" name="Wall_construct" value="1">Cement Blocks (6')</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="5" name="Wall_construct" value="2">Cement Blocks (8')</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="6" name="Wall_construct" value="3">Bricks</a>
+									</div>
+									<input type="hidden" name="StructureVal" id="StructureVal">
+								</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">FLOORING</h4>
+								<!-- <span>Please choose one</span> -->
+								<div class="input-group">
+									<div id="radioBtnFlooring" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="floorVal" data-title="7" value="1">Vetrified</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="floorVal" data-title="8" value="2">Granite</a>      
+									</div>
+									<input type="hidden" name="floorVal" id="floorVal">
+								</div>
+								</div>
+								<div class="price-slider">
+								<h4 class="great">DOORS</h4>
+								<!-- <span>Please choose one</span> -->
+								<div class="input-group">
+									<div id="radioBtnDoors" class="btn-group">
+										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="9" value="1">Teakwood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10" value="2">HonneWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11" value="3">SalWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12" value="4">OSTDoors</a>
+										
+									</div>
+									<input type="hidden" name="DoorVal" id="DoorVal">
+								</div>
+							</div>
+								<div class="price-slider">
+									<h4 class="great">WINDOWS</h4>
+									<div class="input-group">
+										<div id="radioBtnWindows" class="btn-group">
+											<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="windowVal" data-title="11">Teakwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="12">Salwood</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="13">Honne</a>
+											<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="windowVal" data-title="14">UPVC</a>
+										</div>
+										<input type="hidden" name="windowVal" id="windowVal">
+									</div>
+								</div>
+							
+							</div>
+							</div>
+							<div style="text-align:center; margin-top:50px;">
+								<button type="button" class="btn btn-default" id="calcost">Calculate Cost</button>
+							</div>
+                    </div>
+                </div>
+            </div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-sm-12">
+                    <div class="form-pricing">
+                        <div class="row">
+                            <div class="eastimation_titlep col-md-8" style="display:left">
+                                <h1 style="text-align:center; font-weight:600; font-size:18px;padding:15px;font-family:sans-serif">
+             Total construction cost for your home
+            <span id="estpad">₹</span><span class="eastimation_cost">1463711</span>
+            </h1>
+                            </div>
+                            <div class="col-md-4 printtt" style="text-align:center; font-weight:600; font-size:18px;padding:15px;font-family:sans-serif">
+                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#" onclick="PrintElem(&#39;#print_info&#39;)">
+                                    <span><span class="printt"><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/Print-20.png" alt="print"></span></span><span class="printt">Print</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="panel-group">
+                            <!-- accordion 1 START -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#foundation">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Foundation </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="foundation_value">241101</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="f_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="construction cost down"></span></a>
+                                            </div>
+                                            <div class="f_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span>
+                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt=" construction cost estimator up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="foundation" class="panel-collapse collapse in">
+									<!-- foundation_value panel body Start-->
+                                    <div class="panel-body" style="padding:15px">
+                                        <div class="table_titile">Earthwork and Excavation</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="e_earthfillng" id="FearthWork01">NaN cubic ft</span>  <span id="FearthWork02">@ ₹12 per unit</span> </td>
+                                                    <td><span id="estpad">₹</span><span class="e_earthcharges" id="EarthWorkTotalnnn">NaN</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="EarthTotal">₹ NaN</span><!-- <span class="e_earthcharges">28510</span>--></td> 
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="table_titile">Layering and Curing Concrete</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="e_fbags" id="totBags">NaN Bags @</span><span></span> <span class="e_bagprice" id="disprate">₹ 100 per unit</span></td>
+                                                    <td> <span class="e_cementprice" id="totalprice">₹ NaN</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="esand" id="labour">NaN cubic ft @</span> <span>₹</span><span class="esandp" id="rate">20 per unit</span></td>
+													<td><span>₹</span><span class="esandt" id="totalLabour">NaN</span></td>
+                                                </tr>
+											</tbody>								
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span>₹</span>
+                                                        <span class="ftotal" id="totalLayer">NaN</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="table_titile">Providing and constructing the SSM</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="materialcost">NaNcubic ft @</span><span></span> <span class="e_bagprice" id="displayrate">₹ 120 per unit</span> </td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totalMaterial">NaN</span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="labourCost">NaNcubic ft @</span><span class="e_bagprice" id="displayrate2">₹ 20 per unit</span></td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totalLabourCost">NaN</span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>₹</span><span class="ptotal" id="totalCost">NaN</span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+										<div class="table_titile">Providing and laying Concrete</div>
+										<div class="subtable_titile">a) Footing</div>											
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="totLayMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="drate">₹ 235 per unit</span> </td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totLay">NaN</span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="totLayLabour">NaN cubic ft @</span><span class="e_bagprice" id="ratelabour">₹ 15 per unit</span></td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totlabour">NaN</span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>₹</span><span class="ptotal" id="totLayConcrete">NaN</span></td>
+                                                </tr>
+                                            </tfoot>											
+                                        </table>
+										<div class="subtable_titile">b) Column</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="colconcrete">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="colrate">₹ 235 per unit</span> </td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totlColMaterial">NaN</span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="colconcretelab">NaN cubic ft @</span><span class="e_bagprice" id="colratelabour">₹ 30 per unit</span></td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totlCollabour">NaN</span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>₹</span><span class="ptotal" id="totColConcrete">NaN</span></td>
+                                                </tr>
+                                            </tfoot>											
+                                        </table>
+										<div class="subtable_titile">c) Plinth Beam</div>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="PlinthMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="Plinthrate">₹ 220 per unit</span> </td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totalPlinthMat">NaN</span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="PlinthLab">NaN cubic ft @</span><span class="e_bagprice" id="PlinthrateLab">₹ 15 per unit</span></td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="TotPlinthLab">NaN</span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+												
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>₹</span><span class="ptotal" id="TotPlinth">NaN</span></td>
+                                                </tr>
+                                            </tfoot>											
+                                        </table>										
+                                    </div>                                
+									<!-- foundation_value panel body Ends-->
+								</div>
+								
+                            </div>
+							<!-- accordion 1 END -->
+							
+							<!-- accordion 2 START -->							
+							<div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#steel_structural">
+                                        <div class="col-md-8 c_title">
+                                            <h3>Steel Structure</h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="structural_value">384397</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="s_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>more</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="s_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="steel_structural" class="panel-collapse collapse in">
+                                    <!-- Steel panel body Starts-->
+									<div class="panel-body" style="padding:15px">
+									<div class="table_titile">Providing and Fabricating steel</div>
+										<div class="subtable_titile">a) Footing</div>											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="footMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="footrate">₹ 47000.00</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totalfootMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="SteelLab">NaN Metric Tonne @</span><span class="e_bagprice" id="Steelratelab">₹ 5000</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totSteelLab">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSteelFoot">NaN</span></td>
+													</tr>
+												</tfoot>											
+											</table>
+											
+										<div class="subtable_titile">b) Column</div>
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="colSteelMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="colrateMat">₹ 47000.00</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="steelmat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="colSteelLab">NaN Metric Tonne @</span><span class="e_bagprice" id="rateSteelLab">₹ 5000</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totSteelLab"></span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSteelColumn">NaN</span></td>
+													</tr>
+												</tfoot>											
+											</table>
+											
+										<div class="subtable_titile">c) Plinth Beam</div>
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelPlinth">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="ratePlinth">₹ 47000.00</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totStlPlinthMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelPlintlab">NaN Metric Tonne @</span><span class="e_bagprice" id="steelPlintLabrate">₹ 5000</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totSteelPlintLab">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totstlplinth">NaN</span></td>
+													</tr>
+												</tfoot>
+											</table>
+											
+									</div>	
+									<!-- Steel panel body Ends-->
+								</div>
+							</div>
+							<!-- accordion 2 END -->
+							
+							<!-- accordion 3 START -->							
+							<div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#roofing">
+                                        <div class="col-md-8 c_title">
+                                            <h3>Roofing</h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="structural_value">384397</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="s_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>more</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="s_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Roofing panel body starts-->
+                                <div id="roofing" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+										<div class="table_titile">Providing and laying Base</div>											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="baseMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="baseRate">100 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totbaseMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="baseLab">NaN cubic ft @</span><span class="e_bagprice" id="labrate">20 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totbaselab">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totbase">NaN</span></td>
+													</tr>
+												</tfoot>										
+											</table>										
+
+										<div class="table_titile">Providing and laying 1:1.5:3 concrete</div>
+											<div class="subtable_titile">a) Column</div>										
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="columnact">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="ratecol">235 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totcolstruct">NaN</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="columnLabact">NaN cubic ft @</span><span class="e_bagprice" id="columnLabRate">30 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totcolumnLab">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSuperColumn">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">b) Beam</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="beammmat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="beamRate">235 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totbeamMat">NaN</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="beamlab">NaN cubic ft @</span><span class="e_bagprice" id="beamRatelab">30 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totbeamlab">NaN</span></td>
+														</tr>                                              
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSuperBeam">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">c) Slab</div>										
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="SlabcubicMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="SlabRateMat">215 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totSlabMat">NaN215</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="SlabcubicLab">NaN cubic ft @</span><span class="e_bagprice" id="SlabrateLab">20 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totSlabLab">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSlabprice">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">d) Lintel</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="LintelMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="LintelRateMat">235 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totLintelMat">NaN</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="LintelLab">NaN cubic ft @</span><span class="e_bagprice" id="LintelRate">30 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totLintelLab">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSuperLintel">NaN</span></td>
+														</tr>
+													</tfoot>												
+												</table>
+												
+											<div class="subtable_titile">e) Chijja</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="ChijjaMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="ChijjaRate">100 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totChijjaMat">NaN</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="ChijjaLab">NaN cubic ft @</span><span class="e_bagprice" id="ChijjaRateLab">20 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totChijjaLab">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSuperChijja">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">e) Staircase</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Material</td>
+															<td><span class="p_bags" id="StaircaseMat">NaN cubic ft @</span><span></span> <span class="e_bagprice" id="StaircaseRate">235 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totStaircaseMat">NaN</span></td>
+														</tr>
+														<tr>
+															<td>Labour</td>
+															<td><span class="p_bags" id="StaircaseLab">NaN cubic ft @</span><span class="e_bagprice" id="StaircaseRateLab">40 per unit</span></td>
+															<td><span>₹</span> <span class="p_cementprice" id="totStaircaseLab">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totSuperStaircase">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+												
+											<div class="subtable_titile">e) Granite Slab</div>											
+												<table class="table table-borderless">
+													<thead>
+														<tr>
+															<th class="titem">Item</th>
+															<th class="tquantity">Quantity</th>
+															<th class="tprice">Price</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+														   <td>Material</td>
+															<td><span class="p_bags" id="steelGranite_slabMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateGranite_slab">400 per unit</span> </td>
+															<td><span>₹</span> <span class="p_cementprice" id="totsteeelGranite_slabMat">NaN</span></td>
+														</tr>
+														
+													</tbody>
+													<tfoot class="c_dotted">
+														<tr>
+															<td></td>
+															<td class="tquantity">Total Price</td>
+															<td><span>₹</span><span class="ptotal" id="totsteeelGranite_slab">NaN</span></td>
+														</tr>
+													</tfoot>											
+												</table>
+											
+									</div>
+								</div>
+								<!-- Roofing panel body Ends -->
+							</div>							
+							<!-- accordion 3 END -->
+							
+                            <!-- accordion 4 START -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#super_structural">
+                                        <div class="col-md-8 c_title">
+                                            <h3>   Super Structure </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="structural_value">384397</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="s_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>more</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="s_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span><span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div id="super_structural" class="panel-collapse collapse in">
+                                    <!-- super structural panel body start-->
+									<div class="panel-body" style="padding:15px">
+                                        <div class="subtable_titile">a) Column</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelColumnMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRate">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelColumnMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelColumnLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelLabourRate">5000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelColumnLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelColumn">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>	
+											
+										<div class="subtable_titile">b) Beam</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelBeamMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateBeam">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelBeamMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelBeamLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelBeamRate">5000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelBeamLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelBeam">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>
+											 
+										<div class="subtable_titile">c) Slab</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelSlabMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateSlab">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelSlabMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelSlabLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelSlabRate">5000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelSlabLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelSlab">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>
+										
+										<div class="subtable_titile">d) Lintel</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelLintelMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateLintel">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelLintelMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelLintelLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelLintelRate">4000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelLintelLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelLintel">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>
+										
+										<div class="subtable_titile">e) Chijja</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelChijjaMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateChijja">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelChijjaMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelChijjaLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelLabourRateChijja">4000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelChijjaLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelChijja">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>
+										
+										<div class="subtable_titile">e) Staircase</div>
+											
+											<table class="table table-borderless">
+												<thead>
+													<tr>
+														<th class="titem">Item</th>
+														<th class="tquantity">Quantity</th>
+														<th class="tprice">Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Material</td>
+														<td><span class="p_bags" id="steelStaircaseMat">NaN Metric Tonne @</span><span></span> <span class="e_bagprice" id="steelMatRateStaircase">47000 per unit</span> </td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelStaircaseMat">NaN</span></td>
+													</tr>
+													<tr>
+														<td>Labour</td>
+														<td><span class="p_bags" id="steelStaircaseLabour">NaN Metric Tonne @</span><span class="e_bagprice" id="steelLabourRateStaircase">5000 per unit</span></td>
+														<td><span>₹</span> <span class="p_cementprice" id="totsteeelStaircaseLabour">NaN</span></td>
+													</tr>
+													
+												</tbody>
+												<tfoot class="c_dotted">
+													<tr>
+														<td></td>
+														<td class="tquantity">Total Price</td>
+														<td><span>₹</span><span class="ptotal" id="totSuperStructure_steelStaircase">NaN</span></td>
+													</tr>
+												</tfoot>
+												
+
+											</table>
+
+                                    </div>
+                                    <!-- structural panel body ends-->
+                                </div>
+                            </div>
+                            <!-- accordion 4 END -->
+							     <!-- accordion 5 START -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#Wall_construct">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Wall Construction </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="foundation_value">241101</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="f_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="construction cost down"></span></a>
+                                            </div>
+                                            <div class="f_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span>
+                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt=" construction cost estimator up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="Wall_construct" class="panel-collapse collapse in">
+									<!-- wall construction_value panel body Start-->
+                                    
+                                        <div class="table_titile" id="Wall_BrickSize1">6 inch Thick Cement Block</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="e_fbags" id="WallSix_Mat">NaN square_ft @</span><span></span> <span class="e_bagprice" id="Bricksixrate">70 per unit</span></td>
+                                                    <td> <span class="e_cementprice" id="totWallSix_Mat">₹NaN</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="esand" id="WallSix_Labour">NaN square_ft @</span> <span>₹</span><span class="esandp" id="Bricksixrate2">25 per unit</span></td>
+													<td><span>₹</span><span class="esandt" id="totWallSix_Labour">NaN</span></td>
+                                                </tr>
+											</tbody>								
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span>₹</span>
+                                                        <span class="ftotal" id="totSix_Cost">NaN</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="table_titile" id="Wall_BrickSize2">4 inch Thick Cement Block</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td><span class="p_bags" id="WallFour_Mat">NaN square_ft @</span><span></span> <span class="e_bagprice" id="BrickFourrate">40 per unit</span> </td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totWallFour_Mat">₹NaN</span></td>
+                                                </tr>
+												<tr>
+                                                    <td>Labour</td>
+                                                    <td><span class="p_bags" id="WallFour_Labour">NaN square_ft @</span><span class="e_bagprice" id="BrickFourrate2">20 per unit</span></td>
+                                                    <td><span>₹</span> <span class="p_cementprice" id="totWallFour_Labour">NaN</span></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="tquantity">Total Price</td>
+                                                    <td><span>₹</span><span class="ptotal" id="totFour_Cost">NaN</span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+																	
+                                    </div>                                
+									<!-- Wall construction_value panel body Ends-->
+								</div>
+								
+                            </div>
+							<!-- accordion 5 END -->
+                            
+							<!-- Flooring -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#flooring">
+                                        <div class="col-md-8 c_title">
+                                            <h3>  Flooring </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="flooring_value">81260</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="fl_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="fl_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span>
+                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- flooring panel body -->
+                                <div id="flooring" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+                                        <div class="table_titile" id="flooringId">Vetrified Tiles</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiles</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTiles">NaN square_ft @</span> ₹ <span class="mftp" id="VetrifiedTilesRate">60 per unit</span></td>
+                                                    <td><span id="estpad">₹</span><span class="mf_tilesp" id="totVetrifiedTiles">NaN</span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Material</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesMaterial">NaN square_ft @</span>₹ <span class="mftp" id="VetrifiedTilesMaterialRate">40 per unit</span></td>
+                                                    <td><span id="estpad">₹</span><span class="mf_tilesp" id="totVetrifiedTilesMaterial">NaN</span></td>
+                                                </tr>
+                                            </tbody>
+											<tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td>
+                                                        <span class="mft_area" id="VetrifiedTilesLabour">NaN square_ft @</span>₹ <span class="mftp" id="VetrifiedTilesLabourRate">20 per unit</span></td>
+                                                    <td><span id="estpad">₹</span><span class="mf_tilesp" id="totVetrifiedTilesLabour">NaN</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="mf_tilesp" id="totVetrifiedFloor">NaN</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+
+                                        
+                                        <table class="table table-borderless">
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="titem"></td>
+                                                    <td class="tquantity">Total Flooring Price</td>
+                                                    <td class="tprice" id="estpad"><span>₹</span><span class="flooring_value" id="totVetrifiedFloor1">NaN</span></td>
+                               
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+								
+                            </div>
+                            <!-- flooring end -->
+                            <!-- Plastering -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#plastering">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Plastering &amp; Wall Tiles </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="pl_total">28730</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="pl_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span> </a>
+                                            </div>
+                                            <div class="pl_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>less</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- plastering panel body -->
+                                <div id="plastering" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+                                        <div class="table_titile">Plastering - Walls</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cement</td>
+                                                    <td><span class="plw_cement" id="estpad">15</span> bags @ <span class="e_bagprice">₹ 335</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="plw_cementp">5025</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sand</td>
+                                                    <td><span class="plw_sand" id="estpad">86</span>cft @ ₹ <span class="esandp" id="estpad">40</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="plw_sandp">3440</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="plwt">8465</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile">Plastering - Ceiling</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cement</td>
+                                                    <td><span class="pl_cement" id="estpad">9</span> bags @ <span class="e_bagprice">₹ 335</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="pl_cementp">3015</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sand</td>
+                                                    <td><span class="pl_sand" id="estpad">56</span>cft @ ₹ <span class="esandp" id="estpad">40</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="pl_sandp">2240</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="plc_total">5255</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile">Wall Tiles</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Glazed Tiles - Kitchen
+                                                        <br> (Including Labour charges) </td>
+                                                    <td><span class="kitchent" id="estpad">35</span>sqft @ ₹ <span class="kitchenpsp" id="estpad">95</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="kitchentiles">3325</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Glazed Tiles - Bathroom
+                                                        <br> (Including Labour charges) </td>
+                                                    <td><span class="bathtoptiles" id="estpad">123 </span> @ ₹ <span class="toptilesp" id="estpad">95</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="bathglasstiles">11685</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="batht_total">15010</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <table class="table table-borderless">
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="titem"></td>
+                                                    <td class="tquantity">Total Cost</td>
+                                                    <td class="tprice"><span id="estpad">₹</span><span class="pl_total" id="estpad">28730</span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                    </div>
+                                    <!-- plastering body -->
+                                </div>
+                            </div>
+                            <!-- plastering end -->
+                            <!-- wood work -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#wood">
+                                        <div class="col-md-8 c_title">
+                                            <h3>   Wood Work </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="twood">104400</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="w_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="w_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>less</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- wood panel body -->
+                                <div id="wood" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+                                        <div class="table_titile">Doors</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="doors">TeakWood Doors</td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="MaterialDoor">NaN</span> ft @ ₹ <span class="wroomdp" id="Materialrate">2200</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="roomdp" id="totMaterialCost">NaN</span></td>
+                                                </tr>
+												<tr id="labour">	
+													<td>Labour</td>											  
+                                                    <td><span class="roomd" id="LabourDoor">NaN</span> ft @ ₹ <span class="wroomdp" id="Labourrate">250</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="roomdp" id="totLabourCost">NaN</span></td>
+                                                </tr>
+                                                <!-- <tr> -->
+                                                    <!-- <td>Membrane Doors -->
+                                                        <!-- <br>(Main door including shutters & frames)</td> -->
+                                                    <!-- <td><span class="roomd" id="estpad">59</span> ft @ ₹ <span class="wroomdp" id="estpad">450</span> per unit</td> -->
+                                                    <!-- <td><span id="estpad">&#8377;</span><span class="roomdp">26550</span></td> -->
+                                                <!-- </tr> -->
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="roomdp" id="totDoorPrice">NaN</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile" id="windows">Windows</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>3 Track UPVC Sliding windows</td>
+                                                    <td><span class="windows" id="estpad">87</span>sqft @ ₹ <span class="windowps" id="estpad">550</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="windowsp">47850</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="windowsp">47850</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <table class="table table-borderless">
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="titem"></td>
+                                                    <td class="tquantity">Total Cost</td>
+                                                    <td class="twood"><span id="estpad">₹</span><span>104400</span></td>
+                                                </tr>
+
+                                            </tfoot>
+
+                                        </table>
+                                    </div>
+                                    <!-- wood panel body -->
+                                </div>
+                            </div>
+                            <!-- wood woork end -->
+                            <!-- Painting -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#painting">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Painting </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="tpaint">70524</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="pa_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="pa_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>less</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- painting panel body -->
+                                <div id="painting" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:15px">
+
+                                        <div class="table_titile">Exterior Painting</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Exterior</td>
+                                                    <td><span class="ppceiling" id="estpad">1368</span> sqft @ ₹ <span class="ppcpsft" id="estpad">18</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="ppctotal">24624</span></td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="eptotal">24624</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile">Interior Painting</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Interior</td>
+                                                    <td><span class="ippceiling" id="estpad">2700</span> sqft @ ₹ <span class="ippcpsft" id="estpad">17</span> per unit</td>
+                                                    <td><span id="estpad">₹</span><span class="ippctotal">45900</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="iptotal">45900</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <table class="table table-borderless">
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="titem"></td>
+                                                    <td class="tquantity">Total Painting Cost</td>
+                                                    <td class="tprice"><span id="estpad">₹</span><span class="tpaint">70524</span></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                    </div>
+                                    <!-- painting body -->
+                                </div>
+                            </div>
+
+                            <!-- Painting end -->
+                            <!-- electrical & Plumbing -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#electrical">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Electrical &amp; Plumbing </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="tep">283299</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="el_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span></a>
+                                            </div>
+                                            <div class="el_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span>
+                   <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- electrical&plumbing panel body -->
+                                <div id="electrical" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:35px">
+                                        <div class="table_titile">Electrical</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Electrical</td>
+                                                    <td>Lump Sum</td>
+                                                    <td><span id="estpad">₹</span><span class="electricalt">135747</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="electricalt">135747</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                        <div class="table_titile">Plumbing</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Plumbing</td>
+                                                    <td>Lump Sum</td>
+                                                    <td><span id="estpad">₹</span><span class="plumbing">147552</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="plumbingt">147552</span></td>
+                                                </tr>
+                                            </tfoot>
+                                            </table><table class="table table-borderless">
+                                                <tfoot>
+                                                    <tr>
+                                                        <td class="titem"></td>
+                                                        <td class="tquantity">Total Electrical &amp; Plumbing Cost</td>
+                                                        <td class="tprice"><span id="estpad">₹</span><span class="tep">283299</span></td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+
+                                        
+
+                                    </div>
+                                    <!-- electrical & Plumbing panel body -->
+                                </div>
+                                <!-- electrical & Plumbing end -->
+                            </div>
+                            <!--- labour charges -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <!-- panel-heading -->
+                                    <div class="row pannel-title" data-toggle="collapse" data-parent="#accordion" href="#labourc">
+                                        <div class="col-md-8 c_title">
+                                            <h3> Construction Labour Charges </h3>
+                                        </div>
+                                        <div class="col-md-2" id="price_eastimation">
+                                            <span id="prprice">₹</span><span id="prprice" class="labc">270000</span>
+                                        </div>
+                                        <div class="col-md-2 chevron">
+                                            <div class="el_close">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"> <span>more</span>
+                                                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/down.png" alt="down"></span> </a>
+                                            </div>
+                                            <div class="el_open" style="display:none">
+                                                <a href="file:///C:/Users/shubhojit/Documents/GitHub/RetailCalculator/calculator.html#"><span>less</span>
+                    <span><img src="./Bootstrap Loan Calculator - Bootsnipp.com_files/up.png" alt="up"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- electrical&plumbing panel body -->
+                                <div id="labourc" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding:35px">
+                                        <div class="table_titile">Labour</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Labour</td>
+                                                    <td>Lump Sum</td>
+                                                    <td><span id="estpad">₹</span><span class="laboursft">270000</span></td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">₹</span><span class="labc">270000</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+                                    </div>
+                                    <!-- electrical & Plumbing panel body -->
+                                </div>
+                                <!-- electrical & Plumbing end -->
+                            </div>
+                        </div>
+                        <p style="padding:10px"><strong>Note:</strong><span class="requireds">*</span> <b>This construction cost estimation is only an approximation of the most common project needs. Actual costs may vary depending on exact requirements.</b> </p>
+                    </div>
+                </div>
+			</div>
+        </div>
+    
+    <script src="./Bootstrap Loan Calculator - Bootsnipp.com_files/customJS.js.download" type="text/javascript"></script>
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
