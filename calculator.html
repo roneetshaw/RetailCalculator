@@ -671,8 +671,8 @@
 								<!-- <span>Please choose one</span> -->
 								<div class="input-group">
 									<div id="radioBtnPaint" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="PaintVal" data-title="16">Basic</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="PaintVal" data-title="17">Premium</a>
+										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="PaintVal" data-title="16"value="1">Basic</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="PaintVal" data-title="17"value="2">Premium</a>
 									</div>
 									<input type="hidden" name="PaintVal" id="PaintVal">
 								</div>
@@ -1922,13 +1922,13 @@
                                                  </tr> 
 												  <tr>	
 													<td>Material</td>											  
-                                                    <td><span class="roomd" id="MainMaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="MainMaterialrate"></span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMainMaterialCost"></span></td>
+                                                    <td><span class="roomd" id="MainWindowMat"></span> ft @ ₹ <span class="wroomdp" id="MainWindowRate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="MainWindowMatPrice"></span></td>
                                                 </tr>
 												<tr>	
 													<td >Labour</td>											  
-                                                    <td><span class="roomd" id="MainLabourDoor"></span> ft @ ₹ <span class="wroomdp" id="MainLabourrate"></span> per unit</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMainLabourCost"></span></td>
+                                                    <td><span class="roomd" id="MainWindowLabour"></span> ft @ ₹ <span class="wroomdp" id="MainWindowRateLabour"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="MainWindowLabourPrice"></span></td>
                                                 </tr>
                                                 
 
@@ -1937,7 +1937,7 @@
                                                 <tr>
                                                     <td></td>
                                                     <td>Total Price</td>
-                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totDoorPrice">56550</span></td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="MaintotWindowPrice">56550</span></td>
                                                 </tr>
                                             </tfoot>
 
@@ -2006,6 +2006,38 @@
                                                     <td></td>
                                                     <td>Total Price</td>
                                                     <td><span id="estpad">&#8377;</span><span class="windowsp"id="totWindowPrice">47850</span></td>
+                                                </tr>
+                                            </tfoot>
+
+                                        </table>
+										<table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="WindowName">MS Grills<td>
+                                                 </tr> 
+												  <tr>	
+													<td id="Material">Material</td>											  
+                                                    <td><span class="roomd" id="WindowMatMS_Grill"></span> ft @ ₹ <span class="wroomdp" id="WindowRateMS_Grill"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowMatPriceMS_Grill"></span></td>
+                                                </tr>
+												<tr id="labour">	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="WindowLabourMS_Grill"></span> ft @ ₹ <span class="wroomdp" id="WindowRateLabourMS_Grill"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="WindowLabourPriceMS_Grill"></span></td>
+                                                </tr>
+											</tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="windowsp"id="totWindowPriceMS_Grill">47850</span></td>
                                                 </tr>
                                             </tfoot>
 

@@ -594,7 +594,7 @@ $( document ).ready(function() {
 	
 	$("#calcost").on('click',function(){
 		var textVal=parseInt($("#landAreatext").val());
-		var totalVal1=parseInt(textVal-(textVal*0.17));
+		var totalVal1=parseInt(textVal-(textVal*0.20));
 		$("#landArea").val(totalVal1);
 		calFoundation();
 		calSteel();
@@ -615,11 +615,11 @@ $( document ).ready(function() {
 	function calEarthWork()
 	{
 		var cubic_ft=data.Foundation[0].Earthwork[0].Labour_and_Earth[0].cubic_ft;
-		var totalVal2=(parseInt($("#landArea").val()))*cubic_ft;
+		var totalVal2=((parseInt($("#landArea").val()))*cubic_ft).toFixed(2);
 		$("#FearthWork01").text(totalVal2+" cubic ft");
 		var rate = data.Foundation[0].Earthwork[0].Labour_and_Earth[0].rate
 		$("#FearthWork02").text("@ ₹"+rate+" per unit");
-		var tot=totalVal2*rate;
+		var tot=Math.ceil(totalVal2*rate);
 		$("#EarthWorkTotalnnn").text(tot);
 		$("#EarthTotal").text("₹ "+tot);
 		return tot;
@@ -735,18 +735,18 @@ $( document ).ready(function() {
 		var rate = data.Foundation[0].Plinth_Beam[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var PlinthMat=totalVal2*cubic_ft;
+		var PlinthMat=(totalVal2*cubic_ft).toFixed(2);
 		$("#PlinthMat").text(PlinthMat+" cubic ft @");
 		$("#Plinthrate").text("₹ "+rate+" per unit");
-		totalPlinthMat=PlinthMat*rate;
+		totalPlinthMat=Math.ceil(PlinthMat*rate);
 		$("#totalPlinthMat").text(totalPlinthMat);
 		
 		var cubic_ft=data.Foundation[0].Plinth_Beam[0].Labour[0].cubic_ft;
 		var rate = data.Foundation[0].Plinth_Beam[0].Labour[0].rate;
-		var PlinthLab=totalVal2*cubic_ft;
+		var PlinthLab=(totalVal2*cubic_ft).toFixed(2);
 		$("#PlinthLab").text(PlinthLab+" cubic ft @");
 		$("#PlinthrateLab").text("₹ "+rate+" per unit");
-		TotPlinthLab=PlinthLab*rate;
+		TotPlinthLab=Math.ceil(PlinthLab*rate);
 		$("#TotPlinthLab").text(TotPlinthLab);
 		TotPlinth=TotPlinthLab+totalPlinthMat;
 		$("#TotPlinth").text(TotPlinth);
@@ -845,11 +845,11 @@ $( document ).ready(function() {
 		var rate = data.Foundation[0].Laying_Base[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var baseMatft=totalVal2*cubic_ft;
+		var baseMatft=(totalVal2*cubic_ft).toFixed(2);
 		$("#baseMat").text(baseMatft+" cubic ft @");
 		$("#baseRate").text(rate+" per unit");
 		////alert(baseMatft+" "+rate);
-		var totbaseMat=baseMatft*rate;
+		var totbaseMat=Math.ceil(baseMatft*rate);
 		$("#totbaseMat").text(totbaseMat);
 		
 		
@@ -857,10 +857,10 @@ $( document ).ready(function() {
 		var rate = data.Foundation[0].Laying_Base[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var baseLab=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var baseLab=(totalVal2*cubic_ft).toFixed(2);
 		$("#baseLab").text(baseLab+" cubic ft @");
 		$("#labrate").text(rate+" per unit");
-		var totbaselab=baseLab*rate;
+		var totbaselab=Math.ceil(baseLab*rate);
 		$("#totbaselab").text(totbaselab);
 		
 		var totbase=totbaselab+totbaseMat;
@@ -873,20 +873,20 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Column[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var columnact=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var columnact=(totalVal2*cubic_ft).toFixed(2);
 		$("#columnact").text(columnact+" cubic ft @");
 		$("#ratecol").text(rate+" per unit");
-		var totcolstruct=columnact*rate;
+		var totcolstruct=Math.ceil(columnact*rate);
 		$("#totcolstruct").text(totcolstruct);
 		
 		var cubic_ft=data.SuperStructure[0].Column[0].Labour[0].cubic_ft;
 		var rate = data.SuperStructure[0].Column[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var columnLabact=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var columnLabact=(totalVal2*cubic_ft).toFixed(2);
 		$("#columnLabact").text(columnLabact+" cubic ft @");
 		$("#columnLabRate").text(rate+" per unit");
-		var totcolumnLab=columnLabact*rate;
+		var totcolumnLab=Math.ceil(columnLabact*rate);
 		$("#totcolumnLab").text(totcolumnLab);
 		
 		var totSuperColumn=totcolumnLab+totcolstruct;
@@ -928,20 +928,20 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Slab[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var SlabcubicMat=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var SlabcubicMat=(totalVal2*cubic_ft).toFixed(2);
 		$("#SlabcubicMat").text(SlabcubicMat+" cubic ft @");
 		$("#SlabRateMat").text(rate+" per unit");
-		var totSlabMat=SlabcubicMat+rate;
+		var totSlabMat=Math.ceil(SlabcubicMat+rate);
 		$("#totSlabMat").text(totSlabMat);
 		
 		var cubic_ft=data.SuperStructure[0].Slab[0].Labour[0].cubic_ft;
 		var rate = data.SuperStructure[0].Slab[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var SlabcubicLab=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var SlabcubicLab=(totalVal2*cubic_ft).toFixed(2);
 		$("#SlabcubicLab").text(SlabcubicLab+" cubic ft @");
 		$("#SlabrateLab").text(rate+" per unit");
-		var totSlabLab=SlabcubicLab*rate;
+		var totSlabLab=Math.ceil(SlabcubicLab*rate);
 		$("#totSlabLab").text(totSlabLab);
 		
 		var totSlabprice=+totSlabMat+ +totSlabLab;
@@ -955,20 +955,20 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Lintel[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var LintelMat=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var LintelMat=(totalVal2*cubic_ft).toFixed(2);
 		$("#LintelMat").text(LintelMat+" cubic ft @");
 		$("#LintelRateMat").text(rate+" per unit");
-		 var totLintelMat=LintelMat*rate;
+		 var totLintelMat=Math.ceil(LintelMat*rate);
 		 $("#totLintelMat").text(totLintelMat);
 		 
 		 var cubic_ft=data.SuperStructure[0].Lintel[0].Labour[0].cubic_ft;
 		var rate = data.SuperStructure[0].Lintel[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var LintelLab=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var LintelLab=(totalVal2*cubic_ft).toFixed(2);
 		$("#LintelLab").text(LintelLab+" cubic ft @");
 		$("#LintelRate").text(rate+" per unit");
-		var totLintelLab=LintelLab*rate;
+		var totLintelLab=Math.ceil(LintelLab*rate);
 		$("#totLintelLab").text(totLintelLab);
 		
 		var totSuperLintel=+totLintelLab+ +totLintelMat;
@@ -983,8 +983,8 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Chijja[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var ChijjaMat=Math.ceil(parseInt(totalVal2*cubic_ft));
-		var totChijjaMat=ChijjaMat*rate;
+		var ChijjaMat=(totalVal2*cubic_ft).toFixed(2);
+		var totChijjaMat=Math.ceil(ChijjaMat*rate);
 		$("#ChijjaMat").text(ChijjaMat+" cubic ft @");
 		$("#ChijjaRate").text(rate+" per unit");
 		$("#totChijjaMat").text(totChijjaMat);
@@ -993,8 +993,8 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Chijja[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var ChijjaLab=Math.ceil(parseInt(totalVal2*cubic_ft));
-		var totChijjaLab=ChijjaLab*rate;
+		var ChijjaLab=(totalVal2*cubic_ft).toFixed(2);
+		var totChijjaLab=Math.ceil(ChijjaLab*rate);
 		$("#ChijjaLab").text(ChijjaLab+" cubic ft @");
 		$("#ChijjaRateLab").text(rate+" per unit");
 		$("#totChijjaLab").text(totChijjaLab);
@@ -1009,7 +1009,7 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Staircase[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var StaircaseMat=Math.ceil(parseInt(totalVal2*cubic_ft));
+		var StaircaseMat=(totalVal2*cubic_ft).toFixed(2);
 		var totStaircaseMat=StaircaseMat*rate;
 		$("#StaircaseMat").text(StaircaseMat+" cubic ft @");
 		$("#StaircaseRate").text(rate+" per unit");
@@ -1019,8 +1019,8 @@ $( document ).ready(function() {
 		var rate = data.SuperStructure[0].Staircase[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//var totalVal2=(parseInt(totalVal-200));
-		var StaircaseLab=Math.ceil(parseInt(totalVal2*cubic_ft));
-		var totStaircaseLab=StaircaseLab*rate;
+		var StaircaseLab=(totalVal2*cubic_ft).toFixed(2);
+		var totStaircaseLab=Math.ceil(StaircaseLab*rate);
 		$("#StaircaseLab").text(StaircaseLab+" cubic ft @");
 		$("#StaircaseRateLab").text(rate+" per unit");
 		$("#totStaircaseLab").text(totStaircaseLab);
@@ -1227,9 +1227,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Six[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallSix_Mat=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallSix_Mat=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallSix_Mat=WallSix_Mat*rate;
+			var totWallSix_Mat=Math.ceil(WallSix_Mat*rate);
 			$("#Bricksixrate").text(rate+" per unit");
 			$("#WallSix_Mat").text(WallSix_Mat+" square_ft @");
 			$("#totWallSix_Mat").text("₹"+totWallSix_Mat);
@@ -1238,9 +1238,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Six[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallSix_Labour=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallSix_Labour=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallSix_Labour=WallSix_Labour*rate;
+			var totWallSix_Labour=Math.ceil(WallSix_Labour*rate);
 			$("#Bricksixrate2").text(rate+" per unit");
 			$("#WallSix_Labour").text(WallSix_Labour+" square_ft @");
 			$("#totWallSix_Labour").text(totWallSix_Labour);
@@ -1253,9 +1253,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Four[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFour_Mat=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFour_Mat=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFour_Mat=WallFour_Mat*rate;
+			var totWallFour_Mat=Math.ceil(WallFour_Mat*rate);
 			$("#BrickFourrate").text(rate+" per unit");
 			$("#WallFour_Mat").text(WallFour_Mat+" square_ft @");
 			$("#totWallFour_Mat").text("₹"+totWallFour_Mat);
@@ -1266,9 +1266,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Four[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFour_Labour=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFour_Labour=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFour_Labour=WallFour_Labour*rate;
+			var totWallFour_Labour=Math.ceil(WallFour_Labour*rate);
 			$("#BrickFourrate2").text(rate+" per unit");
 			$("#WallFour_Labour").text(WallFour_Labour+" square_ft @");
 			$("#totWallFour_Labour").text(totWallFour_Labour);
@@ -1312,9 +1312,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Four[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFour_Mat=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFour_Mat=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFour_Mat=WallFour_Mat*rate;
+			var totWallFour_Mat=Math.ceil(WallFour_Mat*rate);
 			$("#BrickFourrate").text(rate+" per unit");
 			$("#WallFour_Mat").text(WallFour_Mat+" square_ft @");
 			$("#totWallFour_Mat").text("₹"+totWallFour_Mat);
@@ -1325,9 +1325,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Four[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFour_Labour=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFour_Labour=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFour_Labour=WallFour_Labour*rate;
+			var totWallFour_Labour=Math.ceil(WallFour_Labour*rate);
 			$("#BrickFourrate2").text(rate+" per unit");
 			$("#WallFour_Labour").text(WallFour_Labour+" square_ft @");
 			$("#totWallFour_Labour").text(totWallFour_Labour);
@@ -1346,9 +1346,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Nine[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallNine_Mat=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallNine_Mat=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallNine_Mat=WallNine_Mat*rate;
+			var totWallNine_Mat=Math.ceil(WallNine_Mat*rate);
 			$("#Bricksixrate").text(rate+" per unit");
 			$("#WallSix_Mat").text(WallNine_Mat+" square_ft @");
 			$("#totWallSix_Mat").text("₹"+totWallNine_Mat);
@@ -1357,9 +1357,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Nine[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallNine_Labour=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallNine_Labour=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallNine_Labour=WallNine_Labour*rate;
+			var totWallNine_Labour=Math.ceil(WallNine_Labour*rate);
 			$("#Bricksixrate2").text(rate+" per unit");
 			$("#WallSix_Labour").text(WallNine_Labour+" square_ft @");
 			$("#totWallSix_Labour").text(totWallNine_Labour);
@@ -1372,9 +1372,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Fourpointfive[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFourpointfive_Mat=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFourpointfive_Mat=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFourpointfive_Mat=WallFourpointfive_Mat*rate;
+			var totWallFourpointfive_Mat=Math.ceil(WallFourpointfive_Mat*rate);
 			$("#BrickFourrate").text(rate+" per unit");
 			$("#WallFour_Mat").text(WallFourpointfive_Mat+" square_ft @");
 			$("#totWallFour_Mat").text(totWallFourpointfive_Mat);
@@ -1385,9 +1385,9 @@ $( document ).ready(function() {
 			var rate = data.Walls[0].Fourpointfive[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var WallFourpointfive_Labour=Math.ceil(parseInt(totalVal2*square_ft));
+			var WallFourpointfive_Labour=(totalVal2*square_ft).toFixed(2);
 			////alert(square_ft+" "+totalVal2);
-			var totWallFourpointfive_Labour=WallFourpointfive_Labour*rate;
+			var totWallFourpointfive_Labour=Math.ceil(WallFourpointfive_Labour*rate);
 			$("#BrickFourrate2").text(rate+" per unit");
 			$("#WallFour_Labour").text(WallFourpointfive_Labour+" square_ft @");
 			$("#totWallFour_Labour").text(totWallFourpointfive_Labour);
@@ -1413,7 +1413,7 @@ $( document ).ready(function() {
 			 var rate=data.Flooring[0].Vitrified[0].Tiles[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var VetrifiedTiles = totalVal2 * square_ft;
+			 var VetrifiedTiles = (totalVal2 * square_ft).toFixed(2);
 			 ////alert(totalVal2+" "+square_ft);
 			 $("#VetrifiedTiles").text(VetrifiedTiles+" square_ft @");
 			 $("#VetrifiedTilesRate").text(rate+" per unit");
@@ -1424,20 +1424,20 @@ $( document ).ready(function() {
 			 var rate=data.Flooring[0].Vitrified[0].Material[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var VetrifiedTilesMaterial = totalVal2 * square_ft;
+			 var VetrifiedTilesMaterial = (totalVal2 * square_ft).toFixed(2);
 			  $("#VetrifiedTilesMaterial").text(VetrifiedTilesMaterial+" square_ft @");
 			 $("#VetrifiedTilesMaterialRate").text(rate+" per unit");
-			 var totVetrifiedTilesMaterial = VetrifiedTilesMaterial*rate;
+			 var totVetrifiedTilesMaterial = Math.ceil(VetrifiedTilesMaterial*rate);
 			 $("#totVetrifiedTilesMaterial").text(totVetrifiedTilesMaterial);
 			 
 			  var square_ft=data.Flooring[0].Vitrified[0].Labour[0].sq_ft;
 			 var rate=data.Flooring[0].Vitrified[0].Labour[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var VetrifiedTilesLabour = totalVal2 * square_ft;
+			 var VetrifiedTilesLabour = (totalVal2 * square_ft).toFixed(2);
 			  $("#VetrifiedTilesLabour").text(VetrifiedTilesLabour+" square_ft @");
 			 $("#VetrifiedTilesLabourRate").text(rate+" per unit");
-			 var totVetrifiedTilesLabour = VetrifiedTilesLabour*rate;
+			 var totVetrifiedTilesLabour = Math.ceil(VetrifiedTilesLabour*rate);
 			 $("#totVetrifiedTilesLabour").text(totVetrifiedTilesLabour);
 			 
 			 var totVetrifiedFloor=totVetrifiedTilesLabour+totVetrifiedTilesMaterial+totVetrifiedTiles;
@@ -1455,31 +1455,31 @@ $( document ).ready(function() {
 			 var rate=data.Flooring[0].Granite[0].Tiles[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var GraniteTiles = totalVal2 * square_ft;
+			 var GraniteTiles = (totalVal2 * square_ft).toFixed(2);
 			 ////alert(totalVal2+" "+square_ft);
 			 $("#VetrifiedTiles").text(GraniteTiles+" square_ft @");
 			 $("#VetrifiedTilesRate").text(rate+" per unit");
-			 var totGraniteTiles = GraniteTiles*rate;
+			 var totGraniteTiles = Math.ceil(GraniteTiles*rate);
 			 $("#totVetrifiedTiles").text(totGraniteTiles);
 			 
 			 var square_ft=data.Flooring[0].Granite[0].Material[0].sq_ft;
 			 var rate=data.Flooring[0].Granite[0].Material[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var GraniteTilesMaterial = totalVal2 * square_ft;
+			 var GraniteTilesMaterial = (totalVal2 * square_ft).toFixed(2);
 			  $("#VetrifiedTilesMaterial").text(GraniteTilesMaterial+" square_ft @");
 			 $("#VetrifiedTilesMaterialRate").text(rate+" per unit");
-			 var totGraniteTilesMaterial = GraniteTilesMaterial*rate;
+			 var totGraniteTilesMaterial = Math.ceil(GraniteTilesMaterial*rate);
 			 $("#totVetrifiedTilesMaterial").text(totGraniteTilesMaterial);
 			 
 			  var square_ft=data.Flooring[0].Granite[0].Labour[0].sq_ft;
 			 var rate=data.Flooring[0].Granite[0].Labour[0].rate;
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var GraniteTilesLabour = totalVal2 * square_ft;
+			 var GraniteTilesLabour =(totalVal2 * square_ft).toFixed(2);
 			  $("#VetrifiedTilesLabour").text(GraniteTilesLabour+" square_ft @");
 			 $("#VetrifiedTilesLabourRate").text(rate+" per unit");
-			 var totGraniteTilesLabour = GraniteTilesLabour*rate;
+			 var totGraniteTilesLabour =Math.ceil(GraniteTilesLabour*rate);
 			 $("#totVetrifiedTilesLabour").text(totGraniteTilesLabour);
 			 
 			 var totGraniteFloor=totGraniteTilesLabour+totGraniteTilesMaterial+totGraniteTiles;
@@ -1488,6 +1488,48 @@ $( document ).ready(function() {
 			return totGraniteFloor;
 			
 		}
+		if(value == 3)
+		{
+			$("#flooringId").text("Marble+Wood");
+			
+			var square_ft=data.Flooring[0].Marble[0].Tiles[0].sq_ft;
+			 var rate=data.Flooring[0].Marble[0].Tiles[0].rate;
+			 var totalVal2=(parseInt($("#landArea").val()));
+			 //var totalVal2=(parseInt(totalVal-200));
+			 var MarbleTiles = (totalVal2 * square_ft).toFixed(2);
+			 ////alert(totalVal2+" "+square_ft);
+			 $("#VetrifiedTiles").text(MarbleTiles+" square_ft @");
+			 $("#VetrifiedTilesRate").text(rate+" per unit");
+			 var totMarbleTiles = Math.ceil(MarbleTiles*rate);
+			 $("#totVetrifiedTiles").text(totMarbleTiles);
+			 
+			 var square_ft=data.Flooring[0].Marble[0].Material[0].sq_ft;
+			 var rate=data.Flooring[0].Marble[0].Material[0].rate;
+			 var totalVal2=(parseInt($("#landArea").val()));
+			 //var totalVal2=(parseInt(totalVal-200));
+			 var MarbleTilesMaterial = (totalVal2 * square_ft).toFixed(2);
+			  $("#VetrifiedTilesMaterial").text(MarbleTilesMaterial+" square_ft @");
+			 $("#VetrifiedTilesMaterialRate").text(rate+" per unit");
+			 var totMarbleTilesMaterial = Math.ceil(MarbleTilesMaterial*rate);
+			 $("#totVetrifiedTilesMaterial").text(totMarbleTilesMaterial);
+			 
+			  var square_ft=data.Flooring[0].Marble[0].Labour[0].sq_ft;
+			 var rate=data.Flooring[0].Marble[0].Labour[0].rate;
+			 var totalVal2=(parseInt($("#landArea").val()));
+			 //var totalVal2=(parseInt(totalVal-200));
+			 var MarbleTilesLabour =(totalVal2 * square_ft).toFixed(2);
+			  $("#VetrifiedTilesLabour").text(MarbleTilesLabour+" square_ft @");
+			 $("#VetrifiedTilesLabourRate").text(rate+" per unit");
+			 var totMarbleTilesLabour =Math.ceil(MarbleTilesLabour*rate);
+			 $("#totVetrifiedTilesLabour").text(totMarbleTilesLabour);
+			 
+			 var totMarbleFloor=totMarbleTilesLabour+totMarbleTilesMaterial+totMarbleTiles;
+			 $("#totVetrifiedFloor").text(totMarbleFloor);
+			  $("#totVetrifiedFloor1").text(totMarbleFloor);
+			return totMarbleFloor;
+			
+		}
+		
 	}
 	
 	function calWoodWorkDoors()
@@ -1501,8 +1543,8 @@ $( document ).ready(function() {
 			var rate=data.Woodwork[0].Doors[0].Teakwood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var TeakWoodMaterial=Math.ceil(parseInt(totalVal2*square_ft));
-			var totTeakWoodMaterial=TeakWoodMaterial*rate;
+			var TeakWoodMaterial=(totalVal2*square_ft).toFixed(2);
+			var totTeakWoodMaterial=Math.ceil(TeakWoodMaterial*rate);
 			$("#MaterialDoor").text(TeakWoodMaterial);
 			$("#WoodMaterialrate").text(rate);
 			$("#totMaterialCost").text(totTeakWoodMaterial);
@@ -1511,8 +1553,8 @@ $( document ).ready(function() {
 			var rate=data.Woodwork[0].Doors[0].Teakwood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var TeakWoodLabour=Math.ceil(parseInt(totalVal2*square_ft));
-			var totTeakWoodLabour=TeakWoodLabour*rate;
+			var TeakWoodLabour=(totalVal2*square_ft).toFixed(2);
+			var totTeakWoodLabour=Math.ceil(TeakWoodLabour*rate);
 			$("#LabourDoor").text(TeakWoodLabour);
 			$("#WoodLabourrate").text(rate);
 			$("#totLabourCost").text(totTeakWoodLabour);
@@ -1528,8 +1570,8 @@ $( document ).ready(function() {
 			var square_ft=data.Woodwork[0].Doors[0].HonneWood[0].Material[0].sq_ft;
 			var rate=data.Woodwork[0].Doors[0].HonneWood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
-			var HonneWoodMaterial=Math.ceil(parseInt(totalVal2*square_ft));
-			var totHonneWoodMaterial=HonneWoodMaterial*rate;
+			var HonneWoodMaterial=(totalVal2*square_ft).toFixed(2);
+			var totHonneWoodMaterial=Math.ceil(HonneWoodMaterial*rate);
 			$("#MaterialDoor").text(HonneWoodMaterial);
 			$("#WoodMaterialrate").text(rate);
 			$("#totMaterialCost").text(totHonneWoodMaterial);
@@ -1537,8 +1579,8 @@ $( document ).ready(function() {
 			var square_ft=data.Woodwork[0].Doors[0].HonneWood[0].Labour[0].sq_ft;
 			var rate=data.Woodwork[0].Doors[0].HonneWood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
-			var HonneWoodLabour=Math.ceil(parseInt(totalVal2*square_ft));
-			var totHonneWoodLabour=HonneWoodLabour*rate;
+			var HonneWoodLabour=(totalVal2*square_ft).toFixed(2);
+			var totHonneWoodLabour=Math.ceil(HonneWoodLabour*rate);
 			$("#LabourDoor").text(HonneWoodLabour);
 			$("#WoodLabourrate").text(rate);
 			$("#totLabourCost").text(totHonneWoodLabour);
@@ -1553,8 +1595,8 @@ $( document ).ready(function() {
 			var rate=data.Woodwork[0].Doors[0].SalWood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var SalWoodMaterial=Math.ceil(parseInt(totalVal2*square_ft));
-			var totSalWoodMaterial=SalWoodMaterial*rate;
+			var SalWoodMaterial=(totalVal2*square_ft).toFixed(2);
+			var totSalWoodMaterial=Math.ceil(SalWoodMaterial*rate);
 			$("#MaterialDoor").text(SalWoodMaterial);
 			$("#WoodMaterialrate").text(rate);
 			$("#totMaterialCost").text(totSalWoodMaterial);
@@ -1563,8 +1605,8 @@ $( document ).ready(function() {
 			var rate=data.Woodwork[0].Doors[0].SalWood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var SalWoodLabour=Math.ceil(parseInt(totalVal2*square_ft));
-			var totSalWoodLabour=SalWoodLabour*rate;
+			var SalWoodLabour=(totalVal2*square_ft).toFixed(2);
+			var totSalWoodLabour=Math.ceil(SalWoodLabour*rate);
 			$("#LabourDoor").text(SalWoodLabour);
 			$("#WoodLabourrate").text(rate);
 			$("#totLabourCost").text(totSalWoodLabour);
@@ -1583,8 +1625,8 @@ $( document ).ready(function() {
 			var rate=data.Woodwork[0].Doors[0].OSTDoors[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var OSTDoorsMaterial=Math.ceil(parseInt(totalVal2*square_ft));
-			var totOSTDoorsMaterial=OSTDoorsMaterial*rate;
+			var OSTDoorsMaterial=(totalVal2*square_ft).toFixed(2);
+			var totOSTDoorsMaterial=Math.ceil(OSTDoorsMaterial*rate);
 			$("#MaterialDoor").text(OSTDoorsMaterial);
 			$("#WoodMaterialrate").text(rate);
 			$("#totMaterialCost").text(totOSTDoorsMaterial);
@@ -1594,8 +1636,8 @@ $( document ).ready(function() {
 			 ////alert(square_ft+""+rate);
 			 var totalVal2=(parseInt($("#landArea").val()));
 			 //var totalVal2=(parseInt(totalVal-200));
-			 var OSTDoorsLabour=Math.ceil(parseInt(totalVal2*square_ft));
-			 var totOSTDoorsLabour=OSTDoorsLabour*rate;
+			 var OSTDoorsLabour=(totalVal2*square_ft).toFixed(2);
+			 var totOSTDoorsLabour=Math.ceil(OSTDoorsLabour*rate);
 			 $("#LabourDoor").text(OSTDoorsLabour);
 			 $("#WoodLabourrate").text(rate);
 			 $("#totLabourCost").text(totOSTDoorsLabour);
@@ -1608,9 +1650,66 @@ $( document ).ready(function() {
 		
 	}
 	
+	function calMainWoodWork()
+	{
+		var sq_ft=data.Woodwork[0].Doors[0].MainTeakwood[0].Material[0].sq_ft;
+		var rate=data.Woodwork[0].Doors[0].MainTeakwood[0].Material[0].rate;
+		
+		var totalVal2=(parseInt($("#landArea").val()));
+		var MainTeakWoodArea =(totalVal2*sq_ft).toFixed(2);
+		var MainTeakWoodMat=Math.ceil(MainTeakWoodArea*rate);
+			$("#MainWindowMat").text(MainTeakWoodArea);
+			$("#MainWindowRate").text(rate);
+			$("#MainWindowMatPrice").text(MainTeakWoodMat);
+			
+			var sq_ft=data.Woodwork[0].Doors[0].MainTeakwood[0].Labour[0].sq_ft;
+			var rate=data.Woodwork[0].Doors[0].MainTeakwood[0].Labour[0].rate;
+			var totalVal2=(parseInt($("#landArea").val()));
+			//var totalVal2=(parseInt(totalVal-200));
+			var MainTeakWoodArea =(totalVal2*sq_ft).toFixed(2);
+			var MainTeakWoodlab=Math.ceil(MainTeakWoodArea*rate);
+			$("#MainWindowLabour").text(MainTeakWoodArea);
+			$("#MainWindowRateLabour").text(rate);
+			$("#MainWindowLabourPrice").text(MainTeakWoodlab);
+			
+			var MaintotWindowPrice = MainTeakWoodlab+MainTeakWoodMat;
+			$("#MaintotWindowPrice").text(MaintotWindowPrice);
+			return MaintotWindowPrice;
+	}
+	function calGrills()
+	{
+		var square_ft = data.Woodwork[0].Grills[0].MS_Grill[0].Material[0].sq_ft;;
+			var rate = data.Woodwork[0].Grills[0].MS_Grill[0].Material[0].rate;
+			var totalVal2=(parseInt($("#landArea").val()));
+			//var totalVal2=(parseInt(totalVal-200));
+			var MS_GrillArea =(totalVal2*square_ft).toFixed(2);
+			var MS_GrillMat=Math.ceil(MS_GrillArea*rate);
+			$("#WindowMatMS_Grill").text(MS_GrillArea);
+			$("#WindowRateMS_Grill").text(rate);
+			$("#WindowMatPriceMS_Grill").text(MS_GrillMat);
+			
+			
+			var square_ft = data.Woodwork[0].Grills[0].MS_Grill[0].Labour[0].sq_ft;
+			var rate = data.Woodwork[0].Grills[0].MS_Grill[0].Labour[0].rate;
+			var totalVal2=(parseInt($("#landArea").val()));
+			//var totalVal2=(parseInt(totalVal-200));
+			var MS_GrillArea =(totalVal2*square_ft).toFixed(2);
+			var MS_Grilllab=Math.ceil(MS_GrillArea*rate);
+			$("#WindowLabourMS_Grill").text(MS_GrillArea);
+			$("#WindowRateLabourMS_Grill").text(rate);
+			$("#WindowLabourPriceMS_Grill").text(MS_Grilllab);
+			
+			var totWindowPriceMS_Grill = MS_Grilllab+MS_GrillMat;
+			$("#totWindowPriceMS_Grill").text(totWindowPriceMS_Grill);
+			return totWindowPriceMS_Grill;
+			
+	}
 	function calWoodWorkWindows()
 	{
 		var value=$("#radioBtnWindows").find(".active").attr("value");
+		
+		
+
 		if(value == 1)
 		{
 			//var square_ft=data.Woodwork[0].Doors[0].Teakwood[0].Material[0].sq_ft;
@@ -1619,8 +1718,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].Teakwood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var TeakWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var TeakWoodMat=TeakWoodArea*rate;
+			var TeakWoodArea =(totalVal2*square_ft).toFixed(2);
+			var TeakWoodMat=Math.ceil(TeakWoodArea*rate);
 			$("#WindowMat").text(TeakWoodArea);
 			$("#WindowRate").text(rate);
 			$("#WindowMatPrice").text(TeakWoodMat);
@@ -1630,8 +1729,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].Teakwood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var TeakWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var TeakWoodlab=TeakWoodArea*rate;
+			var TeakWoodArea =(totalVal2*square_ft).toFixed(2);
+			var TeakWoodlab=Math.ceil(TeakWoodArea*rate);
 			$("#WindowLabour").text(TeakWoodArea);
 			$("#WindowRateLabour").text(rate);
 			$("#WindowLabourPrice").text(TeakWoodlab);
@@ -1647,8 +1746,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].HonneWood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var HonneWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var HonneWoodMat=HonneWoodArea*rate;
+			var HonneWoodArea =(totalVal2*square_ft).toFixed(2);
+			var HonneWoodMat=Math.ceil(HonneWoodArea*rate);
 			$("#WindowMat").text(HonneWoodArea);
 			$("#WindowRate").text(rate);
 			$("#WindowMatPrice").text(HonneWoodMat);
@@ -1658,8 +1757,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].HonneWood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var HonneWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var HonneWoodlab=HonneWoodArea*rate;
+			var HonneWoodArea =(totalVal2*square_ft).toFixed(2);
+			var HonneWoodlab=Math.ceil(HonneWoodArea*rate);
 			$("#WindowLabour").text(HonneWoodArea);
 			$("#WindowRateLabour").text(rate);
 			$("#WindowLabourPrice").text(HonneWoodlab);
@@ -1675,8 +1774,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].SalWood[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var SalWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var SalWoodMat=SalWoodArea*rate;
+			var SalWoodArea =(totalVal2*square_ft).toFixed(2);
+			var SalWoodMat=Math.ceil(SalWoodArea*rate);
 			$("#WindowMat").text(SalWoodArea);
 			$("#WindowRate").text(rate);
 			$("#WindowMatPrice").text(SalWoodMat);
@@ -1686,8 +1785,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].SalWood[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var SalWoodArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var SalWoodlab=SalWoodArea*rate;
+			var SalWoodArea =(totalVal2*square_ft).toFixed(2);
+			var SalWoodlab=Math.ceil(SalWoodArea*rate);
 			$("#WindowLabour").text(SalWoodArea);
 			$("#WindowRateLabour").text(rate);
 			$("#WindowLabourPrice").text(SalWoodlab);
@@ -1702,8 +1801,8 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].UPVC[0].Material[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var UPVCArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var UPVCMat=UPVCArea*rate;
+			var UPVCArea = (totalVal2*square_ft).toFixed(2);
+			var UPVCMat=Math.ceil(UPVCArea*rate);
 			$("#WindowMat").text(UPVCArea);
 			$("#WindowRate").text(rate);
 			$("#WindowMatPrice").text(UPVCMat);
@@ -1713,13 +1812,42 @@ $( document ).ready(function() {
 			var rate = data.Woodwork[0].Windows[0].UPVC[0].Labour[0].rate;
 			var totalVal2=(parseInt($("#landArea").val()));
 			//var totalVal2=(parseInt(totalVal-200));
-			var UPVCArea =Math.ceil(parseInt(totalVal2*square_ft));
-			var UPVClab=SalWoodArea*rate;
+			var UPVCArea =(totalVal2*square_ft).toFixed(2);
+			var UPVClab=Math.ceil(UPVCArea*rate);
 			$("#WindowLabour").text(UPVCArea);
 			$("#WindowRateLabour").text(rate);
 			$("#WindowLabourPrice").text(UPVClab);
 			
 			var totWindowPrice = UPVClab+UPVCMat;
+			$("#totWindowPrice").text(totWindowPrice);
+			return totWindowPrice;
+			
+		}
+		else if(value == 5)
+		{ 
+			$("#WindowName").text("AluminumumWindows");
+			var square_ft = data.Woodwork[0].Windows[0].Aluminumum[0].Material[0].sq_ft;;
+			var rate = data.Woodwork[0].Windows[0].Aluminumum[0].Material[0].rate;
+			var totalVal2=(parseInt($("#landArea").val()));
+			//var totalVal2=(parseInt(totalVal-200));
+			var AluminumumArea = (totalVal2*square_ft).toFixed(2);
+			var AluminumumMat=Math.ceil(AluminumumArea*rate);
+			$("#WindowMat").text(AluminumumArea);
+			$("#WindowRate").text(rate);
+			$("#WindowMatPrice").text(AluminumumMat);
+			
+			
+			var square_ft = data.Woodwork[0].Windows[0].Aluminumum[0].Labour[0].sq_ft;
+			var rate = data.Woodwork[0].Windows[0].Aluminumum[0].Labour[0].rate;
+			var totalVal2=(parseInt($("#landArea").val()));
+			//var totalVal2=(parseInt(totalVal-200));
+			var AluminumumArea =(totalVal2*square_ft).toFixed(2);
+			var Aluminumumlab=Math.ceil(AluminumumArea*rate);
+			$("#WindowLabour").text(AluminumumArea);
+			$("#WindowRateLabour").text(rate);
+			$("#WindowLabourPrice").text(Aluminumumlab);
+			
+			var totWindowPrice = Aluminumumlab+AluminumumMat;
 			$("#totWindowPrice").text(totWindowPrice);
 			return totWindowPrice;
 			
@@ -1732,8 +1860,8 @@ $( document ).ready(function() {
 		var square_ft=data.Tiling[0].Kitchen[0].Tiles[0].sq_ft;
 		var rate = data.Tiling[0].Kitchen[0].Tiles[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var TilesCost =  Math.ceil(totalVal2 * square_ft);
-		var totTilesCost = TilesCost*rate;
+		var TilesCost =  (totalVal2 * square_ft).toFixed(2);
+		var totTilesCost = Math.ceil(TilesCost*rate);
 		$("#TilesCost").text(TilesCost+" sq_ft @");
 		$("#Tilesrate").text(rate+" per unit");
 		$("#TotTilesCost").text(totTilesCost);
@@ -1741,8 +1869,8 @@ $( document ).ready(function() {
 		var square_ft=data.Tiling[0].Kitchen[0].Material[0].sq_ft;
 		var rate = data.Tiling[0].Kitchen[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var MaterialCost =  Math.ceil(totalVal2 * square_ft);
-		var totMaterialCost = MaterialCost*rate;
+		var MaterialCost = (totalVal2 * square_ft).toFixed(2);
+		var totMaterialCost = Math.ceil(MaterialCost*rate);
 		$("#MaterialCost").text(MaterialCost+" sq_ft @");
 		$("#Materialrate").text(rate+" per unit");
 		$("#TotMaterialCost").text(totMaterialCost);
@@ -1750,8 +1878,8 @@ $( document ).ready(function() {
 		var square_ft=data.Tiling[0].Kitchen[0].Labour[0].sq_ft;
 		var rate = data.Tiling[0].Kitchen[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var LabourCost =  Math.ceil(totalVal2 * square_ft);
-		var totLabourCost = LabourCost*rate;
+		var LabourCost =  (totalVal2 * square_ft).toFixed(2);
+		var totLabourCost = Math.ceil(LabourCost*rate);
 		$("#LabourCost").text(LabourCost+" sq_ft @");
 		$("#Labourrate").text(rate+" per unit");
 		$("#TotLabourCost").text(totLabourCost);
@@ -1767,8 +1895,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Toilet[0].Tiles[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		////alert(totalVal2);
-		var TilesCost =  Math.ceil(totalVal2 * square_ft);
-		var totTilesCost = TilesCost*rate;
+		var TilesCost =  (totalVal2 * square_ft).toFixed(2);
+		var totTilesCost = Math.ceil(TilesCost*rate);
 		$("#TilesCostToilet").text(TilesCost+" sq_ft @");
 		$("#TilesrateToilet").text(rate+" per unit");
 		$("#TotTilesCostToilet").text(totTilesCost);
@@ -1777,8 +1905,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Toilet[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		////alert(totalVal2);
-		var MaterialCost =  Math.ceil(totalVal2 * square_ft);
-		var totMaterialCost = MaterialCost*rate;
+		var MaterialCost = (totalVal2 * square_ft).toFixed(2);
+		var totMaterialCost = Math.ceil(MaterialCost*rate);
 		$("#MaterialCostToilet").text(MaterialCost+" sq_ft @");
 		$("#MaterialrateToilet").text(rate+" per unit");
 		$("#TotMaterialCostToilet").text(totMaterialCost);
@@ -1787,8 +1915,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Toilet[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		////alert(totalVal2);
-		var LabourCost =  Math.ceil(totalVal2 * square_ft);
-		var totLabourCost = LabourCost*rate;
+		var LabourCost =  (totalVal2 * square_ft).toFixed(2);
+		var totLabourCost = Math.ceil(LabourCost*rate);
 		$("#LabourCostToilet").text(LabourCost+" sq_ft @");
 		$("#LabourrateToilet").text(rate+" per unit");
 		$("#TotLabourCostToilet").text(totLabourCost);
@@ -1804,8 +1932,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Bathroom[0].Tiles[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		////alert(totalVal2);
-		var TilesCost =  Math.ceil(totalVal2 * square_ft);
-		var totTilesCost = TilesCost*rate;
+		var TilesCost =  (totalVal2 * square_ft).toFixed(2);
+		var totTilesCost = Math.ceil(TilesCost*rate);
 		$("#TilesCostBathroom").text(TilesCost+" sq_ft @");
 		$("#TilesrateBathroom").text(rate+" per unit");
 		$("#TotTilesCostBathroom").text(totTilesCost);
@@ -1814,8 +1942,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Bathroom[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		////alert(totalVal2);
-		var MaterialCost =  Math.ceil(totalVal2 * square_ft);
-		var totMaterialCost = MaterialCost*rate;
+		var MaterialCost =  (totalVal2 * square_ft).toFixed(2);
+		var totMaterialCost = Math.ceil(MaterialCost*rate);
 		$("#MaterialCostBathroom").text(MaterialCost+" sq_ft @");
 		$("#MaterialrateBathroom").text(rate+" per unit");
 		$("#TotMaterialCostBathroom").text(totMaterialCost);
@@ -1824,8 +1952,8 @@ $( document ).ready(function() {
 		var rate = data.Tiling[0].Bathroom[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
 		//alert(totalVal2);
-		var LabourCost =  Math.ceil(totalVal2 * square_ft);
-		var totLabourCost = LabourCost*rate;
+		var LabourCost = (totalVal2 * square_ft).toFixed(2);
+		var totLabourCost = Math.ceil(LabourCost*rate);
 		$("#LabourCostBathroom").text(LabourCost+" sq_ft @");
 		$("#LabourrateBathroom").text(rate+" per unit");
 		$("#TotLabourCostBathroom").text(totLabourCost);
@@ -1837,12 +1965,16 @@ $( document ).ready(function() {
 	}
 	
 	function calExteriorPainting()
+	{	
+	var value=$("#radioBtnPaint").find(".active").attr("value");
+	if(value == 1)
 	{
+		
 		var square_ft=data.Painting[0].ExteriorWalls[0].Basic[0].Material[0].sq_ft;
 		var rate = data.Painting[0].ExteriorWalls[0].Basic[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var extPaintcost = totalVal2 * square_ft;
-		var totextPaintcost = extPaintcost *rate;
+		var extPaintcost = (totalVal2 * square_ft).toFixed(2);
+		var totextPaintcost = Math.ceil(extPaintcost *rate);
 		$("#extPaintcost").text(extPaintcost);
 		$("#extPaintRate").text(rate);
 		$("#totextPaintcost").text(totextPaintcost);
@@ -1851,8 +1983,8 @@ $( document ).ready(function() {
 		var square_ft=data.Painting[0].ExteriorWalls[0].Basic[0].Labour[0].sq_ft;
 		var rate = data.Painting[0].ExteriorWalls[0].Basic[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var extPaintcostLabour = totalVal2 * square_ft;
-		var totextPaintcostLabour = extPaintcostLabour *rate;
+		var extPaintcostLabour = (totalVal2 * square_ft).toFixed(2);
+		var totextPaintcostLabour = Math.ceil(extPaintcostLabour *rate);
 		$("#extPaintcostLabour").text(extPaintcostLabour);
 		$("#extPaintRateLabour").text(rate);
 		$("#totextPaintcostLabour").text(totextPaintcostLabour);
@@ -1860,16 +1992,44 @@ $( document ).ready(function() {
 		var totIntPaint =totextPaintcostLabour+totextPaintcost;
 		$("#totIntPaint").text(totIntPaint);
 		return totIntPaint;
+		}else if(value == 2)
+		{
+			var square_ft=data.Painting[0].ExteriorWalls[0].Premium[0].Material[0].sq_ft;
+		var rate = data.Painting[0].ExteriorWalls[0].Premium[0].Material[0].rate;
+		var totalVal2=(parseInt($("#landArea").val()));
+		var PremiumextPaintcost = (totalVal2 * square_ft).toFixed(2);
+		var PremiumtotextPaintcost = Math.ceil(PremiumextPaintcost *rate);
+		$("#extPaintcost").text(PremiumextPaintcost);
+		$("#extPaintRate").text(rate);
+		$("#totextPaintcost").text(PremiumtotextPaintcost);
+		
+		
+		var square_ft=data.Painting[0].ExteriorWalls[0].Premium[0].Labour[0].sq_ft;
+		var rate = data.Painting[0].ExteriorWalls[0].Premium[0].Labour[0].rate;
+		var totalVal2=(parseInt($("#landArea").val()));
+		var PremiumextPaintcostLabour = (totalVal2 * square_ft).toFixed(2);
+		var PremiumtotextPaintcostLabour = Math.ceil(PremiumextPaintcostLabour *rate);
+		$("#extPaintcostLabour").text(PremiumextPaintcostLabour);
+		$("#extPaintRateLabour").text(rate);
+		$("#totextPaintcostLabour").text(PremiumtotextPaintcostLabour);
+		
+		var totIntPaint =PremiumtotextPaintcostLabour+PremiumtotextPaintcost;
+		$("#totIntPaint").text(totIntPaint);
+		return totIntPaint;
 		}
+	}
 	
 	
 	function calInteriorPainting()
 	{
+		var value=$("#radioBtnPaint").find(".active").attr("value");
+		if(value == 1)
+	{
 		var square_ft=data.Painting[0].InteriorWalls[0].Basic[0].Material[0].sq_ft;
 		var rate = data.Painting[0].InteriorWalls[0].Basic[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var intPaintcost = totalVal2 * square_ft;
-		var totintPaintcost = intPaintcost *rate;
+		var intPaintcost = (totalVal2 * square_ft).toFixed(2);
+		var totintPaintcost = Math.ceil(intPaintcost *rate);
 		$("#intPaintcost").text(intPaintcost);
 		$("#intPaintRate").text(rate);
 		$("#totintPaintcost").text(totintPaintcost);
@@ -1878,8 +2038,8 @@ $( document ).ready(function() {
 		var square_ft=data.Painting[0].InteriorWalls[0].Basic[0].Labour[0].sq_ft;
 		var rate = data.Painting[0].InteriorWalls[0].Basic[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var intPaintcostLabour = totalVal2 * square_ft;
-		var totintPaintcostLabour = intPaintcostLabour *rate;
+		var intPaintcostLabour = (totalVal2 * square_ft).toFixed(2);
+		var totintPaintcostLabour = Math.ceil(intPaintcostLabour *rate);
 		$("#intPaintcostLabour").text(intPaintcostLabour);
 		$("#intPaintRateLabour").text(rate);
 		$("#totintPaintcostLabour").text(totintPaintcostLabour);
@@ -1887,15 +2047,40 @@ $( document ).ready(function() {
 		var totIntPaint =totintPaintcostLabour+totintPaintcost;
 		$("#totInttotIntPaintPaint").text(totIntPaint);
 		return totIntPaint;
+		}else if(value == 2)
+		{
+		var square_ft=data.Painting[0].InteriorWalls[0].Premium[0].Material[0].sq_ft;
+		var rate = data.Painting[0].InteriorWalls[0].Premium[0].Material[0].rate;
+		var totalVal2=(parseInt($("#landArea").val()));
+		var PremiumintPaintcost = (totalVal2 * square_ft).toFixed(2);
+		var PremiumtotintPaintcost = Math.ceil(PremiumintPaintcost *rate);
+		$("#intPaintcost").text(PremiumintPaintcost);
+		$("#intPaintRate").text(rate);
+		$("#totintPaintcost").text(PremiumtotintPaintcost);
+		
+		
+		var square_ft=data.Painting[0].InteriorWalls[0].Premium[0].Labour[0].sq_ft;
+		var rate = data.Painting[0].InteriorWalls[0].Premium[0].Labour[0].rate;
+		var totalVal2=(parseInt($("#landArea").val()));
+		var PremiumintPaintcostLabour = (totalVal2 * square_ft).toFixed(2);
+		var PremiumtotintPaintcostLabour = Math.ceil(PremiumintPaintcostLabour *rate);
+		$("#intPaintcostLabour").text(PremiumintPaintcostLabour);
+		$("#intPaintRateLabour").text(rate);
+		$("#totintPaintcostLabour").text(PremiumtotintPaintcostLabour);
+		
+		var totIntPaint =PremiumtotintPaintcostLabour+PremiumtotintPaintcost;
+		$("#totInttotIntPaintPaint").text(totIntPaint);
+		return totIntPaint;
 		}
+	}
 	
 	function calPlasteringCeiling()
 	{
 		var cubic_ft=data.Plastering[0].Ceiling[0].Material[0].cubic_ft;
 		var rate = data.Plastering[0].Ceiling[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringCeiling = totalVal2*cubic_ft;
-		var totPlasterCeiling =PlasteringCeiling * rate;
+		var PlasteringCeiling = (totalVal2*cubic_ft).toFixed(2);
+		var totPlasterCeiling =Math.ceil(PlasteringCeiling * rate);
 		$("#PlasteringCeiling").text(PlasteringCeiling);
 		$("#PlasteringRate").text(rate);
 		$("#totPlasterCeiling").text(totPlasterCeiling);
@@ -1903,8 +2088,8 @@ $( document ).ready(function() {
 		var cubic_ft=data.Plastering[0].Ceiling[0].Labour[0].cubic_ft;
 		var rate = data.Plastering[0].Ceiling[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringCeilingLabour = totalVal2*cubic_ft;
-		var totPlasterCeilingLabour =PlasteringCeilingLabour * rate;
+		var PlasteringCeilingLabour = (totalVal2*cubic_ft).toFixed(2);
+		var totPlasterCeilingLabour =Math.ceil(PlasteringCeilingLabour * rate);
 		$("#PlasteringCeilingLabour").text(PlasteringCeilingLabour);
 		$("#PlasteringRateLabour").text(rate);
 		$("#totPlasterCeilingLabour").text(totPlasterCeilingLabour);
@@ -1919,8 +2104,8 @@ $( document ).ready(function() {
 		var cubic_ft=data.Plastering[0].InternalWall[0].Material[0].cubic_ft;
 		var rate = data.Plastering[0].InternalWall[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringInternalWall = totalVal2*cubic_ft;
-		var totPlasterInternalWall =PlasteringInternalWall * rate;
+		var PlasteringInternalWall = (totalVal2*cubic_ft).toFixed(2);
+		var totPlasterInternalWall =Math.ceil(PlasteringInternalWall * rate);
 		$("#PlasteringInternalWall").text(PlasteringInternalWall);
 		$("#PlasteringRateInternalWall").text(rate);
 		$("#totPlasterInternalWall").text(totPlasterInternalWall);
@@ -1928,8 +2113,8 @@ $( document ).ready(function() {
 		var cubic_ft=data.Plastering[0].InternalWall[0].Labour[0].cubic_mt;
 		var rate = data.Plastering[0].InternalWall[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringInternalWallLabour = totalVal2*cubic_ft;
-		var totPlasterInternalWallLabour =PlasteringInternalWallLabour * rate;
+		var PlasteringInternalWallLabour =(totalVal2*cubic_ft).toFixed(2);
+		var totPlasterInternalWallLabour =Math.ceil(PlasteringInternalWallLabour * rate);
 		$("#PlasteringInternalWallLabour").text(PlasteringInternalWallLabour);
 		$("#PlasteringRateLabourInternalWall").text(rate);
 		$("#totPlasterInternalWallLabour").text(totPlasterInternalWallLabour);
@@ -1944,8 +2129,8 @@ $( document ).ready(function() {
 		var cubic_ft=data.Plastering[0].ExternalSurfaces[0].Material[0].cubic_ft;
 		var rate = data.Plastering[0].ExternalSurfaces[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringExternalSurfaces = totalVal2*cubic_ft;
-		var totPlasterExternalSurfaces =PlasteringExternalSurfaces * rate;
+		var PlasteringExternalSurfaces = (totalVal2*cubic_ft).toFixed(2);
+		var totPlasterExternalSurfaces =Math.ceil(PlasteringExternalSurfaces * rate);
 		$("#PlasteringExternalSurfaces").text(PlasteringExternalSurfaces);
 		$("#PlasteringRateExternalSurfaces").text(rate);
 		$("#totPlasterExternalSurfaces").text(totPlasterExternalSurfaces);
@@ -1953,8 +2138,8 @@ $( document ).ready(function() {
 		var cubic_ft=data.Plastering[0].ExternalSurfaces[0].Labour[0].cubic_mt;
 		var rate = data.Plastering[0].ExternalSurfaces[0].Labour[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var PlasteringExternalSurfacesLabour = totalVal2*cubic_ft;
-		var totPlasterExternalSurfacesLabour =PlasteringExternalSurfacesLabour * rate;
+		var PlasteringExternalSurfacesLabour = (totalVal2*cubic_ft).toFixed(2);
+		var totPlasterExternalSurfacesLabour =Math.ceil(PlasteringExternalSurfacesLabour * rate);
 		$("#PlasteringExternalSurfacesLabour").text(PlasteringExternalSurfacesLabour);
 		$("#PlasteringRateLabourExternalSurfaces").text(rate);
 		$("#totPlasterExternalSurfacesLabour").text(totPlasterExternalSurfacesLabour);
@@ -1970,8 +2155,8 @@ $( document ).ready(function() {
 		var square_ft=data.Miscellaneous[0].Electrification[0].Material[0].sq_ft;
 		var rate = data.Miscellaneous[0].Electrification[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var Electricneeds = totalVal2*square_ft;
-		var totElectricneeds =Electricneeds*rate;
+		var Electricneeds = (totalVal2*square_ft).toFixed(2);
+		var totElectricneeds =Math.ceil(Electricneeds*rate);
 		$("#Electricneeds").text(Electricneeds);
 		$("#ElelctricRate").text(rate);
 		$("#totElectricneeds").text(totElectricneeds);
@@ -1984,8 +2169,8 @@ $( document ).ready(function() {
 		var square_ft=data.Miscellaneous[0].Sanitary[0].Material[0].sq_ft;
 		var rate = data.Miscellaneous[0].Sanitary[0].Material[0].rate;
 		var totalVal2=(parseInt($("#landArea").val()));
-		var Sanitaryneeds = totalVal2*square_ft;
-		var totSanitaryneeds =Sanitaryneeds*rate;
+		var Sanitaryneeds = (totalVal2*square_ft).toFixed(2);
+		var totSanitaryneeds =Math.ceil(Sanitaryneeds*rate);
 		$("#Sanitaryneeds").text(Sanitaryneeds);
 		$("#SanitaryRate").text(rate);
 		$("#totSanitaryneeds").text(totSanitaryneeds);
@@ -2038,6 +2223,8 @@ $( document ).ready(function() {
 	{
 		var WoodWorkDoors = calWoodWorkDoors();
 		var WoodWorkWindows=calWoodWorkWindows();
+		var MainWoodWork=calMainWoodWork();
+		var Grills= calGrills();
 	}
 	function callWallTiles()
 	{
