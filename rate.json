@@ -610,25 +610,40 @@ data ={
 				],
 				"UPVC":[
 					{
-						"Materialpluslabour":[
+						"Material":[
 							{
 								"sq_ft":"0.3",
-								"rate":"800"
+								"rate":"600"
+							}
+						],
+						"Labour":[
+							{
+								"sq_ft":"0.3",
+								"rate":"200"
 							}
 						]
 					}
-				],
+				]
+			}
+		],
+		"Grills": [
+			{
 				"MS_Grill":[
 					{
-						"Materialpluslabour":[
+						"Material":[
 							{
-								"sq_ft":"250",
-								"rate":"190"
+								"sq_ft":"0.25",
+								"rate":"120"
+							}
+						],
+						"Labour":[
+							{
+								"sq_ft":"0.25",
+								"rate":"70"
 							}
 						]
 					}
-				],
-				
+				]
 			}
 		]
 	}

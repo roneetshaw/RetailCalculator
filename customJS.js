@@ -594,7 +594,7 @@ $( document ).ready(function() {
 	
 	$("#calcost").on('click',function(){
 		var textVal=parseInt($("#landAreatext").val());
-		var totalVal1=parseInt(textVal-(textVal*.17));
+		var totalVal1=parseInt(textVal-(textVal*0.17));
 		$("#landArea").val(totalVal1);
 		calFoundation();
 		calSteel();
