@@ -626,9 +626,9 @@
 								<div class="input-group">
 									<div id="radioBtnDoors" class="btn-group">
 										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10"value = "2">HonneWood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11"value = "3">SalWood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12"value = "4">OSTDoors</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="10" value = "2">HonneWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11" value = "3">SalWood</a>
+										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12" value = "4">OSTDoors</a>
 										
 									</div>
 									<input type="hidden" name="DoorVal" id="DoorVal">
@@ -1610,9 +1610,9 @@
 																	
                                     </div>                                
 									<!-- Wall construction_value panel body Ends-->
-								</div>
+							</div>
 								
-                            </div>
+                            
 							<!-- accordion 5 END -->
                             
 							<!-- Flooring -->
@@ -1873,12 +1873,46 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <!-- wood panel body -->
                                 <div id="wood" class="panel-collapse collapse in">
                                     <div class="panel-body" style="padding:15px">
-                                        <div class="table_titile">Doors</div>
+										<div class="table_titile">Doors (Main door and Puja Room)</div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th class="titem">Item</th>
+                                                    <th class="tquantity">Quantity</th>
+                                                    <th class="tprice">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Teakwood Door</td>
+                                                 </tr> 
+												  <tr>	
+													<td>Material</td>											  
+                                                    <td><span class="roomd" id="MainMaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="MainMaterialrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMainMaterialCost"></span></td>
+                                                </tr>
+												<tr>	
+													<td >Labour</td>											  
+                                                    <td><span class="roomd" id="MainLabourDoor"></span> ft @ ₹ <span class="wroomdp" id="MainLabourrate"></span> per unit</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMainLabourCost"></span></td>
+                                                </tr>
+                                                
+
+                                            </tbody>
+                                            <tfoot class="c_dotted">
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total Price</td>
+                                                    <td><span id="estpad">&#8377;</span><span class="roomdp" id="totDoorPrice">56550</span></td>
+                                                </tr>
+                                            </tfoot>
+
+										</table>
+                                        <div class="table_titile">Doors (Other doors)</div>
                                         <table class="table table-borderless">
                                             <thead>
                                                 <tr>
@@ -1893,12 +1927,12 @@
                                                  </tr> 
 												  <tr>	
 													<td id="Material">Material</td>											  
-                                                    <td><span class="roomd" id="MaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="Materialrate"></span> per unit</td>
+                                                    <td><span class="roomd" id="MaterialDoor"></span> ft @ ₹ <span class="wroomdp" id="WoodMaterialrate"></span> per unit</td>
                                                     <td><span id="estpad">&#8377;</span><span class="roomdp" id="totMaterialCost"></span></td>
                                                 </tr>
 												<tr id="labour">	
 													<td >Labour</td>											  
-                                                    <td><span class="roomd" id="LabourDoor"></span> ft @ ₹ <span class="wroomdp" id="Labourrate"></span> per unit</td>
+                                                    <td><span class="roomd" id="LabourDoor"></span> ft @ ₹ <span class="wroomdp" id="WoodLabourrate"></span> per unit</td>
                                                     <td><span id="estpad">&#8377;</span><span class="roomdp" id="totLabourCost"></span></td>
                                                 </tr>
                                                 
@@ -2311,7 +2345,7 @@
                                 <!-- electrical & Plumbing end -->
                             </div>
                             
-                            
+                        </div>    
                         </div>
                         <p style="padding:10px"><strong>Note:</strong><span class="requireds">*</span> <b>This </i>construction cost estimation</i> is only an approximation of the most common project needs. Actual costs may vary depending on exact requirements.</b> </p>
                     </div>

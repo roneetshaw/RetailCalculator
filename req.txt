@@ -33,3 +33,10 @@ req_2
 req_3
 1. Flooring add  an option Premium Marble + Wooden
 2. Doors Honnewood, SalWood, Plywood, TeakWood
+
+Not working
+------------
+1. windows not working properly.
+2. MS_GRILL not included in windows
+3. UPVC not divided.
+4.	Decimals need to be truncated
