@@ -16,6 +16,11 @@
     <link href="bootstrap.css?v=0" rel="stylesheet" />
 	<link href="customCSS.css?v=0" rel="stylesheet" />
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<style>
+		a {
+			cursor: pointer;
+		}
+	</style>
 
 </head>
 
@@ -27,18 +32,43 @@
                     <div class="form-pricing">
 							<div class="row">
 							<div class="col-sm-12">
-								<div class="price-slider">
-								<h4 class="great">LAND AREA</h4>
+							<div class="price-slider">
+								<h4 class="great" id="siteLabel">SITE AREA</h4>
+								<label class="radio-inline">
+								  <input type="radio" name="optradio" value="1" id="siteArea">SITE AREA
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="optradio" value="2" id="siteDimension">SITE DIMENSION
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="optradio" value="3" id="sqFT">SQ. FT.
+								</label>
 								<div class="row">
 										<div class="col-sm-3">
-											<div style="width:250px">
-												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">
-												<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
-											</div>                            
-									</div> 
+											<div style="width:250px" style="display:none" id="landTextBox">
+												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">									
+											</div> 
+											<div class="dropdown" style="display:none" id="dwnSiteDimension" >
+											<button class="btn btn-default dropdown-toggle" style="width:250px" id="siteDimText" type="button" data-toggle="dropdown">Select Dimensions
+												<span class="caret"></span></button>
+											<ul class="dropdown-menu" style="width:250px" id="dwnSiteDimUl">
+												<li><a value="600">20x30</a></li>
+												<li><a value="800">20x40</a></li>
+											</ul>
+											</div>
+											<div class="dropdown" style="display:none" id="dwnSqFT">
+												<button class="btn btn-default dropdown-toggle"  style="width:250px" id="sitesqftText" type="button" data-toggle="dropdown">Select Sq.ft.
+													<span class="caret"></span></button>
+												<ul class="dropdown-menu" style="width:250px" id="dwnsqFtUl">
+													<li><a value="400">400</a></li>
+													<li><a value="500">500</a></li>
+												</ul>
+											</div>
+										</div> 
 										<div class="col-sm-2" style="font-size: x-large;">
 											Sq.Ft.                           
-									</div> 								
+										</div>
+										<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
 								</div>
 							</div>
 								<div class="price-slider">
@@ -574,15 +604,16 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="dropdown">
-											<button class="btn btn-default dropdown-toggle" id="dwnFloortext" style="width:330px" type="button" data-toggle="dropdown">Select
+											<button class="btn btn-default dropdown-toggle" id="dwnFloortext" style="width:330px" type="button" data-toggle="dropdown">Select Floors
 												<span class="caret"></span></button>
 											<ul class="dropdown-menu" style="width:330px" id="dwnFloorUl">
-												<li><a href="#" value="1">Ground Floor Only</a></li>
-												<li><a href="#" value="2">Ground +1 Floor(G+1)</a></li>
-												<li><a href="#" value="3">Ground +2 Floors(G+2)</a></li>
-												<li><a href="#" value="4">Ground +3 Floors(G+3)</a></li>
-												<li><a href="#" value="5">Ground +3 Floors(G+4)</a></li>
+												<li><a value="1">Ground Floor Only</a></li>
+												<li><a value="2">Ground +1 Floor(G+1)</a></li>
+												<li><a value="3">Ground +2 Floors(G+2)</a></li>
+												<li><a value="4">Ground +3 Floors(G+3)</a></li>
+												<li><a value="5">Ground +4 Floors(G+4)</a></li>
 											</ul>
+											<input type="hidden" value="0" id="floorDropdwnval">
 										</div>
 									</div>
 								</div>
@@ -1549,7 +1580,8 @@
                                 </div>
                             </div>
                             <!-- accordion 4 END -->
-							     <!-- accordion 5 START -->
+							
+							<!-- accordion 5 START -->
                             <div class="panel" >
                                 <div class="panel-heading">
                                     <!-- panel-heading -->
@@ -1575,7 +1607,7 @@
                                 
                                 <div id="Wall_construct" class="panel-collapse collapse in">
 									<!-- wall construction_value panel body Start-->
-                                    
+                                    <div class="panel-body" style="padding:15px">
                                         <div class="table_titile" id="Wall_BrickSize1"></div>
                                         <table class="table table-borderless">
                                             <thead>
@@ -1607,6 +1639,7 @@
                                                 </tr>
                                             </tfoot>
                                         </table>
+										
                                         <div class="table_titile" id="Wall_BrickSize2"></div>
                                         <table class="table table-borderless">
                                             <thead>
@@ -1637,12 +1670,11 @@
                                                 </tr>
                                             </tfoot>
                                         </table>
-																	
-                                    </div>                                
+									</div>								
+                                </div>                                
 									<!-- Wall construction_value panel body Ends-->
 							</div>
-								
-                            
+								                      
 							<!-- accordion 5 END -->
                             
 							<!-- Flooring -->
