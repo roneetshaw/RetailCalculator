@@ -35,9 +35,20 @@ req_3
 2. Doors Honnewood, SalWood, Plywood, TeakWood+
 3. Add Aluminumum option to windows+
 
-Not working
-------------
-1. windows not working properly.+
-2. MS_GRILL not included in windows+
-3. UPVC not divided.+
-4.	Decimals need to be truncated+
+
+Site area
+---------
+
+Instead of having 2 inputs, we will have 3 Inputs for Calculation as given below.
+
+Site Area : _________ SQ FT OR  Site Dimension  _________ OR By SQ . FT  _________
+
+The Details of the Three Inputs given below.
+
+Site Area: Place to enter on sq ft.
+
+or Site Dimension
+20x30, 20x40, 30x40 , 30x50 , 30x60 , 40x40 , 40x50, 40x60 , 40x80, 50x80 , 80x100 , 80x120 , 100x100 100x120 20x60 , 30x20 30x30 , 30x70, 30x80, 40x20 , 40x30 , 40x70 , 40x80 , 40x100 , 50x40 , 50x50 , 50x30 , 50x60 , 50x70 , 50x100 , 50x120 , 60x30 , 60x40 , 60x50 , 60x60 , 60x80 , 60x90 , 60x100 , 60x120 , 70x30 ,70x40 70x50 ,70x80 , 70x100 , 70x120 , 80x30 , 80x40 , 80x50 , 80x60 , 80x80 , 80x90 , 90x30 , 90x40 , 90x50 , 90x60 , 90x80 , 90x100 , 90x120 , 100x30 , 100x40 , 100x50 , 100x60 , 100x80 , 100x90 , 120x100 , 120x80 , 120x60 , 120x40 , 120x120 (next options are for SEO all of them are repeats like 30x40 or 30*40 , I am just removing “x” and adding “*” ) 20*30, 20*40, 30*40 , 30*50 , 30*60 , 40*40 , 40*50, 40*60 , 40*80, 50*80 , 80*100 , 80*120 , 100*100 , 100*120
+
+or by Site sq ft 
+400 sq ft , 500 sq ft , 600 sq ft , 800 sq ft , 900 sq ft , 1000 sq ft , 1100 sq ft, 1150 sq ft, 1200 sq ft , 1250 sq ft , 1350 sq ft , 1400 sq ft , 1450 sq ft, 1500 sq ft , 1550 sq ft, 1600 sq ft , 1650 sq ft , 1700 sq ft , 1800 sq ft , 1850 sq ft , 1900 sq ft , 2000 sq ft , 2100 sq ft , 2150 sq ft , 2200 sq ft ,2250 sq ft , 2300 sq ft , 2350 sq ft ,  2400 sq ft , 2600 sq ft , 2800 sq ft , 3000 sq ft , 3200 sq ft , 3400 sq ft , 3500 sq ft 3600 sq ft , 3800 sq ft , 4000 sq ft , 4200 sq ft , 4400 sq ft , 4500 sq ft , 4600 sq ft , 4800 sq ft , 5000 sq ft , 5200 sq ft , 5400 sq ft , 5500 sq ft , 5600 sq ft , 5800 sq ft , 6000 sq ft , 6200 sq ft , 6400 sq ft , 6600 sq ft , 6800 sq ft , 7000 sq ft , 7200 sq ft 7400 sq ft , 7500 sq ft , 7600 sq ft , 7800 sq ft , 8000 sq ft , 8200 sq ft , 8400 sq ft , 8600 sq ft , 8800 sq ft , 9000 sq ft , 9200 sq ft ,9400 sq ft, 9500 sq ft , 9600 sq ft , 9800 sq ft , 10,000 sq ft , 10,500 sq ft , 11,000 sq ft , 12,000 sq ft , 14,000 sq ft , 15,000 sq ft , 20,000 sq ft 
