@@ -633,18 +633,20 @@ $( document ).ready(function() {
 		else
 		{
 			$("#landArea").val(parseInt($("#floorDropdwnval").val().trim())*totalVal1);
-			calFoundation();
-			calSteel();
-			calLayingBase();
-			calSuperStructure();
-			calSuperStructure_Steel()
-			calFlooring();
-			calWall_construction();
-			calWoodWork();
-			callWallTiles();
-			calPainting();
-			calPlastering();
-			calMiscellaneous();
+			// calFoundation();
+			// calSteel();
+			//calLayingBase();
+			// calSuperStructure();
+			// calSuperStructure_Steel()
+			// calmainFlooring();
+			// //calWall_construction();
+			// calWoodWork();
+			// callWallTiles();
+			// calPainting();
+			// calPlastering();
+			// calMiscellaneous();
+			// Wall_Construction();
+			mainHouse_Cost();
 		}
 	})
 	
@@ -950,6 +952,7 @@ $( document ).ready(function() {
 		
 		var totSuperBeam=totbeamlab+totbeamMat;
 		$("#totSuperBeam").text(totSuperBeam);
+		return totSuperBeam;
 	}
 	function calSuperSlab()
 	{
@@ -1030,6 +1033,7 @@ $( document ).ready(function() {
 		
 		var totSuperChijja=+totChijjaMat + +totChijjaLab;
 		$("#totSuperChijja").text(totSuperChijja);
+		return totSuperChijja;
 		
 	}
 	function calSuperStaircase()
@@ -1362,6 +1366,7 @@ $( document ).ready(function() {
 				var totFour_Cost =totWallFour_Labour+totWallFour_Mat;
 				$("#totFour_Cost").text(totFour_Cost);
 				var tot56 = totFour_Cost+totEight_Cost;
+				var tot56;
 		}
 		else if(value == 3)
 		{
@@ -2216,16 +2221,22 @@ $( document ).ready(function() {
 		// var SteelFooting=calSteelFooting();
 		// var SteelColumn=calSteelColumn();
 		var totFoundation=EarthWork+CuringConcrete+SSM_Foundation+ConcreteFooting+ColumnConcrete+PlinthConcrete;
-		$("#totFoundation").text(totFoundation);
+		$("#totFoundation2").text(totFoundation);
+		return totFoundation;
+		
 	}
 	function calSteel()
 	{
 		var SteelFooting=calSteelFooting();
 		var SteelColumn=calSteelColumn();
 		var SteelPlinth = calSteelPlinth();
+		var totSteel = SteelFooting+SteelColumn+SteelPlinth;
+		$("#totSteel").text(totSteel);
+		return totSteel;
 	}
 	function calSuperStructure()
 	{
+		var LayingBase=calLayingBase();
 		var superColumn=calsuperColumn();
 		var superBeam=calsuperBeam();
 		var superSlab=calSuperSlab();
@@ -2233,6 +2244,9 @@ $( document ).ready(function() {
 		var SuperChijja=calSuperChijja();
 		var SuperStaircase=calSuperStaircase();
 		var SuperStructureGranite_slab= calSuperStructureGranite_slab();
+		var totSuperStructure = superColumn+superBeam+superSlab+SuperLintel+SuperChijja+SuperStaircase+SuperStructureGranite_slab;
+		$("#totSuperStructure").text(totSuperStructure);
+		return totSuperStructure;
 	}
 	
 	function calSuperStructure_Steel()
@@ -2243,6 +2257,9 @@ $( document ).ready(function() {
 		var SuperStructure_steelLintel=calSuperStructure_steelLintel();
 		var SuperStructure_steelChijja = calSuperStructure_steelChijja();
 		var Structure_steelStaircase= calSuperStructure_steelStaircase();
+		var SuperStructure_Steel=SuperStructure_steelColumn+SuperStructure_steelBeam+SuperStructure_steelSlab+SuperStructure_steelLintel+SuperStructure_steelChijja+Structure_steelStaircase;
+		$("#SuperStructure_Steel").text(SuperStructure_Steel);
+		return SuperStructure_Steel;
 		
 	}
 	
@@ -2252,19 +2269,27 @@ $( document ).ready(function() {
 		var WoodWorkWindows=calWoodWorkWindows();
 		var MainWoodWork=calMainWoodWork();
 		var Grills= calGrills();
+		var totWoodWork = WoodWorkDoors+WoodWorkWindows+MainWoodWork+Grills;
+			$("#totWoodWork").text(totWoodWork);
+			return totWoodWork;
 	}
 	function callWallTiles()
 	{
 		var TilesToilet= calTilesToilet();
 		var TilesKitchen=calTilesKitchen();
 		var  TilesBathroom=calTilesBathroom();
+		var WallTiles = TilesToilet+TilesKitchen+TilesBathroom;
+			$("#WallTiles").text(WallTiles);
+			return WallTiles;
+		
 	}
 	function calPainting()
 	{
 		var interior =calInteriorPainting();
 		 var exterior =calExteriorPainting();
 		 var totPainting =interior+exterior;
-		 $("totPainting").text(totPainting);
+		 $("#totPainting").text(totPainting);
+		 return totPainting;
 	}
 	function calPlastering()
 	{
@@ -2273,6 +2298,7 @@ $( document ).ready(function() {
 		 var External=calPlasteringExternalSurfaces();
 		 var totPlastering = ceiling+Internal+External;
 		 $("#totPlastering").text(totPlastering);
+		 return totPlastering;
 	}	
 	function calMiscellaneous()
 	{
@@ -2280,5 +2306,39 @@ $( document ).ready(function() {
 		var plumbing = calMiscellaneousSanitary();
 		var totMisc =electricity+plumbing;
 		$("#totMisc").text(totMisc);
+		return totMisc;
 	}
+	function calmainFlooring()
+	{
+		var Flooring =calFlooring();
+		$("#Flooring").text(Flooring);
+		return Flooring;
+	}
+	function Wall_Construction()
+	{
+		var totWallconstruct=calWall_construction();
+		$("#totWallconstruct").text(totWallconstruct);
+		return totWallconstruct;
+	}
+	function mainHouse_Cost()
+	{
+		var wallconstruction = Wall_Construction();
+		var flooring = calmainFlooring();
+		var misc = calMiscellaneous();
+		var Plastering = calPlastering();
+		var paint = calPainting();
+		var tiles = callWallTiles();
+		var wood = calWoodWork();
+		var supersteel = calSuperStructure_Steel();
+		var superstructure = calSuperStructure();
+		var  steelnorm = calSteel();
+		var foundation =  calFoundation();
+		var tothomecost = wallconstruction+flooring+misc+Plastering+paint+tiles+wood+supersteel+superstructure+steelnorm+foundation;
+		$("#tothomecost").text(tothomecost);
+		  
+		 
+		
+	}
+	
+		
 });
