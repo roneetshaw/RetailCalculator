@@ -633,19 +633,6 @@ $( document ).ready(function() {
 		else
 		{
 			$("#landArea").val(parseInt($("#floorDropdwnval").val().trim())*totalVal1);
-			// calFoundation();
-			// calSteel();
-			//calLayingBase();
-			// calSuperStructure();
-			// calSuperStructure_Steel()
-			// calmainFlooring();
-			// //calWall_construction();
-			// calWoodWork();
-			// callWallTiles();
-			// calPainting();
-			// calPlastering();
-			// calMiscellaneous();
-			// Wall_Construction();
 			mainHouse_Cost();
 		}
 	})
@@ -2305,7 +2292,8 @@ $( document ).ready(function() {
 		var electricity = calMiscellaneousElectrification();
 		var plumbing = calMiscellaneousSanitary();
 		var totMisc =electricity+plumbing;
-		$("#totMisc").text(totMisc);
+		$("#totplumb").text(totMisc);
+		//alert(totMisc);
 		return totMisc;
 	}
 	function calmainFlooring()
