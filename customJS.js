@@ -1,3 +1,11 @@
+$( window ).load(function() {
+  // alert("loaded")
+   $("#dwnFloorUl li:nth-child(1)").click();
+   $("#dwnCity li:nth-child(1)").click();
+   $("#landAreatext").val("1200");
+   $("#calcost").click();
+});
+
 $( document ).ready(function() {
 	$('#siteArea').attr("checked", "checked");
 	$("input[name='optradio']").click(function() {
@@ -22,9 +30,7 @@ $( document ).ready(function() {
 			$("#dwnSqFT").show();
 		}
 	});
-	$("#dwnFloorUl li").on('click',function(){
-		$("#floorDropdwnval").val($(this).find("a").attr("value").trim());
-	})
+
 	$('#radioBtnBHK a').on('click', function(){
     var sel = $(this).data('title');
 		var tog = $(this).data('toggle');
@@ -616,12 +622,15 @@ $( document ).ready(function() {
 	})
 	$("#dwnFloorUl li").on('click',function(){
 		$("#dwnFloortext").html($(this).text()+'  '+'<span class="caret"></span></button>');
+		$("#floorDropdwnval").val($(this).find("a").attr("value").trim());
 	})
 	$("#dwnSiteDimUl li").on('click',function(){
 		$("#siteDimText").html($(this).text()+'  '+'<span class="caret"></span></button>');
+		$("#landAreatext").val($(this).find("a").attr("value").trim());
 	})
 	$("#dwnsqFtUl li").on('click',function(){
 		$("#sitesqftText").html($(this).text()+'  '+'<span class="caret"></span></button>');
+		$("#landAreatext").val($(this).find("a").attr("value").trim());
 	})
 	
 	$("#calcost").on('click',function(){
@@ -2292,6 +2301,7 @@ $( document ).ready(function() {
 		var electricity = calMiscellaneousElectrification();
 		var plumbing = calMiscellaneousSanitary();
 		var totMisc =electricity+plumbing;
+		$("#totMiscq1").text(totMisc);
 		$("#totplumb").text(totMisc);
 		//alert(totMisc);
 		return totMisc;
@@ -2323,9 +2333,8 @@ $( document ).ready(function() {
 		var foundation =  calFoundation();
 		var tothomecost = wallconstruction+flooring+misc+Plastering+paint+tiles+wood+supersteel+superstructure+steelnorm+foundation;
 		$("#tothomecost").text(tothomecost);
-		  
-		 
-		
+		var floorval=$("#floorDropdwnval").val().trim();
+		$("#totalConstHomeText").text("Total construction cost for your home ("+$("#landAreatext").val()+"sq.ft and "+$("#dwnFloortext").text().trim()+")");
 	}
 	
 		
