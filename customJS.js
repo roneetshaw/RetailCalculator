@@ -2293,6 +2293,7 @@ $( document ).ready(function() {
 		var plumbing = calMiscellaneousSanitary();
 		var totMisc =electricity+plumbing;
 		$("#totplumb").text(totMisc);
+		$("#totMiscq1").text(totMisc);
 		//alert(totMisc);
 		return totMisc;
 	}
