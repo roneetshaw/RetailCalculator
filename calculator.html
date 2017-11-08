@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Bootstrap Loan Calculator - Bootsnipp.com</title>
+    <title>Bootstrap Loan Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -32,711 +32,719 @@
                     <div class="form-pricing">
 							<div class="row">
 							<div class="col-sm-12">
-							<div class="price-slider">
-								<h4 class="great" id="siteLabel">SITE AREA</h4>
-								<label class="radio-inline">
-								  <input type="radio" name="optradio" value="1" id="siteArea">SITE AREA
-								</label>
-								<label class="radio-inline">
-								  <input type="radio" name="optradio" value="2" id="siteDimension">SITE DIMENSION
-								</label>
-								<label class="radio-inline">
-								  <input type="radio" name="optradio" value="3" id="sqFT">SQ. FT.
-								</label>
-								<div class="row">
-										<div class="col-sm-3">
-											<div style="width:250px" style="display:none" id="landTextBox">
-												<input type="text" style="text-align:center;" class="form-control" id="landAreatext">									
-											</div> 
-											<div class="dropdown" style="display:none" id="dwnSiteDimension" >
-											<button class="btn btn-default dropdown-toggle" style="width:250px" id="siteDimText" type="button" data-toggle="dropdown">Select Dimensions
-												<span class="caret"></span></button>
-											<ul class="dropdown-menu" style="width:250px;height: 200px;overflow:auto" id="dwnSiteDimUl">
-												
-																	<li><a value="600">20x30</a></li>
-																	<li><a value="800">20x40</a></li>
-																	<li><a value="1200">30x40</a></li>
-																	<li><a value="1500">30x50</a></li>
-																	<li><a value="1800">30x60</a></li>
-																	<li><a value="1600">40x40</a></li>
-																	<li><a value="2000">40x50</a></li>
-																	<li><a value="2400">40x60</a></li>
-																	<li><a value="3200">40x80</a></li>
-																	<li><a value="4000">50x80</a></li>
-																	<li><a value="8000">80x100</a></li>
-																	<li><a value="9600">80x120</a></li>
-																	<li><a value="10000">100x100</a></li>
-																	<li><a value="12000">100x120</a></li>
-																	<li><a value="1200">20x60</a></li>
-																	<li><a value="600">30x20</a></li>
-																	<li><a value="900">30x30</a></li>
-																	<li><a value="2100">30x70</a></li>
-																	<li><a value="2400">30x80</a></li>
-																	<li><a value="800">40x20</a></li>
-																	<li><a value="1200">40x30</a></li>
-																	<li><a value="2800">40x70</a></li>
-																	<li><a value="3200">40x80</a></li>
-																	<li><a value="4000">40x100</a></li>
-																	<li><a value="2000">50x40</a></li>
-																	<li><a value="2500">50x50</a></li>
-																	<li><a value="1500">50x30</a></li>
-																	<li><a value="3000">50x60</a></li>
-																	<li><a value="3500">50x70</a></li>
-																	<li><a value="5000">50x100</a></li>
-																	<li><a value="6000">50x120</a></li>
-																	<li><a value="1800">60x30</a></li>
-																	<li><a value="2400">60x40</a></li>
-																	<li><a value="3000">60x50</a></li>
-																	<li><a value="3600">60x60</a></li>
-																	<li><a value="4800">60x80</a></li>
-																	<li><a value="5400">60x90</a></li>
-																	<li><a value="6000">60x100</a></li>
-																	<li><a value="7200">60x120</a></li>
-																	<li><a value="2100">70x30</a></li>
-																	<li><a value="2800">70x40</a></li>
-																	<li><a value="3500">70x50</a></li>
-																	<li><a value="5600">70x80</a></li>
-																	<li><a value="7000">70x100</a></li>
-																	<li><a value="8400">70x120</a></li>
-																	<li><a value="2400">80x30</a></li>
-																	<li><a value="3200">80x40</a></li>
-																	<li><a value="4000">80x50</a></li>
-																	<li><a value="4800">80x60</a></li>
-																	<li><a value="6400">80x80</a></li>
-																	<li><a value="7200">80x90</a></li>
-																	<li><a value="2700">90x30</a></li>
-																	<li><a value="3600">90x40</a></li>
-																	<li><a value="4500">90x50</a></li>
-																	<li><a value="5400">90x60</a></li>
-																	<li><a value="7200">90x80</a></li>
-																	<li><a value="9000">90x100</a></li>
-																	<li><a value="1800">90x120</a></li>
-																	<li><a value="3000">100x30</a></li>
-																	<li><a value="4000">100x40</a></li>
-																	<li><a value="5000">100x50</a></li>
-																	<li><a value="6000">100x60</a></li>
-																	<li><a value="8000">100x80</a></li>
-																	<li><a value="9000">100x90</a></li>
-																	<li><a value="12000">120x100</a></li>
-																	<li><a value="9600">120x80</a></li>
-																	<li><a value="7200">120x60</a></li>
-																	<li><a value="4800">120x40</a></li>
-																	<li><a value="14400">120x120 </a></li>
-																	<li><a value="600">20*30</a></li>
-																	<li><a value="800">20*40</a></li>
-																	<li><a value="1200">30*40</a></li>
-																	<li><a value="1500">30*50</a></li>
-																	<li><a value="1800">30*60</a></li>
-																	<li><a value="1600">40*40</a></li>
-																	<li><a value="2000">40*50</a></li>
-																	<li><a value="2400">40*60</a></li>
-																	<li><a value="4000">50*80</a></li>
-																	<li><a value="8000">80*100</a></li>
-																	<li><a value="9600">80*120</a></li>
-																	<li><a value="10000">100*100</a></li>
-																	<li><a value="12000">100*120</a></li>
-
-											</ul>
-											</div>
-											<div class="dropdown" style="display:none" id="dwnSqFT">
-												<button class="btn btn-default dropdown-toggle"  style="width:250px" id="sitesqftText" type="button" data-toggle="dropdown">Select Sq.ft.
-													<span class="caret"></span></button>
-												<ul class="dropdown-menu" style="width:250px;height: 200px;overflow:auto" id="dwnsqFtUl">
-													<li><a value="400">400</a></li>
-													<li><a value="500">500</a></li>
-														<li><a value="600">600</a></li>
-														<li><a value="1100">1100</a></li>
-														<li><a value="1250">1250</a></li>
-														<li><a value="1350">1350</a></li>
-														<li><a value="1400">1400</a></li>
-														<li><a value="1450">1450</a></li>
-														<li><a value="1650">1650</a></li>
-														<li><a value="1700">1700</a></li>
-														<li><a value="1800">1800</a></li>
-														<li><a value="2350">2350</a></li>
-														<li><a value="2400">2400</a></li>
-														<li><a value="2600">2600</a></li>
-														<li><a value="2800">2800</a></li>
-														<li><a value="3000">3000</a></li>
-														<li><a value="4200">4200</a></li>
-														<li><a value="4400">4400</a></li>
-														<li><a value="4500">4500</a></li>
-														<li><a value="4600">4600</a></li>
-														<li><a value="4800">4800</a></li>
-														<li><a value="5000">5000</a></li>
-														<li><a value="5200">5200</a></li>
-														<li><a value="5400">5400</a></li>
-														<li><a value="5500">5500</a></li>
-														<li><a value="5600">5600</a></li>
-														<li><a value="5800">5800</a></li>
-														<li><a value="6000">6000</a></li>
-														<li><a value="6200">6200</a></li>
-														<li><a value="6400">6400</a></li>
-														<li><a value="6600">6600</a></li>
-														<li><a value="6800">6800</a></li>
-														<li><a value="7000">7000</a></li>
-														<li><a value="7200">7200</a></li>
-														<li><a value="7500">7500</a></li>
-														<li><a value="7600">7600</a></li>
-														<li><a value="7800">7800</a></li>
-														<li><a value="8000">8000</a></li>
-														<li><a value="8200">8200</a></li>
-														<li><a value="8400">8400</a></li>
-														<li><a value="8600">8600</a></li>
-														<li><a value="8800">8800</a></li>
-														<li><a value="9000">9000</a></li>
-														<li><a value="9200">9200</a></li>
-														<li><a value="9500">9500</a></li>
-														<li><a value="9800">9800</a></li>
-														<li><a value="10000">10000</a></li>
-														<li><a value="10500">10500</a></li>
-														<li><a value="11000">11000</a></li>
-														<li><a value="12000">12000</a></li>
-														<li><a value="14000">14000</a></li>
-														<li><a value="15000">15000</a></li>
-														<li><a value="20000">20000</a></li>
-
-												</ul>
-											</div>
-										</div> 
-										<div class="col-sm-2" style="font-size: x-large;">
-											Sq.Ft.                           
-										</div>
-										<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
-								</div>
-							</div>
 								<div class="price-slider">
-									<h4 class="great">LOCATION</h4>
+									<label class="radio-inline">
+									  <input type="radio" name="optradio" value="1" id="siteArea">SITE AREA
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="optradio" value="2" id="siteDimension">SITE DIMENSION
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="optradio" value="3" id="sqFT">SQ. FT.
+									</label>
 									<div class="row">
-										<div class="col-sm-12">
-											<div class="dropdown">
-												<input class="btn btn-default" placeholder="Type a Location" style="width:292px" id="dwnText" type="text" >
-												</input>
-												<button type="button" style="height:33px" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu" style="width:330px;height: 200px;overflow:auto" id="dwnCity">
-												<li><a href="#" value="Aalada Mara Road "> Aalada Mara Road </a></li>
-													<li><a href="#" value=" Aavalahal "> Aavalahal </a></li>
-													<li><a href="#" value=" Abbigere"> Abbigere</a></li>
-													<li><a href="#" value=" Adugodi"> Adugodi</a></li>
-													<li><a href="#" value=" AECS Layout   "> AECS Layout   </a></li>
-													<li><a href="#" value=" Akshayanagar "> Akshayanagar </a></li>
-													<li><a href="#" value=" Amrutha Hal  "> Amrutha Hal  </a></li>
-													<li><a href="#" value=" Anagalapura"> Anagalapura</a></li>
-													<li><a href="#" value=" Ananth Nagar "> Ananth Nagar </a></li>
-													<li><a href="#" value=" Andrahal  "> Andrahal  </a></li>
-													<li><a href="#" value=" Anekal "> Anekal </a></li>
-													<li><a href="#" value=" Anjanapura "> Anjanapura </a></li>
-													<li><a href="#" value=" Annapurneshwari Nagar "> Annapurneshwari Nagar </a></li>
-													<li><a href="#" value=" Arasanakunte "> Arasanakunte </a></li>
-													<li><a href="#" value=" Architects in Bangalore "> Architects in Bangalore </a></li>
-													<li><a href="#" value=" Arekere"> Arekere</a></li>
-													<li><a href="#" value=" Ashirvad Colony "> Ashirvad Colony </a></li>
-													<li><a href="#" value=" Ashok Nagar "> Ashok Nagar </a></li>
-													<li><a href="#" value=" Attibele Anekal Road"> Attibele Anekal Road</a></li>
-													<li><a href="#" value=" Attibele "> Attibele </a></li>
-													<li><a href="#" value=" Attiguppe"> Attiguppe</a></li>
-													<li><a href="#" value=" Austin Town "> Austin Town </a></li>
-													<li><a href="#" value=" Avenue Road "> Avenue Road </a></li>
-													<li><a href="#" value=" Azad Nagar "> Azad Nagar </a></li>
-													<li><a href="#" value=" Babusa Palya "> Babusa Palya </a></li>
-													<li><a href="#" value=" Bagalakunte "> Bagalakunte </a></li>
-													<li><a href="#" value=" Bagalur  "> Bagalur  </a></li>
-													<li><a href="#" value=" Bagalur Road "> Bagalur Road </a></li>
-													<li><a href="#" value=" Bagaluru"> Bagaluru</a></li>
-													<li><a href="#" value=" Bagepal  Bagepal"> Bagepal  Bagepal</a></li>
-													<li><a href="#" value=" Baiyyappanahal "> Baiyyappanahal </a></li>
-													<li><a href="#" value=" Balagere Balagere"> Balagere Balagere</a></li>
-													<li><a href="#" value=" Balepet Balepet"> Balepet Balepet</a></li>
-													<li><a href="#" value=" Ballur Ballur"> Ballur Ballur</a></li>
-													<li><a href="#" value=" Banashankari 3rd Stage "> Banashankari 3rd Stage </a></li>
-													<li><a href="#" value=" Banashankari "> Banashankari </a></li>
-													<li><a href="#" value=" Banasvadi "> Banasvadi </a></li>
-													<li><a href="#" value=" Banaswadi "> Banaswadi </a></li>
-													<li><a href="#" value=" Bangalore Central "> Bangalore Central </a></li>
-													<li><a href="#" value=" Bangalore East "> Bangalore East </a></li>
-													<li><a href="#" value=" Bangalore North "> Bangalore North </a></li>
-													<li><a href="#" value=" Bangalore South "> Bangalore South </a></li>
-													<li><a href="#" value=" Bangalore West "> Bangalore West </a></li>
-													<li><a href="#" value=" Bannerghatta "> Bannerghatta </a></li>
-													<li><a href="#" value=" Bannerghatta Jigani Road "> Bannerghatta Jigani Road </a></li>
-													<li><a href="#" value=" Bannerghatta Road "> Bannerghatta Road </a></li>
-													<li><a href="#" value=" Bapuji Nagar "> Bapuji Nagar </a></li>
-													<li><a href="#" value=" Basapura "> Basapura </a></li>
-													<li><a href="#" value=" Basavanagar "> Basavanagar </a></li>
-													<li><a href="#" value=" Basavanagudi"> Basavanagudi</a></li>
-													<li><a href="#" value=" Basavanna Nagar "> Basavanna Nagar </a></li>
-													<li><a href="#" value=" Basaveshwara Nagar "> Basaveshwara Nagar </a></li>
-													<li><a href="#" value=" Battarahal  "> Battarahal  </a></li>
-													<li><a href="#" value=" Begur Begur"> Begur Begur</a></li>
-													<li><a href="#" value=" Begur Road "> Begur Road </a></li>
-													<li><a href="#" value=" Belatur "> Belatur </a></li>
-													<li><a href="#" value=" Bellandur "> Bellandur </a></li>
-													<li><a href="#" value=" Bellary Road "> Bellary Road </a></li>
-													<li><a href="#" value=" Bel Road "> Bel Road </a></li>
-													<li><a href="#" value=" BEML  Layout "> BEML  Layout </a></li>
-													<li><a href="#" value=" BEML Layout"> BEML Layout</a></li>
-													<li><a href="#" value=" Bengaluru "> Bengaluru </a></li>
-													<li><a href="#" value=" Bennigana Hal  "> Bennigana Hal  </a></li>
-													<li><a href="#" value=" Benson Town "> Benson Town </a></li>
-													<li><a href="#" value=" Bhaktharahal  "> Bhaktharahal  </a></li>
-													<li><a href="#" value=" Bhoganhal  "> Bhoganhal  </a></li>
-													<li><a href="#" value=" Bhoopasandra "> Bhoopasandra </a></li>
-													<li><a href="#" value=" Bhovi Palya "> Bhovi Palya </a></li>
-													<li><a href="#" value=" Bhuvaneshwari Nagar"> Bhuvaneshwari Nagar</a></li>
-													<li><a href="#" value=" Bidadi "> Bidadi </a></li>
-													<li><a href="#" value=" Bidrahal "> Bidrahal </a></li>
-													<li><a href="#" value=" Bikasipura "> Bikasipura </a></li>
-													<li><a href="#" value=" Bikkanahal  "> Bikkanahal  </a></li>
-													<li><a href="#" value=" Bilekahal  "> Bilekahal  </a></li>
-													<li><a href="#" value=" Bileshivale "> Bileshivale </a></li>
-													<li><a href="#" value=" Binny Pete "> Binny Pete </a></li>
-													<li><a href="#" value=" B Narayanapura "> B Narayanapura </a></li>
-													<li><a href="#" value=" Bommanahal  "> Bommanahal  </a></li>
-													<li><a href="#" value=" Bommasandra "> Bommasandra </a></li>
-													<li><a href="#" value=" Boyalahal  "> Boyalahal  </a></li>
-													<li><a href="#" value=" Brigade Road "> Brigade Road </a></li>
-													<li><a href="#" value=" Brookefield "> Brookefield </a></li>
-													<li><a href="#" value=" Btm layout "> Btm layout </a></li>
-													<li><a href="#" value=" Budigere Road "> Budigere Road </a></li>
-													<li><a href="#" value=" Budihal "> Budihal </a></li>
-													<li><a href="#" value=" Byatarayanapura "> Byatarayanapura </a></li>
-													<li><a href="#" value=" Byrathi "> Byrathi </a></li>
-													<li><a href="#" value=" Cambridge  Layout "> Cambridge  Layout </a></li>
-													<li><a href="#" value=" Carmelaram "> Carmelaram </a></li>
-													<li><a href="#" value=" Chadalapura "> Chadalapura </a></li>
-													<li><a href="#" value=" Chamarajendra Nagar "> Chamarajendra Nagar </a></li>
-													<li><a href="#" value=" Chamarajpet "> Chamarajpet </a></li>
-													<li><a href="#" value=" Chamundi Nagar "> Chamundi Nagar </a></li>
-													<li><a href="#" value=" Chandapura "> Chandapura </a></li>
-													<li><a href="#" value=" Chandra Layout "> Chandra Layout </a></li>
-													<li><a href="#" value=" Chansandra "> Chansandra </a></li>
-													<li><a href="#" value=" Chatram Road "> Chatram Road </a></li>
-													<li><a href="#" value=" Chelekare "> Chelekare </a></li>
-													<li><a href="#" value=" Chickpet "> Chickpet </a></li>
-													<li><a href="#" value=" Chikbanavara "> Chikbanavara </a></li>
-													<li><a href="#" value=" Chikkaballapura "> Chikkaballapura </a></li>
-													<li><a href="#" value=" Chikkaballapura Road "> Chikkaballapura Road </a></li>
-													<li><a href="#" value=" Chikkaballapur "> Chikkaballapur </a></li>
-													<li><a href="#" value=" Chikkaballapur Road"> Chikkaballapur Road</a></li>
-													<li><a href="#" value=" Chikkabasavanapura "> Chikkabasavanapura </a></li>
-													<li><a href="#" value=" Chikkabellandur "> Chikkabellandur </a></li>
-													<li><a href="#" value=" Chikkabidarakallu "> Chikkabidarakallu </a></li>
-													<li><a href="#" value=" Chikkagubbi "> Chikkagubbi </a></li>
-													<li><a href="#" value=" Chikkakannal  "> Chikkakannal  </a></li>
-													<li><a href="#" value=" Chikkalasandra "> Chikkalasandra </a></li>
-													<li><a href="#" value=" Chikkanahal  "> Chikkanahal  </a></li>
-													<li><a href="#" value=" Chikkathoguru "> Chikkathoguru </a></li>
-													<li><a href="#" value=" Chikka Tirupathi "> Chikka Tirupathi </a></li>
-													<li><a href="#" value=" Chikka Tirupathi Road "> Chikka Tirupathi Road </a></li>
-													<li><a href="#" value=" Chinnapa Garden "> Chinnapa Garden </a></li>
-													<li><a href="#" value=" Chinnapanna Hal  "> Chinnapanna Hal  </a></li>
-													<li><a href="#" value=" Chokkanahal  "> Chokkanahal  </a></li>
-													<li><a href="#" value=" Cholanayakanahal  "> Cholanayakanahal  </a></li>
-													<li><a href="#" value=" Choodasandra "> Choodasandra </a></li>
-													<li><a href="#" value=" Church Street "> Church Street </a></li>
-													<li><a href="#" value=" Commercial Street "> Commercial Street </a></li>
-													<li><a href="#" value=" Cooke Town "> Cooke Town </a></li>
-													<li><a href="#" value=" Cox Town "> Cox Town </a></li>
-													<li><a href="#" value=" CQAL Layout "> CQAL Layout </a></li>
-													<li><a href="#" value=" Craig Park Layout "> Craig Park Layout </a></li>
-													<li><a href="#" value=" Crescent Road "> Crescent Road </a></li>
-													<li><a href="#" value=" Cunningham road "> Cunningham road </a></li>
-													<li><a href="#" value=" CV Raman Nagar "> CV Raman Nagar </a></li>
-													<li><a href="#" value=" Dabaspete "> Dabaspete </a></li>
-													<li><a href="#" value=" Dasarahal  "> Dasarahal  </a></li>
-													<li><a href="#" value=" Dasarahal  Main Road "> Dasarahal  Main Road </a></li>
-													<li><a href="#" value=" Dayananda Nagar "> Dayananda Nagar </a></li>
-													<li><a href="#" value=" Defence Colony "> Defence Colony </a></li>
-													<li><a href="#" value=" Devanahal  "> Devanahal  </a></li>
-													<li><a href="#" value=" Devanahal  Road "> Devanahal  Road </a></li>
-													<li><a href="#" value=" Devarachikkanahal "> Devarachikkanahal </a></li>
-													<li><a href="#" value=" Devasthanagalu "> Devasthanagalu </a></li>
-													<li><a href="#" value=" Devinagar "> Devinagar </a></li>
-													<li><a href="#" value=" Dickenson Road "> Dickenson Road </a></li>
-													<li><a href="#" value=" Doddaballapur "> Doddaballapur </a></li>
-													<li><a href="#" value=" Doddaballapur Road "> Doddaballapur Road </a></li>
-													<li><a href="#" value=" Dodda Banasvadi "> Dodda Banasvadi </a></li>
-													<li><a href="#" value=" Doddabele "> Doddabele </a></li>
-													<li><a href="#" value=" Doddabommasandra "> Doddabommasandra </a></li>
-													<li><a href="#" value=" Doddakallasandra "> Doddakallasandra </a></li>
-													<li><a href="#" value=" Doddakammanahal  "> Doddakammanahal  </a></li>
-													<li><a href="#" value=" Doddakannal  "> Doddakannal  </a></li>
-													<li><a href="#" value=" Doddamaval  "> Doddamaval  </a></li>
-													<li><a href="#" value=" Doddathoguru "> Doddathoguru </a></li>
-													<li><a href="#" value=" Doddenahal  "> Doddenahal  </a></li>
-													<li><a href="#" value=" Doddenakundi "> Doddenakundi </a></li>
-													<li><a href="#" value=" Dodsworth Layout "> Dodsworth Layout </a></li>
-													<li><a href="#" value=" Dollars Colony "> Dollars Colony </a></li>
-													<li><a href="#" value=" Domlur "> Domlur </a></li>
-													<li><a href="#" value=" Dommasandra "> Dommasandra </a></li>
-													<li><a href="#" value=" Donnenahal  "> Donnenahal  </a></li>
-													<li><a href="#" value=" Dooravani Nagar "> Dooravani Nagar </a></li>
-													<li><a href="#" value=" Ejipura "> Ejipura </a></li>
-													<li><a href="#" value=" Electronic City "> Electronic City </a></li>
-													<li><a href="#" value=" Electronic City Phase 1  "> Electronic City Phase 1  </a></li>
-													<li><a href="#" value=" Electronic City Phase 2 "> Electronic City Phase 2 </a></li>
-													<li><a href="#" value=" Essel Gardens "> Essel Gardens </a></li>
-													<li><a href="#" value=" Frazer Town "> Frazer Town </a></li>
-													<li><a href="#" value=" Ganapathihal  "> Ganapathihal  </a></li>
-													<li><a href="#" value=" Gandhi Nagar "> Gandhi Nagar </a></li>
-													<li><a href="#" value=" Ganga Nagar "> Ganga Nagar </a></li>
-													<li><a href="#" value=" Garden Layout "> Garden Layout </a></li>
-													<li><a href="#" value=" Garudachar Palya "> Garudachar Palya </a></li>
-													<li><a href="#" value=" Garvebhavi Palya "> Garvebhavi Palya </a></li>
-													<li><a href="#" value=" Gattahal  "> Gattahal  </a></li>
-													<li><a href="#" value=" Gauribidanur "> Gauribidanur </a></li>
-													<li><a href="#" value=" Gavipuram "> Gavipuram </a></li>
-													<li><a href="#" value=" Girinagar "> Girinagar </a></li>
-													<li><a href="#" value=" GM Palya "> GM Palya </a></li>
-													<li><a href="#" value=" Gollahal  "> Gollahal  </a></li>
-													<li><a href="#" value=" Gottigere "> Gottigere </a></li>
-													<li><a href="#" value=" Gunjur "> Gunjur </a></li>
-													<li><a href="#" value=" Gunjur Mugalur Road "> Gunjur Mugalur Road </a></li>
-													<li><a href="#" value=" Guttahal  Guttahal"> Guttahal  Guttahal</a></li>
-													<li><a href="#" value=" Hal Hal"> Hal Hal</a></li>
-													<li><a href="#" value=" HAL Layout "> HAL Layout </a></li>
-													<li><a href="#" value=" Hancharahal  "> Hancharahal  </a></li>
-													<li><a href="#" value=" Hanumantha Nagar "> Hanumantha Nagar </a></li>
-													<li><a href="#" value=" Hanumanthanagar "> Hanumanthanagar </a></li>
-													<li><a href="#" value=" Haragadde "> Haragadde </a></li>
-													<li><a href="#" value=" Haralur Road "> Haralur Road </a></li>
-													<li><a href="#" value=" Harlur "> Harlur </a></li>
-													<li><a href="#" value=" Harohal  "> Harohal  </a></li>
-													<li><a href="#" value=" Haudin Road "> Haudin Road </a></li>
-													<li><a href="#" value=" Hbr layout "> Hbr layout </a></li>
-													<li><a href="#" value=" Hebbal "> Hebbal </a></li>
-													<li><a href="#" value=" Hegde Nagar "> Hegde Nagar </a></li>
-													<li><a href="#" value=" Hennur "> Hennur </a></li>
-													<li><a href="#" value=" Hennur Road "> Hennur Road </a></li>
-													<li><a href="#" value=" Hesaraghatta "> Hesaraghatta </a></li>
-													<li><a href="#" value=" Hombegowda Nagar "> Hombegowda Nagar </a></li>
-													<li><a href="#" value=" Hongasandra "> Hongasandra </a></li>
-													<li><a href="#" value=" Hoodi "> Hoodi </a></li>
-													<li><a href="#" value=" Horamavu Agara "> Horamavu Agara </a></li>
-													<li><a href="#" value=" Horamavu "> Horamavu </a></li>
-													<li><a href="#" value=" Hosakerehal  "> Hosakerehal  </a></li>
-													<li><a href="#" value=" Hosapalaya "> Hosapalaya </a></li>
-													<li><a href="#" value=" Hosa Road "> Hosa Road </a></li>
-													<li><a href="#" value=" Hoskote "> Hoskote </a></li>
-													<li><a href="#" value=" Hosur Road "> Hosur Road </a></li>
-													<li><a href="#" value=" House Architects "> House Architects </a></li>
-													<li><a href="#" value=" HRBR Layout "> HRBR Layout </a></li>
-													<li><a href="#" value=" Hsr layout "> Hsr layout </a></li>
-													<li><a href="#" value=" HSR Layout Sector 1 2 3 4 5 "> HSR Layout Sector 1 2 3 4 5 </a></li>
-													<li><a href="#" value=" Hullahal  "> Hullahal  </a></li>
-													<li><a href="#" value=" Hu mavu "> Hu mavu </a></li>
-													<li><a href="#" value=" Huskur "> Huskur </a></li>
-													<li><a href="#" value=" Huttanahal  "> Huttanahal  </a></li>
-													<li><a href="#" value=" Immadihal  "> Immadihal  </a></li>
-													<li><a href="#" value=" Infantry Road "> Infantry Road </a></li>
-													<li><a href="#" value=" International Airport Road "> International Airport Road </a></li>
-													<li><a href="#" value=" ISRO Layout "> ISRO Layout </a></li>
-													<li><a href="#" value=" ITPL "> ITPL </a></li>
-													<li><a href="#" value=" IVC Road  "> IVC Road  </a></li>
-													<li><a href="#" value=" Jagadish Nagar "> Jagadish Nagar </a></li>
-													<li><a href="#" value=" Jagajeevanram Nagar "> Jagajeevanram Nagar </a></li>
-													<li><a href="#" value=" Jakkasandra "> Jakkasandra </a></li>
-													<li><a href="#" value=" Jakkuru "> Jakkuru </a></li>
-													<li><a href="#" value="  Jakkuru Layout  ">  Jakkuru Layout  </a></li>
-													<li><a href="#" value=" Jalahal  Cross "> Jalahal  Cross </a></li>
-													<li><a href="#" value=" Jalahal  East  "> Jalahal  East  </a></li>
-													<li><a href="#" value=" Jalahal  "> Jalahal  </a></li>
-													<li><a href="#" value=" Jalahal  West "> Jalahal  West </a></li>
-													<li><a href="#" value=" Jangamakote "> Jangamakote </a></li>
-													<li><a href="#" value=" Jayamahal Road "> Jayamahal Road </a></li>
-													<li><a href="#" value=" Jayanagar "> Jayanagar </a></li>
-													<li><a href="#" value=" Jeevanbheema Nagar "> Jeevanbheema Nagar </a></li>
-													<li><a href="#" value=" Jeevan Bheema Nagar "> Jeevan Bheema Nagar </a></li>
-													<li><a href="#" value=" Jigani "> Jigani </a></li>
-													<li><a href="#" value=" Jnana Ganga Nagar"> Jnana Ganga Nagar</a></li>
-													<li><a href="#" value=" JP nagar "> JP nagar </a></li>
-													<li><a href="#" value=" JP Nagar Phase 1 2 3 4 5 "> JP Nagar Phase 1 2 3 4 5 </a></li>
-													<li><a href="#" value=" JP Nagar Phase 6 "> JP Nagar Phase 6 </a></li>
-													<li><a href="#" value=" JP Nagar Phase 9 "> JP Nagar Phase 9 </a></li>
-													<li><a href="#" value=" Kacharakanahal  "> Kacharakanahal  </a></li>
-													<li><a href="#" value=" Kadabagere "> Kadabagere </a></li>
-													<li><a href="#" value=" Kadubeesanahal  "> Kadubeesanahal  </a></li>
-													<li><a href="#" value=" Kadugodi "> Kadugodi </a></li>
-													<li><a href="#" value=" Kadugondanahal "> Kadugondanahal </a></li>
-													<li><a href="#" value=" Kadusonnappanahal  "> Kadusonnappanahal  </a></li>
-													<li><a href="#" value=" Kaggadasapura "> Kaggadasapura </a></li>
-													<li><a href="#" value=" Kagga pura "> Kagga pura </a></li>
-													<li><a href="#" value=" Kalasipalayam "> Kalasipalayam </a></li>
-													<li><a href="#" value=" Kalena Agrahara "> Kalena Agrahara </a></li>
-													<li><a href="#" value=" Kalkere "> Kalkere </a></li>
-													<li><a href="#" value=" Kallumantapa "> Kallumantapa </a></li>
-													<li><a href="#" value=" Kalyan Nagar "> Kalyan Nagar </a></li>
-													<li><a href="#" value=" Kamaksipalya "> Kamaksipalya </a></li>
-													<li><a href="#" value=" Kamala Nagar "> Kamala Nagar </a></li>
-													<li><a href="#" value=" Kammanahal  "> Kammanahal  </a></li>
-													<li><a href="#" value=" Kammasandra Agrahara "> Kammasandra Agrahara </a></li>
-													<li><a href="#" value=" Kammasandra "> Kammasandra </a></li>
-													<li><a href="#" value=" Kanaka Nagar "> Kanaka Nagar </a></li>
-													<li><a href="#" value=" Kanakapura"> Kanakapura</a></li>
-													<li><a href="#" value=" Kanakapura road "> Kanakapura road </a></li>
-													<li><a href="#" value=" Kannamangala "> Kannamangala </a></li>
-													<li><a href="#" value=" Kartik Nagar "> Kartik Nagar </a></li>
-													<li><a href="#" value=" Karuna Nagar "> Karuna Nagar </a></li>
-													<li><a href="#" value=" Kasavanahal  "> Kasavanahal  </a></li>
-													<li><a href="#" value=" Kasturba Road "> Kasturba Road </a></li>
-													<li><a href="#" value=" Kasturi Nagar "> Kasturi Nagar </a></li>
-													<li><a href="#" value=" Kathriguppe "> Kathriguppe </a></li>
-													<li><a href="#" value=" Kattigenahal  "> Kattigenahal  </a></li>
-													<li><a href="#" value=" Kaval Byrasandra"> Kaval Byrasandra</a></li>
-													<li><a href="#" value=" K Channasandra Malur"> K Channasandra Malur</a></li>
-													<li><a href="#" value=" Kempapura "> Kempapura </a></li>
-													<li><a href="#" value=" Kempegowda Nagar "> Kempegowda Nagar </a></li>
-													<li><a href="#" value=" Kempe Gowda Road "> Kempe Gowda Road </a></li>
-													<li><a href="#" value=" Kengeri "> Kengeri </a></li>
-													<li><a href="#" value=" Kengeri Satel te Town "> Kengeri Satel te Town </a></li>
-													<li><a href="#" value=" Kithiganur "> Kithiganur </a></li>
-													<li><a href="#" value=" Kodathi "> Kodathi </a></li>
-													<li><a href="#" value=" Kodichikkanahal  "> Kodichikkanahal  </a></li>
-													<li><a href="#" value=" Kodigehal  "> Kodigehal  </a></li>
-													<li><a href="#" value=" Kodihal  "> Kodihal  </a></li>
-													<li><a href="#" value=" Kogilu "> Kogilu </a></li>
-													<li><a href="#" value=" Kolar "> Kolar </a></li>
-													<li><a href="#" value=" Kolar Road "> Kolar Road </a></li>
-													<li><a href="#" value=" Kommaghatta "> Kommaghatta </a></li>
-													<li><a href="#" value=" Konanakunte "> Konanakunte </a></li>
-													<li><a href="#" value=" Koppa "> Koppa </a></li>
-													<li><a href="#" value=" Koralur "> Koralur </a></li>
-													<li><a href="#" value="Koramangala ">Koramangala </a></li>
-													<li><a href="#" value=" Kothanoor "> Kothanoor </a></li>
-													<li><a href="#" value=" Kothanur "> Kothanur </a></li>
-													<li><a href="#" value=" Koti Hosahal  "> Koti Hosahal  </a></li>
-													<li><a href="#" value=" Krishnaraja Puram "> Krishnaraja Puram </a></li>
-													<li><a href="#" value=" K R Puram  "> K R Puram  </a></li>
-													<li><a href="#" value=" KR puram "> KR puram </a></li>
-													<li><a href="#" value=" Kudlu Gate "> Kudlu Gate </a></li>
-													<li><a href="#" value=" Kudlu "> Kudlu </a></li>
-													<li><a href="#" value=" Kumara Krupa Road Kumara "> Kumara Krupa Road Kumara </a></li>
-													<li><a href="#" value=" Kumaraswamy Layout "> Kumaraswamy Layout </a></li>
-													<li><a href="#" value=" Kumbalgodu "> Kumbalgodu </a></li>
-													<li><a href="#" value=" Kundalahal  "> Kundalahal  </a></li>
-													<li><a href="#" value=" Kunigal Road "> Kunigal Road </a></li>
-													<li><a href="#" value=" Kuthaganahal "> Kuthaganahal </a></li>
-													<li><a href="#" value=" Lady Curzon Road "> Lady Curzon Road </a></li>
-													<li><a href="#" value=" Laggere "> Laggere </a></li>
-													<li><a href="#" value=" Lake City "> Lake City </a></li>
-													<li><a href="#" value=" Lakshmamma Layout "> Lakshmamma Layout </a></li>
-													<li><a href="#" value=" lal bagh "> lal bagh </a></li>
-													<li><a href="#" value=" Langford Road "> Langford Road </a></li>
-													<li><a href="#" value=" Langford Town "> Langford Town </a></li>
-													<li><a href="#" value=" Lavelle Road "> Lavelle Road </a></li>
-													<li><a href="#" value=" LB Shastri Nagar "> LB Shastri Nagar </a></li>
-													<li><a href="#" value=" Madhava Nagar "> Madhava Nagar </a></li>
-													<li><a href="#" value=" Madivala "> Madivala </a></li>
-													<li><a href="#" value=" Magadi Road "> Magadi Road </a></li>
-													<li><a href="#" value=" Magrath Road "> Magrath Road </a></li>
-													<li><a href="#" value=" Mahadevapura "> Mahadevapura </a></li>
-													<li><a href="#" value=" Mahalakshmi Layout "> Mahalakshmi Layout </a></li>
-													<li><a href="#" value=" Mahalakshmipuram "> Mahalakshmipuram </a></li>
-													<li><a href="#" value=" Majestic "> Majestic </a></li>
-													<li><a href="#" value=" Mallathahal  "> Mallathahal  </a></li>
-													<li><a href="#" value=" Malleshpalya "> Malleshpalya </a></li>
-													<li><a href="#" value=" Malleshwaram "> Malleshwaram </a></li>
-													<li><a href="#" value=" Marathahal  "> Marathahal  </a></li>
-													<li><a href="#" value=" Margondanahal  "> Margondanahal  </a></li>
-													<li><a href="#" value=" Maruthi Nagar "> Maruthi Nagar </a></li>
-													<li><a href="#" value=" Maruthi Sevanagar "> Maruthi Sevanagar </a></li>
-													<li><a href="#" value=" Medihal  "> Medihal  </a></li>
-													<li><a href="#" value=" Meenakunte "> Meenakunte </a></li>
-													<li><a href="#" value=" MG Road "> MG Road </a></li>
-													<li><a href="#" value=" Mico Layout "> Mico Layout </a></li>
-													<li><a href="#" value=" Millers Road "> Millers Road </a></li>
-													<li><a href="#" value=" Mission Road "> Mission Road </a></li>
-													<li><a href="#" value=" MS Palya "> MS Palya </a></li>
-													<li><a href="#" value=" Munireddy Layout "> Munireddy Layout </a></li>
-													<li><a href="#" value=" Munireddypalya "> Munireddypalya </a></li>
-													<li><a href="#" value=" Munnekollal "> Munnekollal </a></li>
-													<li><a href="#" value="  Murugeshpalya  ">  Murugeshpalya  </a></li>
-													<li><a href="#" value=" Museum Road "> Museum Road </a></li>
-													<li><a href="#" value=" Mysore Road "> Mysore Road </a></li>
-													<li><a href="#" value=" Nagadevanahal  "> Nagadevanahal  </a></li>
-													<li><a href="#" value=" Nagarathpet "> Nagarathpet </a></li>
-													<li><a href="#" value=" Nagarbhavi Circle "> Nagarbhavi Circle </a></li>
-													<li><a href="#" value=" Nagarbhavi "> Nagarbhavi </a></li>
-													<li><a href="#" value=" Nagasandra "> Nagasandra </a></li>
-													<li><a href="#" value=" Nagashetty Hal  "> Nagashetty Hal  </a></li>
-													<li><a href="#" value=" Nagavara "> Nagavara </a></li>
-													<li><a href="#" value=" Nagondanahal   "> Nagondanahal   </a></li>
-													<li><a href="#" value=" Nallurhal "> Nallurhal </a></li>
-													<li><a href="#" value=" Nandi  Hills"> Nandi  Hills</a></li>
-													<li><a href="#" value=" Nandini Layout "> Nandini Layout </a></li>
-													<li><a href="#" value=" Nanjappa Garden "> Nanjappa Garden </a></li>
-													<li><a href="#" value=" Narasapura "> Narasapura </a></li>
-													<li><a href="#" value=" Nayanda Hal  "> Nayanda Hal  </a></li>
-													<li><a href="#" value=" Neeladri Nagar "> Neeladri Nagar </a></li>
-													<li><a href="#" value=" Neelasandra "> Neelasandra </a></li>
-													<li><a href="#" value=" Nehru Nagar "> Nehru Nagar </a></li>
-													<li><a href="#" value=" Nelamangala "> Nelamangala </a></li>
-													<li><a href="#" value=" New BEL Road"> New BEL Road</a></li>
-													<li><a href="#" value="  ngadheeranahal    ">  ngadheeranahal    </a></li>
-													<li><a href="#" value="  ngarajapuram  ">  ngarajapuram  </a></li>
-													<li><a href="#" value=" Nobo Nagar "> Nobo Nagar </a></li>
-													<li><a href="#" value=" NRI Layout "> NRI Layout </a></li>
-													<li><a href="#" value=" Old Airport Road O"> Old Airport Road O</a></li>
-													<li><a href="#" value=" OMBR Layout "> OMBR Layout </a></li>
-													<li><a href="#" value=" Outer Ring Road "> Outer Ring Road </a></li>
-													<li><a href="#" value=" Padmanabhanagar "> Padmanabhanagar </a></li>
-													<li><a href="#" value=" Padmanabha Nagar "> Padmanabha Nagar </a></li>
-													<li><a href="#" value=" Pai Layout "> Pai Layout </a></li>
-													<li><a href="#" value=" Palace Road "> Palace Road </a></li>
-													<li><a href="#" value=" Panathur "> Panathur </a></li>
-													<li><a href="#" value=" Panduranga Nagar "> Panduranga Nagar </a></li>
-													<li><a href="#" value=" Pattandur Agrahara "> Pattandur Agrahara </a></li>
-													<li><a href="#" value=" Peenya Peenya"> Peenya Peenya</a></li>
-													<li><a href="#" value=" Prashanth Nagar "> Prashanth Nagar </a></li>
-													<li><a href="#" value=" Race Course Road "> Race Course Road </a></li>
-													<li><a href="#" value=" Ragavendra Nagar "> Ragavendra Nagar </a></li>
-													<li><a href="#" value=" Raghavendra Colony "> Raghavendra Colony </a></li>
-													<li><a href="#" value=" Rajaji Nagar "> Rajaji Nagar </a></li>
-													<li><a href="#" value=" Rajanukunte "> Rajanukunte </a></li>
-													<li><a href="#" value=" Rajarajeshwari nagar "> Rajarajeshwari nagar </a></li>
-													<li><a href="#" value=" Raj Bhavan Road "> Raj Bhavan Road </a></li>
-													<li><a href="#" value=" Rajiv Gandhi Nagar "> Rajiv Gandhi Nagar </a></li>
-													<li><a href="#" value=" Rajpet "> Rajpet </a></li>
-													<li><a href="#" value=" Ramagondanahal  "> Ramagondanahal  </a></li>
-													<li><a href="#" value=" Ramamurthy Nagar "> Ramamurthy Nagar </a></li>
-													<li><a href="#" value=" Rayasandra "> Rayasandra </a></li>
-													<li><a href="#" value=" Residency Road Residency Road"> Residency Road Residency Road</a></li>
-													<li><a href="#" value=" Residential Architects "> Residential Architects </a></li>
-													<li><a href="#" value=" Rest House Road "> Rest House Road </a></li>
-													<li><a href="#" value=" Richard's Park "> Richard's Park </a></li>
-													<li><a href="#" value=" Richards Town "> Richards Town </a></li>
-													<li><a href="#" value=" Richmond Town "> Richmond Town </a></li>
-													<li><a href="#" value=" RK Hegde Nagar "> RK Hegde Nagar </a></li>
-													<li><a href="#" value=" RMV 2nd Stage "> RMV 2nd Stage </a></li>
-													<li><a href="#" value=" RMV Extension "> RMV Extension </a></li>
-													<li><a href="#" value=" RMV "> RMV </a></li>
-													<li><a href="#" value=" Roopena Agrahara"> Roopena Agrahara</a></li>
-													<li><a href="#" value=" RT Nagar "> RT Nagar </a></li>
-													<li><a href="#" value=" Sadashiva Nagar "> Sadashiva Nagar </a></li>
-													<li><a href="#" value=" Sadashivanagar "> Sadashivanagar </a></li>
-													<li><a href="#" value=" Sadduguntepalya "> Sadduguntepalya </a></li>
-													<li><a href="#" value=" Sahakara Nagar "> Sahakara Nagar </a></li>
-													<li><a href="#" value=" Sampangi Rama Nagar "> Sampangi Rama Nagar </a></li>
-													<li><a href="#" value=" Sampangiram "> Sampangiram </a></li>
-													<li><a href="#" value=" Sampigehal  "> Sampigehal  </a></li>
-													<li><a href="#" value=" Sanjay Nagar "> Sanjay Nagar </a></li>
-													<li><a href="#" value=" Sankey Road "> Sankey Road </a></li>
-													<li><a href="#" value=" Sarjapura "> Sarjapura </a></li>
-													<li><a href="#" value=" Sarjapur Attibele Road "> Sarjapur Attibele Road </a></li>
-													<li><a href="#" value=" Sarjapur Road "> Sarjapur Road </a></li>
-													<li><a href="#" value=" Sarjapur "> Sarjapur </a></li>
-													<li><a href="#" value=" Sathanur "> Sathanur </a></li>
-													<li><a href="#" value=" Seegehal  "> Seegehal  </a></li>
-													<li><a href="#" value=" Seenappa Layout "> Seenappa Layout </a></li>
-													<li><a href="#" value=" Seshadripuram "> Seshadripuram </a></li>
-													<li><a href="#" value=" Seshadri Road "> Seshadri Road </a></li>
-													<li><a href="#" value=" Shankarapura "> Shankarapura </a></li>
-													<li><a href="#" value=" Shanthala Nagar "> Shanthala Nagar </a></li>
-													<li><a href="#" value=" Shanthi Nagar "> Shanthi Nagar </a></li>
-													<li><a href="#" value=" Shanthi Pura "> Shanthi Pura </a></li>
-													<li><a href="#" value=" Shanti Nagar "> Shanti Nagar </a></li>
-													<li><a href="#" value=" Shettihal  "> Shettihal  </a></li>
-													<li><a href="#" value=" Shigehal  "> Shigehal  </a></li>
-													<li><a href="#" value=" Shivajinagar "> Shivajinagar </a></li>
-													<li><a href="#" value=" Shivaji Nagar "> Shivaji Nagar </a></li>
-													<li><a href="#" value=" Siddapura "> Siddapura </a></li>
-													<li><a href="#" value=" Sidlaghatta "> Sidlaghatta </a></li>
-													<li><a href="#" value=" Silk Board "> Silk Board </a></li>
-													<li><a href="#" value=" Silver Springs Layout "> Silver Springs Layout </a></li>
-													<li><a href="#" value=" Singanahal  "> Singanahal  </a></li>
-													<li><a href="#" value=" Singasandra "> Singasandra </a></li>
-													<li><a href="#" value=" S Medihal  "> S Medihal  </a></li>
-													<li><a href="#" value=" Solur "> Solur </a></li>
-													<li><a href="#" value=" Somashetti Hal  "> Somashetti Hal  </a></li>
-													<li><a href="#" value=" Sompura "> Sompura </a></li>
-													<li><a href="#" value=" Sonnenahal  "> Sonnenahal  </a></li>
-													<li><a href="#" value=" Soukya Road "> Soukya Road </a></li>
-													<li><a href="#" value=" Soundarya Layout "> Soundarya Layout </a></li>
-													<li><a href="#" value=" Srinagar "> Srinagar </a></li>
-													<li><a href="#" value=" Srinivasa Nagar "> Srinivasa Nagar </a></li>
-													<li><a href="#" value=" Srirampuram "> Srirampuram </a></li>
-													<li><a href="#" value=" Srirampura "> Srirampura </a></li>
-													<li><a href="#" value=" St. Mark's Road "> St. Mark's Road </a></li>
-													<li><a href="#" value=" St. Thomas Town "> St. Thomas Town </a></li>
-													<li><a href="#" value=" St Johns Road "> St Johns Road </a></li>
-													<li><a href="#" value=" Subramanyapura "> Subramanyapura </a></li>
-													<li><a href="#" value=" Sudhama Nagar "> Sudhama Nagar </a></li>
-													<li><a href="#" value=" Sunkadakatte "> Sunkadakatte </a></li>
-													<li><a href="#" value=" Suryanagar "> Suryanagar </a></li>
-													<li><a href="#" value=" Talaghattapura "> Talaghattapura </a></li>
-													<li><a href="#" value=" Tavarekere "> Tavarekere </a></li>
-													<li><a href="#" value=" TC Palya "> TC Palya </a></li>
-													<li><a href="#" value=" T Dasarahal  "> T Dasarahal  </a></li>
-													<li><a href="#" value=" Teachers Colony "> Teachers Colony </a></li>
-													<li><a href="#" value=" Thanisandra "> Thanisandra </a></li>
-													<li><a href="#" value=" Tharabal  "> Tharabal  </a></li>
-													<li><a href="#" value=" Tharabanahal  "> Tharabanahal  </a></li>
-													<li><a href="#" value=" Thavarekere "> Thavarekere </a></li>
-													<li><a href="#" value=" Thippasandra "> Thippasandra </a></li>
-													<li><a href="#" value=" Thubarahal  "> Thubarahal  </a></li>
-													<li><a href="#" value=" Thurahal   "> Thurahal   </a></li>
-													<li><a href="#" value=" Tilak Nagar "> Tilak Nagar </a></li>
-													<li><a href="#" value=" Tippenahal  "> Tippenahal  </a></li>
-													<li><a href="#" value=" Tumkur Road "> Tumkur Road </a></li>
-													<li><a href="#" value=" Ullal "> Ullal </a></li>
-													<li><a href="#" value=" Ulsoor "> Ulsoor </a></li>
-													<li><a href="#" value=" Uttarahal  Main Road "> Uttarahal  Main Road </a></li>
-													<li><a href="#" value=" Uttarahal "> Uttarahal </a></li>
-													<li><a href="#" value=" Varthur Road"> Varthur Road</a></li>
-													<li><a href="#" value=" Varthur"> Varthur</a></li>
-													<li><a href="#" value=" Vasanthapura "> Vasanthapura </a></li>
-													<li><a href="#" value=" Vasanth Nagar "> Vasanth Nagar </a></li>
-													<li><a href="#" value=" Vehlo  "> Vehlo  </a></li>
-													<li><a href="#" value=" Venkatagiri Kote "> Venkatagiri Kote </a></li>
-													<li><a href="#" value=" Venkatapura "> Venkatapura </a></li>
-													<li><a href="#" value=" Venkateshpuram "> Venkateshpuram </a></li>
-													<li><a href="#" value=" Victoria Layout "> Victoria Layout </a></li>
-													<li><a href="#" value=" Vidyaranyapura "> Vidyaranyapura </a></li>
-													<li><a href="#" value=" Vignana Nagar "> Vignana Nagar </a></li>
-													<li><a href="#" value=" Vijay bank layout   "> Vijay bank layout   </a></li>
-													<li><a href="#" value=" Vijay Nagar "> Vijay Nagar </a></li>
-													<li><a href="#" value=" Vijaypura "> Vijaypura </a></li>
-													<li><a href="#" value=" Vimanapura "> Vimanapura </a></li>
-													<li><a href="#" value=" Vinayaka Layout "> Vinayaka Layout </a></li>
-													<li><a href="#" value=" Virupakshapura "> Virupakshapura </a></li>
-													<li><a href="#" value=" Vishweshwaraiah Layout"> Vishweshwaraiah Layout</a></li>
-													<li><a href="#" value=" Vittal Mallya Road "> Vittal Mallya Road </a></li>
-													<li><a href="#" value=" Vittal Nagar "> Vittal Nagar </a></li>
-													<li><a href="#" value=" Viveka Nagar "> Viveka Nagar </a></li>
-													<li><a href="#" value=" Vivek Nagar "> Vivek Nagar </a></li>
-													<li><a href="#" value=" VV Puram "> VV Puram </a></li>
-													<li><a href="#" value=" Vya kaval "> Vya kaval </a></li>
-													<li><a href="#" value=" Weavers Colony "> Weavers Colony </a></li>
-													<li><a href="#" value=" Wheeler Road "> Wheeler Road </a></li>
-													<li><a href="#" value=" Whitefield "> Whitefield </a></li>
-													<li><a href="#" value=" Wil ams Town "> Wil ams Town </a></li>
-													<li><a href="#" value=" Wilson Garden "> Wilson Garden </a></li>
-													<li><a href="#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
-													<li><a href="#" value=" Yelachena Hal "> Yelachena Hal </a></li>
-													<li><a href="#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
-													<li><a href="#" value=" Yelahanka "> Yelahanka </a></li>
-													<li><a href="#" value=" Yemalur "> Yemalur </a></li>
-													<li><a href="#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
-													<li><a href="#" value=" Wil ams Town "> Wil ams Town </a></li>
-													<li><a href="#" value=" Wilson Garden "> Wilson Garden </a></li>
-													<li><a href="#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
-													<li><a href="#" value=" Yelachena Hal "> Yelachena Hal </a></li>
-													<li><a href="#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
-													<li><a href="#" value=" Yelahanka "> Yelahanka </a></li>
-													<li><a href="#" value=" Yemalur "> Yemalur </a></li>
-													<li><a href="#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
-												</ul>
+											<div class="col-sm-2">
+												<h4 class="great" id="siteLabel" >SITE AREA</h4>
 											</div>
+											<div class="col-sm-3" style="margin-top:7px;">
+												<div >
+												<div style="width:250px" style="display:none" id="landTextBox">
+													<input type="text" style="text-align:center;" class="form-control" id="landAreatext">									
+												</div> 
+												<div class="dropdown" style="display:none" id="dwnSiteDimension" >
+												<button class="btn btn-default dropdown-toggle" style="width:250px" id="siteDimText" type="button" data-toggle="dropdown">Select Dimensions
+													<span class="caret"></span></button>
+												<ul class="dropdown-menu" style="width:250px;height: 200px;overflow:auto" id="dwnSiteDimUl">
+													
+																		<li><a value="600">20x30</a></li>
+																		<li><a value="800">20x40</a></li>
+																		<li><a value="1200">30x40</a></li>
+																		<li><a value="1500">30x50</a></li>
+																		<li><a value="1800">30x60</a></li>
+																		<li><a value="1600">40x40</a></li>
+																		<li><a value="2000">40x50</a></li>
+																		<li><a value="2400">40x60</a></li>
+																		<li><a value="3200">40x80</a></li>
+																		<li><a value="4000">50x80</a></li>
+																		<li><a value="8000">80x100</a></li>
+																		<li><a value="9600">80x120</a></li>
+																		<li><a value="10000">100x100</a></li>
+																		<li><a value="12000">100x120</a></li>
+																		<li><a value="1200">20x60</a></li>
+																		<li><a value="600">30x20</a></li>
+																		<li><a value="900">30x30</a></li>
+																		<li><a value="2100">30x70</a></li>
+																		<li><a value="2400">30x80</a></li>
+																		<li><a value="800">40x20</a></li>
+																		<li><a value="1200">40x30</a></li>
+																		<li><a value="2800">40x70</a></li>
+																		<li><a value="3200">40x80</a></li>
+																		<li><a value="4000">40x100</a></li>
+																		<li><a value="2000">50x40</a></li>
+																		<li><a value="2500">50x50</a></li>
+																		<li><a value="1500">50x30</a></li>
+																		<li><a value="3000">50x60</a></li>
+																		<li><a value="3500">50x70</a></li>
+																		<li><a value="5000">50x100</a></li>
+																		<li><a value="6000">50x120</a></li>
+																		<li><a value="1800">60x30</a></li>
+																		<li><a value="2400">60x40</a></li>
+																		<li><a value="3000">60x50</a></li>
+																		<li><a value="3600">60x60</a></li>
+																		<li><a value="4800">60x80</a></li>
+																		<li><a value="5400">60x90</a></li>
+																		<li><a value="6000">60x100</a></li>
+																		<li><a value="7200">60x120</a></li>
+																		<li><a value="2100">70x30</a></li>
+																		<li><a value="2800">70x40</a></li>
+																		<li><a value="3500">70x50</a></li>
+																		<li><a value="5600">70x80</a></li>
+																		<li><a value="7000">70x100</a></li>
+																		<li><a value="8400">70x120</a></li>
+																		<li><a value="2400">80x30</a></li>
+																		<li><a value="3200">80x40</a></li>
+																		<li><a value="4000">80x50</a></li>
+																		<li><a value="4800">80x60</a></li>
+																		<li><a value="6400">80x80</a></li>
+																		<li><a value="7200">80x90</a></li>
+																		<li><a value="2700">90x30</a></li>
+																		<li><a value="3600">90x40</a></li>
+																		<li><a value="4500">90x50</a></li>
+																		<li><a value="5400">90x60</a></li>
+																		<li><a value="7200">90x80</a></li>
+																		<li><a value="9000">90x100</a></li>
+																		<li><a value="1800">90x120</a></li>
+																		<li><a value="3000">100x30</a></li>
+																		<li><a value="4000">100x40</a></li>
+																		<li><a value="5000">100x50</a></li>
+																		<li><a value="6000">100x60</a></li>
+																		<li><a value="8000">100x80</a></li>
+																		<li><a value="9000">100x90</a></li>
+																		<li><a value="12000">120x100</a></li>
+																		<li><a value="9600">120x80</a></li>
+																		<li><a value="7200">120x60</a></li>
+																		<li><a value="4800">120x40</a></li>
+																		<li><a value="14400">120x120 </a></li>
+																		<li><a value="600">20*30</a></li>
+																		<li><a value="800">20*40</a></li>
+																		<li><a value="1200">30*40</a></li>
+																		<li><a value="1500">30*50</a></li>
+																		<li><a value="1800">30*60</a></li>
+																		<li><a value="1600">40*40</a></li>
+																		<li><a value="2000">40*50</a></li>
+																		<li><a value="2400">40*60</a></li>
+																		<li><a value="4000">50*80</a></li>
+																		<li><a value="8000">80*100</a></li>
+																		<li><a value="9600">80*120</a></li>
+																		<li><a value="10000">100*100</a></li>
+																		<li><a value="12000">100*120</a></li>
+
+												</ul>
+												</div>
+												<div class="dropdown" style="display:none" id="dwnSqFT">
+													<button class="btn btn-default dropdown-toggle"  style="width:250px" id="sitesqftText" type="button" data-toggle="dropdown">Select Sq.ft.
+														<span class="caret"></span></button>
+													<ul class="dropdown-menu" style="width:250px;height: 200px;overflow:auto" id="dwnsqFtUl">
+														<li><a value="400">400</a></li>
+														<li><a value="500">500</a></li>
+															<li><a value="600">600</a></li>
+															<li><a value="1100">1100</a></li>
+															<li><a value="1250">1250</a></li>
+															<li><a value="1350">1350</a></li>
+															<li><a value="1400">1400</a></li>
+															<li><a value="1450">1450</a></li>
+															<li><a value="1650">1650</a></li>
+															<li><a value="1700">1700</a></li>
+															<li><a value="1800">1800</a></li>
+															<li><a value="2350">2350</a></li>
+															<li><a value="2400">2400</a></li>
+															<li><a value="2600">2600</a></li>
+															<li><a value="2800">2800</a></li>
+															<li><a value="3000">3000</a></li>
+															<li><a value="4200">4200</a></li>
+															<li><a value="4400">4400</a></li>
+															<li><a value="4500">4500</a></li>
+															<li><a value="4600">4600</a></li>
+															<li><a value="4800">4800</a></li>
+															<li><a value="5000">5000</a></li>
+															<li><a value="5200">5200</a></li>
+															<li><a value="5400">5400</a></li>
+															<li><a value="5500">5500</a></li>
+															<li><a value="5600">5600</a></li>
+															<li><a value="5800">5800</a></li>
+															<li><a value="6000">6000</a></li>
+															<li><a value="6200">6200</a></li>
+															<li><a value="6400">6400</a></li>
+															<li><a value="6600">6600</a></li>
+															<li><a value="6800">6800</a></li>
+															<li><a value="7000">7000</a></li>
+															<li><a value="7200">7200</a></li>
+															<li><a value="7500">7500</a></li>
+															<li><a value="7600">7600</a></li>
+															<li><a value="7800">7800</a></li>
+															<li><a value="8000">8000</a></li>
+															<li><a value="8200">8200</a></li>
+															<li><a value="8400">8400</a></li>
+															<li><a value="8600">8600</a></li>
+															<li><a value="8800">8800</a></li>
+															<li><a value="9000">9000</a></li>
+															<li><a value="9200">9200</a></li>
+															<li><a value="9500">9500</a></li>
+															<li><a value="9800">9800</a></li>
+															<li><a value="10000">10000</a></li>
+															<li><a value="10500">10500</a></li>
+															<li><a value="11000">11000</a></li>
+															<li><a value="12000">12000</a></li>
+															<li><a value="14000">14000</a></li>
+															<li><a value="15000">15000</a></li>
+															<li><a value="20000">20000</a></li>
+
+													</ul>
+												</div>
+												</div>
+											</div> 
+											<div class="col-sm-2" style="font-size: x-large;margin-top:13px;">
+												Sq.Ft.                           
+											</div>
+											<input type="hidden" style="text-align:center;" class="form-control" id="landArea">
+									</div>
+								</div>
+								<div class="price-slider">									
+									<div class="row">
+										<div class="col-sm-2" >
+											<h4 class="great">LOCATION</h4>
+										</div>
+										<div class="col-sm-10" style="margin-top:5px;">
+												<div class="dropdown">
+													<input class="btn btn-default" placeholder="Type a Location" style="width:292px" id="dwnText" type="text" >
+													</input>
+													<button type="button" style="height:33px" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" style="width:330px;height: 200px;overflow:auto" id="dwnCity">
+													<li><a href="#" value="Aalada Mara Road "> Aalada Mara Road </a></li>
+														<li><a href="#" value=" Aavalahal "> Aavalahal </a></li>
+														<li><a href="#" value=" Abbigere"> Abbigere</a></li>
+														<li><a href="#" value=" Adugodi"> Adugodi</a></li>
+														<li><a href="#" value=" AECS Layout   "> AECS Layout   </a></li>
+														<li><a href="#" value=" Akshayanagar "> Akshayanagar </a></li>
+														<li><a href="#" value=" Amrutha Hal  "> Amrutha Hal  </a></li>
+														<li><a href="#" value=" Anagalapura"> Anagalapura</a></li>
+														<li><a href="#" value=" Ananth Nagar "> Ananth Nagar </a></li>
+														<li><a href="#" value=" Andrahal  "> Andrahal  </a></li>
+														<li><a href="#" value=" Anekal "> Anekal </a></li>
+														<li><a href="#" value=" Anjanapura "> Anjanapura </a></li>
+														<li><a href="#" value=" Annapurneshwari Nagar "> Annapurneshwari Nagar </a></li>
+														<li><a href="#" value=" Arasanakunte "> Arasanakunte </a></li>
+														<li><a href="#" value=" Architects in Bangalore "> Architects in Bangalore </a></li>
+														<li><a href="#" value=" Arekere"> Arekere</a></li>
+														<li><a href="#" value=" Ashirvad Colony "> Ashirvad Colony </a></li>
+														<li><a href="#" value=" Ashok Nagar "> Ashok Nagar </a></li>
+														<li><a href="#" value=" Attibele Anekal Road"> Attibele Anekal Road</a></li>
+														<li><a href="#" value=" Attibele "> Attibele </a></li>
+														<li><a href="#" value=" Attiguppe"> Attiguppe</a></li>
+														<li><a href="#" value=" Austin Town "> Austin Town </a></li>
+														<li><a href="#" value=" Avenue Road "> Avenue Road </a></li>
+														<li><a href="#" value=" Azad Nagar "> Azad Nagar </a></li>
+														<li><a href="#" value=" Babusa Palya "> Babusa Palya </a></li>
+														<li><a href="#" value=" Bagalakunte "> Bagalakunte </a></li>
+														<li><a href="#" value=" Bagalur  "> Bagalur  </a></li>
+														<li><a href="#" value=" Bagalur Road "> Bagalur Road </a></li>
+														<li><a href="#" value=" Bagaluru"> Bagaluru</a></li>
+														<li><a href="#" value=" Bagepal  Bagepal"> Bagepal  Bagepal</a></li>
+														<li><a href="#" value=" Baiyyappanahal "> Baiyyappanahal </a></li>
+														<li><a href="#" value=" Balagere Balagere"> Balagere Balagere</a></li>
+														<li><a href="#" value=" Balepet Balepet"> Balepet Balepet</a></li>
+														<li><a href="#" value=" Ballur Ballur"> Ballur Ballur</a></li>
+														<li><a href="#" value=" Banashankari 3rd Stage "> Banashankari 3rd Stage </a></li>
+														<li><a href="#" value=" Banashankari "> Banashankari </a></li>
+														<li><a href="#" value=" Banasvadi "> Banasvadi </a></li>
+														<li><a href="#" value=" Banaswadi "> Banaswadi </a></li>
+														<li><a href="#" value=" Bangalore Central "> Bangalore Central </a></li>
+														<li><a href="#" value=" Bangalore East "> Bangalore East </a></li>
+														<li><a href="#" value=" Bangalore North "> Bangalore North </a></li>
+														<li><a href="#" value=" Bangalore South "> Bangalore South </a></li>
+														<li><a href="#" value=" Bangalore West "> Bangalore West </a></li>
+														<li><a href="#" value=" Bannerghatta "> Bannerghatta </a></li>
+														<li><a href="#" value=" Bannerghatta Jigani Road "> Bannerghatta Jigani Road </a></li>
+														<li><a href="#" value=" Bannerghatta Road "> Bannerghatta Road </a></li>
+														<li><a href="#" value=" Bapuji Nagar "> Bapuji Nagar </a></li>
+														<li><a href="#" value=" Basapura "> Basapura </a></li>
+														<li><a href="#" value=" Basavanagar "> Basavanagar </a></li>
+														<li><a href="#" value=" Basavanagudi"> Basavanagudi</a></li>
+														<li><a href="#" value=" Basavanna Nagar "> Basavanna Nagar </a></li>
+														<li><a href="#" value=" Basaveshwara Nagar "> Basaveshwara Nagar </a></li>
+														<li><a href="#" value=" Battarahal  "> Battarahal  </a></li>
+														<li><a href="#" value=" Begur Begur"> Begur Begur</a></li>
+														<li><a href="#" value=" Begur Road "> Begur Road </a></li>
+														<li><a href="#" value=" Belatur "> Belatur </a></li>
+														<li><a href="#" value=" Bellandur "> Bellandur </a></li>
+														<li><a href="#" value=" Bellary Road "> Bellary Road </a></li>
+														<li><a href="#" value=" Bel Road "> Bel Road </a></li>
+														<li><a href="#" value=" BEML  Layout "> BEML  Layout </a></li>
+														<li><a href="#" value=" BEML Layout"> BEML Layout</a></li>
+														<li><a href="#" value=" Bengaluru "> Bengaluru </a></li>
+														<li><a href="#" value=" Bennigana Hal  "> Bennigana Hal  </a></li>
+														<li><a href="#" value=" Benson Town "> Benson Town </a></li>
+														<li><a href="#" value=" Bhaktharahal  "> Bhaktharahal  </a></li>
+														<li><a href="#" value=" Bhoganhal  "> Bhoganhal  </a></li>
+														<li><a href="#" value=" Bhoopasandra "> Bhoopasandra </a></li>
+														<li><a href="#" value=" Bhovi Palya "> Bhovi Palya </a></li>
+														<li><a href="#" value=" Bhuvaneshwari Nagar"> Bhuvaneshwari Nagar</a></li>
+														<li><a href="#" value=" Bidadi "> Bidadi </a></li>
+														<li><a href="#" value=" Bidrahal "> Bidrahal </a></li>
+														<li><a href="#" value=" Bikasipura "> Bikasipura </a></li>
+														<li><a href="#" value=" Bikkanahal  "> Bikkanahal  </a></li>
+														<li><a href="#" value=" Bilekahal  "> Bilekahal  </a></li>
+														<li><a href="#" value=" Bileshivale "> Bileshivale </a></li>
+														<li><a href="#" value=" Binny Pete "> Binny Pete </a></li>
+														<li><a href="#" value=" B Narayanapura "> B Narayanapura </a></li>
+														<li><a href="#" value=" Bommanahal  "> Bommanahal  </a></li>
+														<li><a href="#" value=" Bommasandra "> Bommasandra </a></li>
+														<li><a href="#" value=" Boyalahal  "> Boyalahal  </a></li>
+														<li><a href="#" value=" Brigade Road "> Brigade Road </a></li>
+														<li><a href="#" value=" Brookefield "> Brookefield </a></li>
+														<li><a href="#" value=" Btm layout "> Btm layout </a></li>
+														<li><a href="#" value=" Budigere Road "> Budigere Road </a></li>
+														<li><a href="#" value=" Budihal "> Budihal </a></li>
+														<li><a href="#" value=" Byatarayanapura "> Byatarayanapura </a></li>
+														<li><a href="#" value=" Byrathi "> Byrathi </a></li>
+														<li><a href="#" value=" Cambridge  Layout "> Cambridge  Layout </a></li>
+														<li><a href="#" value=" Carmelaram "> Carmelaram </a></li>
+														<li><a href="#" value=" Chadalapura "> Chadalapura </a></li>
+														<li><a href="#" value=" Chamarajendra Nagar "> Chamarajendra Nagar </a></li>
+														<li><a href="#" value=" Chamarajpet "> Chamarajpet </a></li>
+														<li><a href="#" value=" Chamundi Nagar "> Chamundi Nagar </a></li>
+														<li><a href="#" value=" Chandapura "> Chandapura </a></li>
+														<li><a href="#" value=" Chandra Layout "> Chandra Layout </a></li>
+														<li><a href="#" value=" Chansandra "> Chansandra </a></li>
+														<li><a href="#" value=" Chatram Road "> Chatram Road </a></li>
+														<li><a href="#" value=" Chelekare "> Chelekare </a></li>
+														<li><a href="#" value=" Chickpet "> Chickpet </a></li>
+														<li><a href="#" value=" Chikbanavara "> Chikbanavara </a></li>
+														<li><a href="#" value=" Chikkaballapura "> Chikkaballapura </a></li>
+														<li><a href="#" value=" Chikkaballapura Road "> Chikkaballapura Road </a></li>
+														<li><a href="#" value=" Chikkaballapur "> Chikkaballapur </a></li>
+														<li><a href="#" value=" Chikkaballapur Road"> Chikkaballapur Road</a></li>
+														<li><a href="#" value=" Chikkabasavanapura "> Chikkabasavanapura </a></li>
+														<li><a href="#" value=" Chikkabellandur "> Chikkabellandur </a></li>
+														<li><a href="#" value=" Chikkabidarakallu "> Chikkabidarakallu </a></li>
+														<li><a href="#" value=" Chikkagubbi "> Chikkagubbi </a></li>
+														<li><a href="#" value=" Chikkakannal  "> Chikkakannal  </a></li>
+														<li><a href="#" value=" Chikkalasandra "> Chikkalasandra </a></li>
+														<li><a href="#" value=" Chikkanahal  "> Chikkanahal  </a></li>
+														<li><a href="#" value=" Chikkathoguru "> Chikkathoguru </a></li>
+														<li><a href="#" value=" Chikka Tirupathi "> Chikka Tirupathi </a></li>
+														<li><a href="#" value=" Chikka Tirupathi Road "> Chikka Tirupathi Road </a></li>
+														<li><a href="#" value=" Chinnapa Garden "> Chinnapa Garden </a></li>
+														<li><a href="#" value=" Chinnapanna Hal  "> Chinnapanna Hal  </a></li>
+														<li><a href="#" value=" Chokkanahal  "> Chokkanahal  </a></li>
+														<li><a href="#" value=" Cholanayakanahal  "> Cholanayakanahal  </a></li>
+														<li><a href="#" value=" Choodasandra "> Choodasandra </a></li>
+														<li><a href="#" value=" Church Street "> Church Street </a></li>
+														<li><a href="#" value=" Commercial Street "> Commercial Street </a></li>
+														<li><a href="#" value=" Cooke Town "> Cooke Town </a></li>
+														<li><a href="#" value=" Cox Town "> Cox Town </a></li>
+														<li><a href="#" value=" CQAL Layout "> CQAL Layout </a></li>
+														<li><a href="#" value=" Craig Park Layout "> Craig Park Layout </a></li>
+														<li><a href="#" value=" Crescent Road "> Crescent Road </a></li>
+														<li><a href="#" value=" Cunningham road "> Cunningham road </a></li>
+														<li><a href="#" value=" CV Raman Nagar "> CV Raman Nagar </a></li>
+														<li><a href="#" value=" Dabaspete "> Dabaspete </a></li>
+														<li><a href="#" value=" Dasarahal  "> Dasarahal  </a></li>
+														<li><a href="#" value=" Dasarahal  Main Road "> Dasarahal  Main Road </a></li>
+														<li><a href="#" value=" Dayananda Nagar "> Dayananda Nagar </a></li>
+														<li><a href="#" value=" Defence Colony "> Defence Colony </a></li>
+														<li><a href="#" value=" Devanahal  "> Devanahal  </a></li>
+														<li><a href="#" value=" Devanahal  Road "> Devanahal  Road </a></li>
+														<li><a href="#" value=" Devarachikkanahal "> Devarachikkanahal </a></li>
+														<li><a href="#" value=" Devasthanagalu "> Devasthanagalu </a></li>
+														<li><a href="#" value=" Devinagar "> Devinagar </a></li>
+														<li><a href="#" value=" Dickenson Road "> Dickenson Road </a></li>
+														<li><a href="#" value=" Doddaballapur "> Doddaballapur </a></li>
+														<li><a href="#" value=" Doddaballapur Road "> Doddaballapur Road </a></li>
+														<li><a href="#" value=" Dodda Banasvadi "> Dodda Banasvadi </a></li>
+														<li><a href="#" value=" Doddabele "> Doddabele </a></li>
+														<li><a href="#" value=" Doddabommasandra "> Doddabommasandra </a></li>
+														<li><a href="#" value=" Doddakallasandra "> Doddakallasandra </a></li>
+														<li><a href="#" value=" Doddakammanahal  "> Doddakammanahal  </a></li>
+														<li><a href="#" value=" Doddakannal  "> Doddakannal  </a></li>
+														<li><a href="#" value=" Doddamaval  "> Doddamaval  </a></li>
+														<li><a href="#" value=" Doddathoguru "> Doddathoguru </a></li>
+														<li><a href="#" value=" Doddenahal  "> Doddenahal  </a></li>
+														<li><a href="#" value=" Doddenakundi "> Doddenakundi </a></li>
+														<li><a href="#" value=" Dodsworth Layout "> Dodsworth Layout </a></li>
+														<li><a href="#" value=" Dollars Colony "> Dollars Colony </a></li>
+														<li><a href="#" value=" Domlur "> Domlur </a></li>
+														<li><a href="#" value=" Dommasandra "> Dommasandra </a></li>
+														<li><a href="#" value=" Donnenahal  "> Donnenahal  </a></li>
+														<li><a href="#" value=" Dooravani Nagar "> Dooravani Nagar </a></li>
+														<li><a href="#" value=" Ejipura "> Ejipura </a></li>
+														<li><a href="#" value=" Electronic City "> Electronic City </a></li>
+														<li><a href="#" value=" Electronic City Phase 1  "> Electronic City Phase 1  </a></li>
+														<li><a href="#" value=" Electronic City Phase 2 "> Electronic City Phase 2 </a></li>
+														<li><a href="#" value=" Essel Gardens "> Essel Gardens </a></li>
+														<li><a href="#" value=" Frazer Town "> Frazer Town </a></li>
+														<li><a href="#" value=" Ganapathihal  "> Ganapathihal  </a></li>
+														<li><a href="#" value=" Gandhi Nagar "> Gandhi Nagar </a></li>
+														<li><a href="#" value=" Ganga Nagar "> Ganga Nagar </a></li>
+														<li><a href="#" value=" Garden Layout "> Garden Layout </a></li>
+														<li><a href="#" value=" Garudachar Palya "> Garudachar Palya </a></li>
+														<li><a href="#" value=" Garvebhavi Palya "> Garvebhavi Palya </a></li>
+														<li><a href="#" value=" Gattahal  "> Gattahal  </a></li>
+														<li><a href="#" value=" Gauribidanur "> Gauribidanur </a></li>
+														<li><a href="#" value=" Gavipuram "> Gavipuram </a></li>
+														<li><a href="#" value=" Girinagar "> Girinagar </a></li>
+														<li><a href="#" value=" GM Palya "> GM Palya </a></li>
+														<li><a href="#" value=" Gollahal  "> Gollahal  </a></li>
+														<li><a href="#" value=" Gottigere "> Gottigere </a></li>
+														<li><a href="#" value=" Gunjur "> Gunjur </a></li>
+														<li><a href="#" value=" Gunjur Mugalur Road "> Gunjur Mugalur Road </a></li>
+														<li><a href="#" value=" Guttahal  Guttahal"> Guttahal  Guttahal</a></li>
+														<li><a href="#" value=" Hal Hal"> Hal Hal</a></li>
+														<li><a href="#" value=" HAL Layout "> HAL Layout </a></li>
+														<li><a href="#" value=" Hancharahal  "> Hancharahal  </a></li>
+														<li><a href="#" value=" Hanumantha Nagar "> Hanumantha Nagar </a></li>
+														<li><a href="#" value=" Hanumanthanagar "> Hanumanthanagar </a></li>
+														<li><a href="#" value=" Haragadde "> Haragadde </a></li>
+														<li><a href="#" value=" Haralur Road "> Haralur Road </a></li>
+														<li><a href="#" value=" Harlur "> Harlur </a></li>
+														<li><a href="#" value=" Harohal  "> Harohal  </a></li>
+														<li><a href="#" value=" Haudin Road "> Haudin Road </a></li>
+														<li><a href="#" value=" Hbr layout "> Hbr layout </a></li>
+														<li><a href="#" value=" Hebbal "> Hebbal </a></li>
+														<li><a href="#" value=" Hegde Nagar "> Hegde Nagar </a></li>
+														<li><a href="#" value=" Hennur "> Hennur </a></li>
+														<li><a href="#" value=" Hennur Road "> Hennur Road </a></li>
+														<li><a href="#" value=" Hesaraghatta "> Hesaraghatta </a></li>
+														<li><a href="#" value=" Hombegowda Nagar "> Hombegowda Nagar </a></li>
+														<li><a href="#" value=" Hongasandra "> Hongasandra </a></li>
+														<li><a href="#" value=" Hoodi "> Hoodi </a></li>
+														<li><a href="#" value=" Horamavu Agara "> Horamavu Agara </a></li>
+														<li><a href="#" value=" Horamavu "> Horamavu </a></li>
+														<li><a href="#" value=" Hosakerehal  "> Hosakerehal  </a></li>
+														<li><a href="#" value=" Hosapalaya "> Hosapalaya </a></li>
+														<li><a href="#" value=" Hosa Road "> Hosa Road </a></li>
+														<li><a href="#" value=" Hoskote "> Hoskote </a></li>
+														<li><a href="#" value=" Hosur Road "> Hosur Road </a></li>
+														<li><a href="#" value=" House Architects "> House Architects </a></li>
+														<li><a href="#" value=" HRBR Layout "> HRBR Layout </a></li>
+														<li><a href="#" value=" Hsr layout "> Hsr layout </a></li>
+														<li><a href="#" value=" HSR Layout Sector 1 2 3 4 5 "> HSR Layout Sector 1 2 3 4 5 </a></li>
+														<li><a href="#" value=" Hullahal  "> Hullahal  </a></li>
+														<li><a href="#" value=" Hu mavu "> Hu mavu </a></li>
+														<li><a href="#" value=" Huskur "> Huskur </a></li>
+														<li><a href="#" value=" Huttanahal  "> Huttanahal  </a></li>
+														<li><a href="#" value=" Immadihal  "> Immadihal  </a></li>
+														<li><a href="#" value=" Infantry Road "> Infantry Road </a></li>
+														<li><a href="#" value=" International Airport Road "> International Airport Road </a></li>
+														<li><a href="#" value=" ISRO Layout "> ISRO Layout </a></li>
+														<li><a href="#" value=" ITPL "> ITPL </a></li>
+														<li><a href="#" value=" IVC Road  "> IVC Road  </a></li>
+														<li><a href="#" value=" Jagadish Nagar "> Jagadish Nagar </a></li>
+														<li><a href="#" value=" Jagajeevanram Nagar "> Jagajeevanram Nagar </a></li>
+														<li><a href="#" value=" Jakkasandra "> Jakkasandra </a></li>
+														<li><a href="#" value=" Jakkuru "> Jakkuru </a></li>
+														<li><a href="#" value="  Jakkuru Layout  ">  Jakkuru Layout  </a></li>
+														<li><a href="#" value=" Jalahal  Cross "> Jalahal  Cross </a></li>
+														<li><a href="#" value=" Jalahal  East  "> Jalahal  East  </a></li>
+														<li><a href="#" value=" Jalahal  "> Jalahal  </a></li>
+														<li><a href="#" value=" Jalahal  West "> Jalahal  West </a></li>
+														<li><a href="#" value=" Jangamakote "> Jangamakote </a></li>
+														<li><a href="#" value=" Jayamahal Road "> Jayamahal Road </a></li>
+														<li><a href="#" value=" Jayanagar "> Jayanagar </a></li>
+														<li><a href="#" value=" Jeevanbheema Nagar "> Jeevanbheema Nagar </a></li>
+														<li><a href="#" value=" Jeevan Bheema Nagar "> Jeevan Bheema Nagar </a></li>
+														<li><a href="#" value=" Jigani "> Jigani </a></li>
+														<li><a href="#" value=" Jnana Ganga Nagar"> Jnana Ganga Nagar</a></li>
+														<li><a href="#" value=" JP nagar "> JP nagar </a></li>
+														<li><a href="#" value=" JP Nagar Phase 1 2 3 4 5 "> JP Nagar Phase 1 2 3 4 5 </a></li>
+														<li><a href="#" value=" JP Nagar Phase 6 "> JP Nagar Phase 6 </a></li>
+														<li><a href="#" value=" JP Nagar Phase 9 "> JP Nagar Phase 9 </a></li>
+														<li><a href="#" value=" Kacharakanahal  "> Kacharakanahal  </a></li>
+														<li><a href="#" value=" Kadabagere "> Kadabagere </a></li>
+														<li><a href="#" value=" Kadubeesanahal  "> Kadubeesanahal  </a></li>
+														<li><a href="#" value=" Kadugodi "> Kadugodi </a></li>
+														<li><a href="#" value=" Kadugondanahal "> Kadugondanahal </a></li>
+														<li><a href="#" value=" Kadusonnappanahal  "> Kadusonnappanahal  </a></li>
+														<li><a href="#" value=" Kaggadasapura "> Kaggadasapura </a></li>
+														<li><a href="#" value=" Kagga pura "> Kagga pura </a></li>
+														<li><a href="#" value=" Kalasipalayam "> Kalasipalayam </a></li>
+														<li><a href="#" value=" Kalena Agrahara "> Kalena Agrahara </a></li>
+														<li><a href="#" value=" Kalkere "> Kalkere </a></li>
+														<li><a href="#" value=" Kallumantapa "> Kallumantapa </a></li>
+														<li><a href="#" value=" Kalyan Nagar "> Kalyan Nagar </a></li>
+														<li><a href="#" value=" Kamaksipalya "> Kamaksipalya </a></li>
+														<li><a href="#" value=" Kamala Nagar "> Kamala Nagar </a></li>
+														<li><a href="#" value=" Kammanahal  "> Kammanahal  </a></li>
+														<li><a href="#" value=" Kammasandra Agrahara "> Kammasandra Agrahara </a></li>
+														<li><a href="#" value=" Kammasandra "> Kammasandra </a></li>
+														<li><a href="#" value=" Kanaka Nagar "> Kanaka Nagar </a></li>
+														<li><a href="#" value=" Kanakapura"> Kanakapura</a></li>
+														<li><a href="#" value=" Kanakapura road "> Kanakapura road </a></li>
+														<li><a href="#" value=" Kannamangala "> Kannamangala </a></li>
+														<li><a href="#" value=" Kartik Nagar "> Kartik Nagar </a></li>
+														<li><a href="#" value=" Karuna Nagar "> Karuna Nagar </a></li>
+														<li><a href="#" value=" Kasavanahal  "> Kasavanahal  </a></li>
+														<li><a href="#" value=" Kasturba Road "> Kasturba Road </a></li>
+														<li><a href="#" value=" Kasturi Nagar "> Kasturi Nagar </a></li>
+														<li><a href="#" value=" Kathriguppe "> Kathriguppe </a></li>
+														<li><a href="#" value=" Kattigenahal  "> Kattigenahal  </a></li>
+														<li><a href="#" value=" Kaval Byrasandra"> Kaval Byrasandra</a></li>
+														<li><a href="#" value=" K Channasandra Malur"> K Channasandra Malur</a></li>
+														<li><a href="#" value=" Kempapura "> Kempapura </a></li>
+														<li><a href="#" value=" Kempegowda Nagar "> Kempegowda Nagar </a></li>
+														<li><a href="#" value=" Kempe Gowda Road "> Kempe Gowda Road </a></li>
+														<li><a href="#" value=" Kengeri "> Kengeri </a></li>
+														<li><a href="#" value=" Kengeri Satel te Town "> Kengeri Satel te Town </a></li>
+														<li><a href="#" value=" Kithiganur "> Kithiganur </a></li>
+														<li><a href="#" value=" Kodathi "> Kodathi </a></li>
+														<li><a href="#" value=" Kodichikkanahal  "> Kodichikkanahal  </a></li>
+														<li><a href="#" value=" Kodigehal  "> Kodigehal  </a></li>
+														<li><a href="#" value=" Kodihal  "> Kodihal  </a></li>
+														<li><a href="#" value=" Kogilu "> Kogilu </a></li>
+														<li><a href="#" value=" Kolar "> Kolar </a></li>
+														<li><a href="#" value=" Kolar Road "> Kolar Road </a></li>
+														<li><a href="#" value=" Kommaghatta "> Kommaghatta </a></li>
+														<li><a href="#" value=" Konanakunte "> Konanakunte </a></li>
+														<li><a href="#" value=" Koppa "> Koppa </a></li>
+														<li><a href="#" value=" Koralur "> Koralur </a></li>
+														<li><a href="#" value="Koramangala ">Koramangala </a></li>
+														<li><a href="#" value=" Kothanoor "> Kothanoor </a></li>
+														<li><a href="#" value=" Kothanur "> Kothanur </a></li>
+														<li><a href="#" value=" Koti Hosahal  "> Koti Hosahal  </a></li>
+														<li><a href="#" value=" Krishnaraja Puram "> Krishnaraja Puram </a></li>
+														<li><a href="#" value=" K R Puram  "> K R Puram  </a></li>
+														<li><a href="#" value=" KR puram "> KR puram </a></li>
+														<li><a href="#" value=" Kudlu Gate "> Kudlu Gate </a></li>
+														<li><a href="#" value=" Kudlu "> Kudlu </a></li>
+														<li><a href="#" value=" Kumara Krupa Road Kumara "> Kumara Krupa Road Kumara </a></li>
+														<li><a href="#" value=" Kumaraswamy Layout "> Kumaraswamy Layout </a></li>
+														<li><a href="#" value=" Kumbalgodu "> Kumbalgodu </a></li>
+														<li><a href="#" value=" Kundalahal  "> Kundalahal  </a></li>
+														<li><a href="#" value=" Kunigal Road "> Kunigal Road </a></li>
+														<li><a href="#" value=" Kuthaganahal "> Kuthaganahal </a></li>
+														<li><a href="#" value=" Lady Curzon Road "> Lady Curzon Road </a></li>
+														<li><a href="#" value=" Laggere "> Laggere </a></li>
+														<li><a href="#" value=" Lake City "> Lake City </a></li>
+														<li><a href="#" value=" Lakshmamma Layout "> Lakshmamma Layout </a></li>
+														<li><a href="#" value=" lal bagh "> lal bagh </a></li>
+														<li><a href="#" value=" Langford Road "> Langford Road </a></li>
+														<li><a href="#" value=" Langford Town "> Langford Town </a></li>
+														<li><a href="#" value=" Lavelle Road "> Lavelle Road </a></li>
+														<li><a href="#" value=" LB Shastri Nagar "> LB Shastri Nagar </a></li>
+														<li><a href="#" value=" Madhava Nagar "> Madhava Nagar </a></li>
+														<li><a href="#" value=" Madivala "> Madivala </a></li>
+														<li><a href="#" value=" Magadi Road "> Magadi Road </a></li>
+														<li><a href="#" value=" Magrath Road "> Magrath Road </a></li>
+														<li><a href="#" value=" Mahadevapura "> Mahadevapura </a></li>
+														<li><a href="#" value=" Mahalakshmi Layout "> Mahalakshmi Layout </a></li>
+														<li><a href="#" value=" Mahalakshmipuram "> Mahalakshmipuram </a></li>
+														<li><a href="#" value=" Majestic "> Majestic </a></li>
+														<li><a href="#" value=" Mallathahal  "> Mallathahal  </a></li>
+														<li><a href="#" value=" Malleshpalya "> Malleshpalya </a></li>
+														<li><a href="#" value=" Malleshwaram "> Malleshwaram </a></li>
+														<li><a href="#" value=" Marathahal  "> Marathahal  </a></li>
+														<li><a href="#" value=" Margondanahal  "> Margondanahal  </a></li>
+														<li><a href="#" value=" Maruthi Nagar "> Maruthi Nagar </a></li>
+														<li><a href="#" value=" Maruthi Sevanagar "> Maruthi Sevanagar </a></li>
+														<li><a href="#" value=" Medihal  "> Medihal  </a></li>
+														<li><a href="#" value=" Meenakunte "> Meenakunte </a></li>
+														<li><a href="#" value=" MG Road "> MG Road </a></li>
+														<li><a href="#" value=" Mico Layout "> Mico Layout </a></li>
+														<li><a href="#" value=" Millers Road "> Millers Road </a></li>
+														<li><a href="#" value=" Mission Road "> Mission Road </a></li>
+														<li><a href="#" value=" MS Palya "> MS Palya </a></li>
+														<li><a href="#" value=" Munireddy Layout "> Munireddy Layout </a></li>
+														<li><a href="#" value=" Munireddypalya "> Munireddypalya </a></li>
+														<li><a href="#" value=" Munnekollal "> Munnekollal </a></li>
+														<li><a href="#" value="  Murugeshpalya  ">  Murugeshpalya  </a></li>
+														<li><a href="#" value=" Museum Road "> Museum Road </a></li>
+														<li><a href="#" value=" Mysore Road "> Mysore Road </a></li>
+														<li><a href="#" value=" Nagadevanahal  "> Nagadevanahal  </a></li>
+														<li><a href="#" value=" Nagarathpet "> Nagarathpet </a></li>
+														<li><a href="#" value=" Nagarbhavi Circle "> Nagarbhavi Circle </a></li>
+														<li><a href="#" value=" Nagarbhavi "> Nagarbhavi </a></li>
+														<li><a href="#" value=" Nagasandra "> Nagasandra </a></li>
+														<li><a href="#" value=" Nagashetty Hal  "> Nagashetty Hal  </a></li>
+														<li><a href="#" value=" Nagavara "> Nagavara </a></li>
+														<li><a href="#" value=" Nagondanahal   "> Nagondanahal   </a></li>
+														<li><a href="#" value=" Nallurhal "> Nallurhal </a></li>
+														<li><a href="#" value=" Nandi  Hills"> Nandi  Hills</a></li>
+														<li><a href="#" value=" Nandini Layout "> Nandini Layout </a></li>
+														<li><a href="#" value=" Nanjappa Garden "> Nanjappa Garden </a></li>
+														<li><a href="#" value=" Narasapura "> Narasapura </a></li>
+														<li><a href="#" value=" Nayanda Hal  "> Nayanda Hal  </a></li>
+														<li><a href="#" value=" Neeladri Nagar "> Neeladri Nagar </a></li>
+														<li><a href="#" value=" Neelasandra "> Neelasandra </a></li>
+														<li><a href="#" value=" Nehru Nagar "> Nehru Nagar </a></li>
+														<li><a href="#" value=" Nelamangala "> Nelamangala </a></li>
+														<li><a href="#" value=" New BEL Road"> New BEL Road</a></li>
+														<li><a href="#" value="  ngadheeranahal    ">  ngadheeranahal    </a></li>
+														<li><a href="#" value="  ngarajapuram  ">  ngarajapuram  </a></li>
+														<li><a href="#" value=" Nobo Nagar "> Nobo Nagar </a></li>
+														<li><a href="#" value=" NRI Layout "> NRI Layout </a></li>
+														<li><a href="#" value=" Old Airport Road O"> Old Airport Road O</a></li>
+														<li><a href="#" value=" OMBR Layout "> OMBR Layout </a></li>
+														<li><a href="#" value=" Outer Ring Road "> Outer Ring Road </a></li>
+														<li><a href="#" value=" Padmanabhanagar "> Padmanabhanagar </a></li>
+														<li><a href="#" value=" Padmanabha Nagar "> Padmanabha Nagar </a></li>
+														<li><a href="#" value=" Pai Layout "> Pai Layout </a></li>
+														<li><a href="#" value=" Palace Road "> Palace Road </a></li>
+														<li><a href="#" value=" Panathur "> Panathur </a></li>
+														<li><a href="#" value=" Panduranga Nagar "> Panduranga Nagar </a></li>
+														<li><a href="#" value=" Pattandur Agrahara "> Pattandur Agrahara </a></li>
+														<li><a href="#" value=" Peenya Peenya"> Peenya Peenya</a></li>
+														<li><a href="#" value=" Prashanth Nagar "> Prashanth Nagar </a></li>
+														<li><a href="#" value=" Race Course Road "> Race Course Road </a></li>
+														<li><a href="#" value=" Ragavendra Nagar "> Ragavendra Nagar </a></li>
+														<li><a href="#" value=" Raghavendra Colony "> Raghavendra Colony </a></li>
+														<li><a href="#" value=" Rajaji Nagar "> Rajaji Nagar </a></li>
+														<li><a href="#" value=" Rajanukunte "> Rajanukunte </a></li>
+														<li><a href="#" value=" Rajarajeshwari nagar "> Rajarajeshwari nagar </a></li>
+														<li><a href="#" value=" Raj Bhavan Road "> Raj Bhavan Road </a></li>
+														<li><a href="#" value=" Rajiv Gandhi Nagar "> Rajiv Gandhi Nagar </a></li>
+														<li><a href="#" value=" Rajpet "> Rajpet </a></li>
+														<li><a href="#" value=" Ramagondanahal  "> Ramagondanahal  </a></li>
+														<li><a href="#" value=" Ramamurthy Nagar "> Ramamurthy Nagar </a></li>
+														<li><a href="#" value=" Rayasandra "> Rayasandra </a></li>
+														<li><a href="#" value=" Residency Road Residency Road"> Residency Road Residency Road</a></li>
+														<li><a href="#" value=" Residential Architects "> Residential Architects </a></li>
+														<li><a href="#" value=" Rest House Road "> Rest House Road </a></li>
+														<li><a href="#" value=" Richard's Park "> Richard's Park </a></li>
+														<li><a href="#" value=" Richards Town "> Richards Town </a></li>
+														<li><a href="#" value=" Richmond Town "> Richmond Town </a></li>
+														<li><a href="#" value=" RK Hegde Nagar "> RK Hegde Nagar </a></li>
+														<li><a href="#" value=" RMV 2nd Stage "> RMV 2nd Stage </a></li>
+														<li><a href="#" value=" RMV Extension "> RMV Extension </a></li>
+														<li><a href="#" value=" RMV "> RMV </a></li>
+														<li><a href="#" value=" Roopena Agrahara"> Roopena Agrahara</a></li>
+														<li><a href="#" value=" RT Nagar "> RT Nagar </a></li>
+														<li><a href="#" value=" Sadashiva Nagar "> Sadashiva Nagar </a></li>
+														<li><a href="#" value=" Sadashivanagar "> Sadashivanagar </a></li>
+														<li><a href="#" value=" Sadduguntepalya "> Sadduguntepalya </a></li>
+														<li><a href="#" value=" Sahakara Nagar "> Sahakara Nagar </a></li>
+														<li><a href="#" value=" Sampangi Rama Nagar "> Sampangi Rama Nagar </a></li>
+														<li><a href="#" value=" Sampangiram "> Sampangiram </a></li>
+														<li><a href="#" value=" Sampigehal  "> Sampigehal  </a></li>
+														<li><a href="#" value=" Sanjay Nagar "> Sanjay Nagar </a></li>
+														<li><a href="#" value=" Sankey Road "> Sankey Road </a></li>
+														<li><a href="#" value=" Sarjapura "> Sarjapura </a></li>
+														<li><a href="#" value=" Sarjapur Attibele Road "> Sarjapur Attibele Road </a></li>
+														<li><a href="#" value=" Sarjapur Road "> Sarjapur Road </a></li>
+														<li><a href="#" value=" Sarjapur "> Sarjapur </a></li>
+														<li><a href="#" value=" Sathanur "> Sathanur </a></li>
+														<li><a href="#" value=" Seegehal  "> Seegehal  </a></li>
+														<li><a href="#" value=" Seenappa Layout "> Seenappa Layout </a></li>
+														<li><a href="#" value=" Seshadripuram "> Seshadripuram </a></li>
+														<li><a href="#" value=" Seshadri Road "> Seshadri Road </a></li>
+														<li><a href="#" value=" Shankarapura "> Shankarapura </a></li>
+														<li><a href="#" value=" Shanthala Nagar "> Shanthala Nagar </a></li>
+														<li><a href="#" value=" Shanthi Nagar "> Shanthi Nagar </a></li>
+														<li><a href="#" value=" Shanthi Pura "> Shanthi Pura </a></li>
+														<li><a href="#" value=" Shanti Nagar "> Shanti Nagar </a></li>
+														<li><a href="#" value=" Shettihal  "> Shettihal  </a></li>
+														<li><a href="#" value=" Shigehal  "> Shigehal  </a></li>
+														<li><a href="#" value=" Shivajinagar "> Shivajinagar </a></li>
+														<li><a href="#" value=" Shivaji Nagar "> Shivaji Nagar </a></li>
+														<li><a href="#" value=" Siddapura "> Siddapura </a></li>
+														<li><a href="#" value=" Sidlaghatta "> Sidlaghatta </a></li>
+														<li><a href="#" value=" Silk Board "> Silk Board </a></li>
+														<li><a href="#" value=" Silver Springs Layout "> Silver Springs Layout </a></li>
+														<li><a href="#" value=" Singanahal  "> Singanahal  </a></li>
+														<li><a href="#" value=" Singasandra "> Singasandra </a></li>
+														<li><a href="#" value=" S Medihal  "> S Medihal  </a></li>
+														<li><a href="#" value=" Solur "> Solur </a></li>
+														<li><a href="#" value=" Somashetti Hal  "> Somashetti Hal  </a></li>
+														<li><a href="#" value=" Sompura "> Sompura </a></li>
+														<li><a href="#" value=" Sonnenahal  "> Sonnenahal  </a></li>
+														<li><a href="#" value=" Soukya Road "> Soukya Road </a></li>
+														<li><a href="#" value=" Soundarya Layout "> Soundarya Layout </a></li>
+														<li><a href="#" value=" Srinagar "> Srinagar </a></li>
+														<li><a href="#" value=" Srinivasa Nagar "> Srinivasa Nagar </a></li>
+														<li><a href="#" value=" Srirampuram "> Srirampuram </a></li>
+														<li><a href="#" value=" Srirampura "> Srirampura </a></li>
+														<li><a href="#" value=" St. Mark's Road "> St. Mark's Road </a></li>
+														<li><a href="#" value=" St. Thomas Town "> St. Thomas Town </a></li>
+														<li><a href="#" value=" St Johns Road "> St Johns Road </a></li>
+														<li><a href="#" value=" Subramanyapura "> Subramanyapura </a></li>
+														<li><a href="#" value=" Sudhama Nagar "> Sudhama Nagar </a></li>
+														<li><a href="#" value=" Sunkadakatte "> Sunkadakatte </a></li>
+														<li><a href="#" value=" Suryanagar "> Suryanagar </a></li>
+														<li><a href="#" value=" Talaghattapura "> Talaghattapura </a></li>
+														<li><a href="#" value=" Tavarekere "> Tavarekere </a></li>
+														<li><a href="#" value=" TC Palya "> TC Palya </a></li>
+														<li><a href="#" value=" T Dasarahal  "> T Dasarahal  </a></li>
+														<li><a href="#" value=" Teachers Colony "> Teachers Colony </a></li>
+														<li><a href="#" value=" Thanisandra "> Thanisandra </a></li>
+														<li><a href="#" value=" Tharabal  "> Tharabal  </a></li>
+														<li><a href="#" value=" Tharabanahal  "> Tharabanahal  </a></li>
+														<li><a href="#" value=" Thavarekere "> Thavarekere </a></li>
+														<li><a href="#" value=" Thippasandra "> Thippasandra </a></li>
+														<li><a href="#" value=" Thubarahal  "> Thubarahal  </a></li>
+														<li><a href="#" value=" Thurahal   "> Thurahal   </a></li>
+														<li><a href="#" value=" Tilak Nagar "> Tilak Nagar </a></li>
+														<li><a href="#" value=" Tippenahal  "> Tippenahal  </a></li>
+														<li><a href="#" value=" Tumkur Road "> Tumkur Road </a></li>
+														<li><a href="#" value=" Ullal "> Ullal </a></li>
+														<li><a href="#" value=" Ulsoor "> Ulsoor </a></li>
+														<li><a href="#" value=" Uttarahal  Main Road "> Uttarahal  Main Road </a></li>
+														<li><a href="#" value=" Uttarahal "> Uttarahal </a></li>
+														<li><a href="#" value=" Varthur Road"> Varthur Road</a></li>
+														<li><a href="#" value=" Varthur"> Varthur</a></li>
+														<li><a href="#" value=" Vasanthapura "> Vasanthapura </a></li>
+														<li><a href="#" value=" Vasanth Nagar "> Vasanth Nagar </a></li>
+														<li><a href="#" value=" Vehlo  "> Vehlo  </a></li>
+														<li><a href="#" value=" Venkatagiri Kote "> Venkatagiri Kote </a></li>
+														<li><a href="#" value=" Venkatapura "> Venkatapura </a></li>
+														<li><a href="#" value=" Venkateshpuram "> Venkateshpuram </a></li>
+														<li><a href="#" value=" Victoria Layout "> Victoria Layout </a></li>
+														<li><a href="#" value=" Vidyaranyapura "> Vidyaranyapura </a></li>
+														<li><a href="#" value=" Vignana Nagar "> Vignana Nagar </a></li>
+														<li><a href="#" value=" Vijay bank layout   "> Vijay bank layout   </a></li>
+														<li><a href="#" value=" Vijay Nagar "> Vijay Nagar </a></li>
+														<li><a href="#" value=" Vijaypura "> Vijaypura </a></li>
+														<li><a href="#" value=" Vimanapura "> Vimanapura </a></li>
+														<li><a href="#" value=" Vinayaka Layout "> Vinayaka Layout </a></li>
+														<li><a href="#" value=" Virupakshapura "> Virupakshapura </a></li>
+														<li><a href="#" value=" Vishweshwaraiah Layout"> Vishweshwaraiah Layout</a></li>
+														<li><a href="#" value=" Vittal Mallya Road "> Vittal Mallya Road </a></li>
+														<li><a href="#" value=" Vittal Nagar "> Vittal Nagar </a></li>
+														<li><a href="#" value=" Viveka Nagar "> Viveka Nagar </a></li>
+														<li><a href="#" value=" Vivek Nagar "> Vivek Nagar </a></li>
+														<li><a href="#" value=" VV Puram "> VV Puram </a></li>
+														<li><a href="#" value=" Vya kaval "> Vya kaval </a></li>
+														<li><a href="#" value=" Weavers Colony "> Weavers Colony </a></li>
+														<li><a href="#" value=" Wheeler Road "> Wheeler Road </a></li>
+														<li><a href="#" value=" Whitefield "> Whitefield </a></li>
+														<li><a href="#" value=" Wil ams Town "> Wil ams Town </a></li>
+														<li><a href="#" value=" Wilson Garden "> Wilson Garden </a></li>
+														<li><a href="#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
+														<li><a href="#" value=" Yelachena Hal "> Yelachena Hal </a></li>
+														<li><a href="#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
+														<li><a href="#" value=" Yelahanka "> Yelahanka </a></li>
+														<li><a href="#" value=" Yemalur "> Yemalur </a></li>
+														<li><a href="#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
+														<li><a href="#" value=" Wil ams Town "> Wil ams Town </a></li>
+														<li><a href="#" value=" Wilson Garden "> Wilson Garden </a></li>
+														<li><a href="#" value=" Wind Tunnel Road "> Wind Tunnel Road </a></li>
+														<li><a href="#" value=" Yelachena Hal "> Yelachena Hal </a></li>
+														<li><a href="#" value=" Yelahanka New Town "> Yelahanka New Town </a></li>
+														<li><a href="#" value=" Yelahanka "> Yelahanka </a></li>
+														<li><a href="#" value=" Yemalur "> Yemalur </a></li>
+														<li><a href="#" value=" Yeshwanthpur"> Yeshwanthpur</a></li>
+													</ul>
+												</div>
 										</div>
 									</div>
 								</div>
-							
+								
 								<div class="price-slider">
-								<h4 class="great">FLOORS</h4>
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-sm-2" >
+										<h4 class="great">FLOORS</h4>
+									</div>
+									<div class="col-sm-10" style="margin-top:5px;">
 										<div class="dropdown">
 											<button class="btn btn-default dropdown-toggle" id="dwnFloortext" style="width:330px" type="button" data-toggle="dropdown">Select Floors
 												<span class="caret"></span></button>
@@ -753,103 +761,140 @@
 								</div>
 								</div>
 								<div class="price-slider">
-								<h4 class="great">CONSTRUCTION TYPE</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnBHK" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="ConstructVal" data-title="1">Duplex House</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="ConstructVal" data-title="2">Rental House</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="ConstructVal" data-title="3">Duplex+Rental House</a>
-									</div>
-									<input type="hidden" name="ConstructVal" id="ConstructVal">
-								</div>
-								</div>
-								<div class="price-slider">
-								<h4 class="great">BHK</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnBHK" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="BHKVal" data-title="1">1 BHK</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="2">2 BHK</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="3">3 BHK</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="BHKVal" data-title="4">4 BHK</a>
-									</div>
-									<input type="hidden" name="BHKVal" id="BHKVal">
-								</div>
-								</div>
-								<div class="price-slider">
-								<h4 class="great">STRUCTURE</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnStructure" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="StructureVal" data-title="4" name="Wall_construct" value="1">Cement Blocks (6')</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="5" name="Wall_construct"value="2">Cement Blocks (8')</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="StructureVal" data-title="6" name="Wall_construct" value="3">Bricks</a>
-									</div>
-									<input type="hidden" name="StructureVal" id="StructureVal">
-								</div>
-								</div>
-								<div class="price-slider">
-								<h4 class="great">FLOORING</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnFlooring" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:200px" data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="floorVal" data-title="8" value ="2">Granite</a>
-											<a class="btn btn-primary btn-sm notActive" style="width:200px" data-toggle="floorVal" data-title="9" value ="3">Marble + Wooden</a> 
-									</div>
-									<input type="hidden" name="floorVal" id="floorVal">
-								</div>
-								</div>
-								<div class="price-slider">
-								<h4 class="great">DOORS</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnDoors" class="btn-group">
-									<a class="btn btn-primary btn-sm active" style="width:150px" data-toggle="DoorVal" data-title="10" value = "2">HonneWood</a>
-									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="11" value = "3">SalWood</a>
-									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="12" value = "4">OSTDoors</a>
-									<a class="btn btn-primary btn-sm notActive" style="width:150px" data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>
-										
-										
-										
-										
-									</div>
-									<input type="hidden" name="DoorVal" id="DoorVal">
-								</div>
-							</div>
-								<div class="price-slider">
-									<h4 class="great">WINDOWS</h4>
-									<div class="input-group">
-										<div id="radioBtnWindows" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:120px" data-toggle="windowVal" data-title="12"value = "3">Salwood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="13"value = "2">Honne</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:120px" data-toggle="windowVal" data-title="15"value = "5">Aluminumum</a>
+									<div class="row">
+										<div class="col-sm-2" >
+											<h4 class="great">CONSTRUCTION TYPE</h4>
 										</div>
-										<input type="hidden" name="windowVal" id="windowVal">
+										<div class="col-sm-10" style="margin-top:13px;" >
+											<div class="input-group">
+												<div id="radioBtnBHK" class="btn-group">
+													<a class="btn btn-primary btn-sm active radioWidth"  data-toggle="ConstructVal" data-title="1">Duplex House</a>
+													<a class="btn btn-primary btn-sm notActive radioWidth"  data-toggle="ConstructVal" data-title="2">Rental House</a>
+													<a class="btn btn-primary btn-sm notActive radioWidth"  data-toggle="ConstructVal" data-title="3">Duplex+Rental House</a>
+												</div>
+												<input type="hidden" name="ConstructVal" id="ConstructVal">
+											</div>
+										</div>
 									</div>
 								</div>
-							<div class="price-slider">
-								<h4 class="great">PAINTING TYPE</h4>
-								<!-- <span>Please choose one</span> -->
-								<div class="input-group">
-									<div id="radioBtnPaint" class="btn-group">
-										<a class="btn btn-primary btn-sm active" style="width:300px" data-toggle="PaintVal" data-title="16"value="1">Basic</a>
-										<a class="btn btn-primary btn-sm notActive" style="width:300px" data-toggle="PaintVal" data-title="17"value="2">Premium</a>
+								<div class="price-slider">
+									<div class="row">
+										<div class="col-sm-2" >
+										<h4 class="great">BHK</h4>
+										</div>
+										<div class="col-sm-10" >
+										<div class="input-group">
+											<div id="radioBtnBHK" class="btn-group">
+												<a class="btn btn-primary btn-sm active radioWidth"   data-toggle="BHKVal" data-title="1">1 BHK</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="BHKVal" data-title="2">2 BHK</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="BHKVal" data-title="3">3 BHK</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="BHKVal" data-title="4">4 BHK</a>
+											</div>
+											<input type="hidden" name="BHKVal" id="BHKVal">
+										</div>
+										</div>
 									</div>
-									<input type="hidden" name="PaintVal" id="PaintVal">
 								</div>
+								<div class="price-slider">
+									<div class="row">
+										<div class="col-sm-2" >
+										<h4 class="great">STRUCTURE</h4>
+										</div>
+										<!-- <span>Please choose one</span> -->
+										<div class="col-sm-10" >
+											<div class="input-group">
+												<div id="radioBtnStructure" class="btn-group">
+													<a class="btn btn-primary btn-sm active radioWidth" data-toggle="StructureVal" data-title="4" name="Wall_construct" value="1">Cement Blocks (6')</a>
+													<a class="btn btn-primary btn-sm notActive radioWidth" data-toggle="StructureVal" data-title="5" name="Wall_construct"value="2">Cement Blocks (8')</a>
+													<a class="btn btn-primary btn-sm notActive radioWidth" data-toggle="StructureVal" data-title="6" name="Wall_construct" value="3">Bricks</a>
+												</div>
+												<input type="hidden" name="StructureVal" id="StructureVal">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price-slider">
+									<div class="row">
+										<div class="col-sm-2" >
+											<h4 class="great">FLOORING</h4>
+										</div>
+										<div class="col-sm-10" >	
+										<!-- <span>Please choose one</span> -->
+											<div class="input-group">
+												<div id="radioBtnFlooring" class="btn-group">
+													<a class="btn btn-primary btn-sm active radioWidth"   data-toggle="floorVal" data-title="7" value ="1">Vetrified</a>
+													<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="floorVal" data-title="8" value ="2">Granite</a>
+														<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="floorVal" data-title="9" value ="3">Marble + Wooden</a> 
+												</div>
+												<input type="hidden" name="floorVal" id="floorVal">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price-slider">
+									<div class="row">
+										<div class="col-sm-2" >
+											<h4 class="great">DOORS</h4>
+										</div>
+										<div class="col-sm-10" >
+											<div class="input-group">
+												<div id="radioBtnDoors" class="btn-group">
+												<a class="btn btn-primary btn-sm active radioWidth"   data-toggle="DoorVal" data-title="10" value = "2">HonneWood</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="DoorVal" data-title="11" value = "3">SalWood</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="DoorVal" data-title="12" value = "4">OSTDoors</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="DoorVal" data-title="9" value = "1">Teakwood</a>	
+												</div>
+												<input type="hidden" name="DoorVal" id="DoorVal">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price-slider">
+									<div class="row">
+										<div class="col-sm-2" >
+											<h4 class="great">WINDOWS</h4>
+										</div>
+										<div class="col-sm-10" >
+											<div class="input-group">
+												<div id="radioBtnWindows" class="btn-group">
+												<a class="btn btn-primary btn-sm active radioWidth"  data-toggle="windowVal" data-title="12"value = "3">Salwood</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth" data-toggle="windowVal" data-title="13"value = "2">Honne</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="windowVal" data-title="11"value = "1">Teakwood</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="windowVal" data-title="14"value = "4">UPVC</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="windowVal" data-title="15"value = "5">Aluminumum</a>
+												</div>
+												<input type="hidden" name="windowVal" id="windowVal">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price-slider">
+									<div class="row">
+											<div class="col-sm-2" >
+												<h4 class="great">PAINTING TYPE</h4>
+											</div>
+									<div class="col-sm-10" >								
+										<div class="input-group">
+											<div id="radioBtnPaint" class="btn-group">
+												<a class="btn btn-primary btn-sm active radioWidth"   data-toggle="PaintVal" data-title="16"value="1">Basic</a>
+												<a class="btn btn-primary btn-sm notActive radioWidth"   data-toggle="PaintVal" data-title="17"value="2">Premium</a>
+											</div>
+											<input type="hidden" name="PaintVal" id="PaintVal">
+										</div>
+									</div>
+									</div>
 								</div>
 							</div>
 							</div>
-							<div style="text-align:center; margin-top:50px;">
-								<button type="button" class="btn btn-default" id="calcost">Calculate Cost</button>
+							
+							<div class="row" style="margin-top:30px">
+								<div style="text-align:center;">
+									<button type="button" class="btn btn-default" id="calcost"> Calculate Construction Cost in Bangalore</button>
+								</div>
 							</div>
-                    </div>
-                </div>
-            </div>
+					</div>
+					
+				</div>
 			</br>
 			</br>
 			<div class="row">

@@ -77,13 +77,16 @@ body {
   border:0;
   width: 245px;
 }
-
+.radioWidth{
+	width:150px;
+}
 h4.great {
-  background: #00ac98;
-  margin: 20px 0 15px -60px;
+  text-align:center;
+  background: #ef7f2c;
   padding: 7px 15px;
+  width: 120px;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   border-radius: 5px;
   display: inline-block;
