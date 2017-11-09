@@ -7,6 +7,15 @@ $( window ).load(function() {
 });
 
 $( document ).ready(function() {
+	$('.panel').on('hidden.bs.collapse', function (e) {
+		$(this).find(".f_close").show();
+		$(this).find(".f_open").hide();
+	})
+	$('.panel').on('shown.bs.collapse', function (e) {
+		$(this).find(".f_close").hide();
+		$(this).find(".f_open").show();
+	})
+	
 	$('#siteArea').attr("checked", "checked");
 	$("input[name='optradio']").click(function() {
 		$("#siteLabel").text($(this).parent().text().trim())

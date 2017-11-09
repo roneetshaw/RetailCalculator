@@ -15,15 +15,23 @@
     <!--<link href="papertostonecss.css?v=0" rel="stylesheet" />-->
     <link href="bootstrap.css?v=0" rel="stylesheet" />
 	<link href="customCSS.css?v=0" rel="stylesheet" />
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<style>
-		a {
+		div.panel,a {
 			cursor: pointer;
 		}
 		#calTab .active{
 			background-image: none;
 			background-color: #3cc499;
 			color: white;
+		}
+		#calcost{
+			padding: 10px 40px; 
+			background: #ef7f2c;
+			color: white;
+			width: 500px;
+			font-weight: bold;
+			border-radius: 25px;
 		}
 	</style>
 
@@ -901,7 +909,7 @@
 							
 							<div class="row" style="margin-top:30px">
 								<div style="text-align:center;">
-									<button type="button" class="btn btn-default" id="calcost"> Calculate Construction Cost in Bangalore</button>
+									<button type="button" class="btn btn-default" id="calcost"> CALCULATE CONSTRUCTION COST IN BANGALORE</button>
 								</div>
 							</div>
 					</div>	
@@ -935,13 +943,11 @@
                                             <span id="prprice">&#8377;</span><span id="totFoundation2" class="foundation_value">241101</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="f_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="construction cost down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="f_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt=" construction cost estimator up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -1155,11 +1161,11 @@
                                             <span id="prprice">&#8377;</span><span id="totSteel" class="structural_value">384397</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="s_close">
-                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -1289,11 +1295,11 @@
                                             <span id="prprice">&#8377;</span><span id="totSuperStructure" class="structural_value">384397</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="s_close">
-                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -1571,11 +1577,11 @@
                                             <span id="prprice">&#8377;</span><span id="SuperStructure_Steel" class="structural_value">384397</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="s_close">
-                                                <a href="#"><span>more</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="s_open" style="display:none">
-                                                <a href="#"><span>less</span><span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -1815,13 +1821,11 @@
                                             <span id="prprice">&#8377;</span><span id="totWallconstruct" class="foundation_value">241101</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="f_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="construction cost down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="f_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt=" construction cost estimator up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -1920,13 +1924,11 @@
                                             <span id="prprice" id="estpad">&#8377;</span><span id="Flooring" class="flooring_value">81260</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="fl_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="fl_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -2006,13 +2008,11 @@
                                             <span id="prprice" id="estpad">&#8377;</span><span id="WallTiles" class="pl_total">28730</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="pl_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span> </a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="pl_open" style="display:none">
-                                                <a href="#"> <span>less</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -2139,7 +2139,6 @@
                                             </tfoot>
                                         </table>
 										
-
                                     </div>
                                     <!-- plastering body -->
                                 </div>
@@ -2157,13 +2156,11 @@
                                             <span id="prprice">&#8377;</span><span id="totWoodWork" class="twood">104400</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="w_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="w_open" style="display:none">
-                                                <a href="#"> <span>less</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -2284,7 +2281,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td id="WindowName">MS Grills<td>
+                                                    <td id="WindowName">MS Grills</td>
                                                  </tr> 
 												  <tr>	
 													<td id="Material">Material</td>											  
@@ -2343,13 +2340,11 @@
                                             <span id="prprice">&#8377;</span><span id="totPainting2" class="tpaint"></span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="pa_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="pa_open" style="display:none">
-                                                <a href="#"> <span>less</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -2453,13 +2448,11 @@
                                             <span id="prprice">&#8377;</span><span id="totPlastering" class="tpaint">70524</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="pa_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="pa_open" style="display:none">
-                                                <a href="#"> <span>less</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
@@ -2597,13 +2590,11 @@
                                             <span id="prprice">&#8377;</span><span id="totMiscq1" class="tep">283299</span>
                                         </div>
                                         <div class="col-md-2 chevron">
-                                            <div class="el_close">
-                                                <a href="#"> <span>more</span>
-                                                    <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/down.png" alt="down"></span></a>
+                                            <div class="f_close" style="display:none">
+                                                <a><span>more</span><i class="glyphicon glyphicon-chevron-down"></i></a> 
                                             </div>
-                                            <div class="el_open" style="display:none">
-                                                <a href="#"><span>less</span>
-                   <span><img src="http://www.buildingekart.com/skin/frontend/tv_bigboom_package/tv_bigboom2/images/up.png" alt="up"></span></a>
+                                            <div class="f_open" >
+                                                <a><span>less</span><i class="glyphicon glyphicon-chevron-up"></i></a> 
                                             </div>
                                         </div>
                                     </div>
