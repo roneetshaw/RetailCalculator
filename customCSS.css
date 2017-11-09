@@ -78,7 +78,24 @@ body {
   width: 245px;
 }
 .radioWidth{
-	width:150px;
+	width:160px;
+}
+.radioWidthPaint{
+	width:240px;
+}
+.radioWidthWindow{
+	width:96px;
+}
+
+.radioWidthBHK{
+	width:120px;
+}
+.radioGroupWidth{
+	width:480px;
+}
+.radioStyle{
+	font-size: 13px; 
+	font-weight: bold;
 }
 h4.great {
   text-align:center;

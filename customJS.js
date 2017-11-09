@@ -31,7 +31,7 @@ $( document ).ready(function() {
 		}
 	});
 
-	$('#radioBtnBHK a').on('click', function(){
+	$('#radioBtnHouse a').on('click', function(){
     var sel = $(this).data('title');
 		var tog = $(this).data('toggle');
 		$('#'+tog).prop('value', sel);
