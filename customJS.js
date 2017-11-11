@@ -2362,8 +2362,8 @@ $( document ).ready(function() {
 		var tothomecost = wallconstruction+flooring+misc+Plastering+paint+tiles+wood+supersteel+superstructure+steelnorm+foundation;
 		$("#tothomecost").text(tothomecost.toLocaleString('en-IN'));
 		var floorval=$("#floorDropdwnval").val().trim();
-		$("#totalConstHomeText").text("Total Cost of Construction in Bangalore for Building your Residential  House of  ("+$("#dwnFloortext").text()+") on ("+$("#landAreatext").val()+" sq ft) Site at "+$("#dwnText").val().trim());
-		$("#totalConstHomeText1").text("Total Cost:Rs"+tothomecost.toLocaleString('en-IN'));
+		$("#totalConstHomeText").text("Total Cost of Construction in Bangalore for Building your Residential  House of ("+$("#dwnFloortext").text()+") on ("+$("#landAreatext").val()+" sq ft) Site at "+$("#dwnText").val().trim());
+		$("#totalConstHomeText1").text("Total Cost:Rs "+tothomecost.toLocaleString('en-IN'));
 	}
 	
 		
